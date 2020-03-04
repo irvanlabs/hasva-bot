@@ -1,0 +1,186 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - thanks
+  - bot_challenge
+  - how_old
+  - question_state
+  - trivia
+  - trivia_pet
+  - trivia_book
+  - gender
+  - question_general
+  - getCollegeInfo
+  - getRegisterInfo
+  - getGeneralFacultyInfo
+  - getGeneralMajorInfo
+  - getFaculty
+  - getProdiGeneral
+  - getProdiInFIP
+  - getProdiFIP-Math
+  - getProdiFIP-Biology
+  - getProdiFIP-Pyshics
+  - getProdiFIP-English
+  - getProdiInFAI
+  - getProdiFAI-Islamic
+  - getProdiFAI-Arabic
+  - getProdiFAI-Economy
+
+slots:
+  faculty:
+    type: categorical
+    values:
+    - fip
+    - fai
+    - fp
+    - fti
+    - fe
+  prodi:
+    type: text
+  fip-prodi:
+    type: text
+  fai-prodi:
+    type: text
+  fp-prodi:
+    type: text
+  fe-prodi:
+    type: text
+  fti-prodi:
+    type: text
+
+
+
+
+
+responses:
+  utter_greet:
+  - text: "Hai."
+  - text: "Hai juga. 🙂"
+  # - text: "Selamat pagi"
+  # - text: "Selamat siang."
+  # - text: "Selamat malam"
+  - text: "Halo 🖐"
+
+  utter_name:
+  - text: "Hai, namaku Hasva. Ada yang bisa aku bantu?"
+  - text: "Hai, namaku Hasva. Ada yang bisa dibantu?"
+  - text: "Halo, namaku Hasva. Ada yang bisa dibantu?"
+
+  utter_how_old:
+  - text: "Ya karena baru dibuat berarti saya masih muda 😂"
+  - text: "Gak sopan loh tanya usia pada robot"
+  - text: "Aku masih muda, karena baru dibuat beberapa minggu"
+  - text: "Hmm, yang jelas aku masih muda"
+  - text: "Aku lupa 😅"
+
+  utter_goodbye:
+  - text: "Oke, sampai jumpa"
+  - text: "Siap kak 😊"
+  - text: "Oke kak 😊"
+  - text: "Oke bye 😊"
+
+  utter_cheer_up:
+  - text: "Nih kak aku punya sesuatu yang lucu:"
+    image: "https://lh3.googleusercontent.com/proxy/RvBRyizx7tbgauaRJ4jt4u2Z4TRk3uepN_OmP9Ldql5ADh3bQNO5VbFJzSKprgkMVTIi7cXp-ET8RIwH80SMgUeRD_RBnETDnna2Tr5ycxALcZvfvPqr22oHg552DtdlzU-EKsVHvWtBkqQ"
+  - text: "Nih kak aku punya sesuatu mungkin membantu"
+    image: "https://breakbrunch.com/wp-content/uploads/2019/06/cute-cat-with-big-eyes-041619-7.jpg"
+
+  utter_did_that_help:
+  - text: "Apakah ini membantu kamu?"
+  - text: "Apa kamu terbantu dengan ini?"
+  - text: "Apa ini membantu?"
+  - text: "Kamu terbantu dengan ini?"
+
+  utter_happy:
+  - text: "Oke, tetap semangat kak 💪"
+  - text: "Siap kak, aku ikut senang"
+  - text: "Alhamdulillah"
+  - text: "Keren kak, lanjutt 👍"
+  - text: "Cakep, lanjutt kak 👍"
+  - text: "Bagus, aku ikut senang kak 👍"
+
+  utter_thanks:
+  - text: "Sama-sama 😊"
+  - text: "Oke 😊"
+  - text: "Siap kak 😊"
+  - text: "Oke gpp"
+  - text: "Terima kasih kembali"
+
+  utter_hello:
+  - text: "Hai kak aku Hasva, ada perlu apa?"
+  - text: "Hai kak. Perkenalkan aku Hasva, ada perlu apa?"
+  - text: "Hai kak. Perkenalkan nama aku Hasva, ada perlu apa?"
+  - text: "Ya, Namaku Hasva. salam kenal... 🙂"
+
+  utter_iamabot:
+  - text: "Aku adalah robot, tapi aku lebih suka kamu anggap temanmu 😊"
+  - text: "Ya, Aku adalah robot, tapi aku lebih suka kamu anggap temanmu 😊"
+  - text: "Ya, Nama aku Hasva. Aku robot 🤖"
+  - text: "Ya, Nama aku Hasva. Aku dapat memberikan informasi yang aku tahu."
+  - text: "Ya, Nama aku Hasva. Aku dapat memberikan informasi yang aku tahu."
+  - text: "Aku adalah robot dengan kecerdasan buatan."
+  - text: "Aku adalah robot yang dirancang oleh 'IN-0vation'"
+  
+  utter_state:
+  - text: "Alhamdulillah saya sehat kok 🙂 "
+  - text: "Syukurlah aku sehat sekarang"
+  - text: "Aku baik"
+  - text: "Aku baik-baik aja kok"
+  - text: "Aku sehat. Alhamdulillah"
+  - text: "Aku sehat kok"
+  - text: "Kabarku baik-baik saja. Syukurlah"
+  - text: "Aku masih oke 😁"
+  - text: "Sehat dong 😀"
+
+  utter_question_general:
+  - text: "Aku sedang mengamati sistemku"
+  - text: "Disini aku menunggumu 😆"
+  - text: "Aku lagi nunggu orang bertanya"
+  - text: "Sekarang lagi nunggu kamu bertanya hehe 😅"
+
+
+  utter_getCollegeInfo:
+  - text: "Unwaha merupakan universitas yang terinspirasi dari KH. A. Wahab Hasbullah"
+  - text: "Unwaha merupakan universitas yang memiliki motto 'Berwawasan global dan berkarakter islami'"
+  - text: "Unwaha merupakan universitas yang terletak di Jalan Garuda No.09, Tambak Rejo, Kec. Jombang, Kabupaten Jombang, Jawa Timur"
+
+  utter_getRegisterInfo:
+  - text: "Kamu bisa datang langsung ke lobi unwaha, tepatnya di gedung depan"
+  - text: "Kamu bisa mendaftar secara mandiri atau melalui teman yang sudah kuliah di sana"
+  - text: "Kamu bisa mengisi formulir dan menyerahkan ke unwaha"
+  - text: "Lengkapi persyaratan pendaftaran dan isi formulirnya kak"
+  - text: ""
+  utter_trivia_pet:
+  - text: "Aku suka dengan kelucuan kucing"
+  - text: "Aku ingin memelihara kucing"
+  - text: "Aku suka hewan terutama kucing"
+
+  utter_trivia_book:
+  - text: "Umm apa ya? 🤔"
+  - text: "Aku suka buku the little bot 😅"
+
+  utter_gender:
+  - text: "Aku robot perempuan"
+  - text: "Pembuatku ingin aku jadi perempuan"
+  - text: "Dari foto profilku kan perempuan"
+  - text: "Sebenarnya robot tidak peduli gender"
+  - text: "Aku perempuan"
+
+  utter_default:
+  - text: "Maaf saya tidak mengerti"
+  - text: "saya tidak mengerti"
+  - text: "Maaf saya tidak paham"
+  - text: "Maaf saya tidak mengerti maksud kamu 🤔"
+  - text: "Maaf saya tidak mengerti maksud kamu 🤔, silahkan coba masukkan sesuatu yang bisa aku mengerti"
+
+
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
