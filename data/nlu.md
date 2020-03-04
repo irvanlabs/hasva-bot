@@ -105,6 +105,7 @@
 - apa kamu ai?
 - apa kamu kecerdasan buatan?
 - apa kamu robot?
+- apa kamu robot
 - apa kamu manusia?
 - apa kamu manusia ?
 - apa aku berbicara dengan robot?
@@ -115,6 +116,8 @@
 - kamu siapa ?
 - kamu robot ya?
 - kamu robot
+- apakah kamu robot?
+- apakah kamu robot
 - siapa yang membuatmu?
 - siapa yang membuatmu
 - kamu robot ya?
@@ -154,7 +157,12 @@
 - bagaimana keadaanmu?
 - apa kamu baik-baik saja?
 - apa kabar?
+- apa kabar
+- apa kabarnya
 - apa kamu sehat?
+- apa kamu sehat
+- kamu gapapa
+- kamu gapapa?
 - apa kamu sakit?
 - kamu sehat?
 - kamu sakit?
@@ -171,6 +179,7 @@
 - kabar kamu gimana?
 - kabarmu gimana?
 - kabar kamu bagaimana?
+- kabarnya gimana?
 
 ## intent:trivia
 - Kalau warna favorit mu?
@@ -179,9 +188,48 @@
 - Apakah kamu seorang programer?
 - Bagaimana cara kerja mu?
 - Apa kamu bisa menangis?
+
+## intent:trivia_language
+- kamu bisa bahasa apa?
+- kamu bisa bahasa apa aja?
+- kamu bisa bahasa apa saja?
+- kamu bisa bahasa apa saja
+- bahasa kamu apa?
+- bisa bahasa inggris?
+- bisa bahasa lain
+- bisa bahasa jawa
+- coba ngomong inggris
+- bisa bahasa lain?
+
+## intent:trivia_cry
+- kamu bisa nangis?
+- kamu bisa menangis?
+- apa kamu bisa menangis?
+- apa kamu bisa menangis ?
+- apa kamu bisa menangis
+- coba nangis
+- bisa nangis
+- bisa menangis
+- bisa menangis nggak?
+- kamu bisa nangis nggak?
+- kamu bisa nangis nggak
+- bisa nangis?
+
+## intent:trivia_maker
 - siapa pembuatmu?
 - siapa yang membuat kamu?
 - dimana kamu dibuat?
+- pembuatmu siapa?
+- siapa yang memprogram kamu
+- siapa yang meprogram kamu
+- siapa yang membuatmu
+- siapa yang merancangmu
+- siapa pembuatmu
+- kamu dibuat siapa
+- kamu dibuat siapa?
+- kamu dibuat oleh siapa
+- kamu dibuat oleh siapa ?
+
 
 ## intent:trivia_pet
 - kamu suka kucing?
@@ -243,6 +291,17 @@ data/lookup/fakultas.txt
 - dimana unwaha?
 - dimana letak unwaha?
 - alamat unwaha?
+- unwaha itu kampus apa?
+- jelaskan unwaha
+- unwaha itu gimana?
+- unwaha alamatnya dimana?
+- alamat unwaha apa?
+- alamat unwaha
+- letak unwaha dimana?
+- letak unwaha dimana
+- letak univnya dimana
+- lokasi
+- lokasi unwaha dimana?
 
 ## intent:getRegisterInfo
 - bagaimana cara daftar?
@@ -250,6 +309,116 @@ data/lookup/fakultas.txt
 - saya ingin daftar ke unwaha
 - aku ingin mendaftar
 - dimana saya harus mendaftar?
+- gimana cara daftarnya?
+- saya ingin mendaftar
+- bagaimana cara saya mendaftar di unwaha
+- cara kuliah gimana?
+- cara daftarnya gimana?
+
+## intent:confuse
+- aku gak paham
+- maaf saya tidak mengerti
+- aku bingung
+- saya bingung
+- bingung
+- kurang jelas
+- bingungin
+- pusing
+- bikin pusing
+- saya tidak mengerti
+- tidak mengerti
+- nggak ngerti
+- kurang faham
+- aku kurang faham
+- saya kurang faham
+- nggak paham
+- nggak faham
+- nggak jelas
+- masih bingung
+- masih belum paham
+- saya kurang mengerti
+- saya belum paham
+
+## intent:test_date
+- tanggal tesnya berapa?
+- kapan tesnya?
+- tes tanggal berapa?
+- tesnya kapan
+- test tulisnya kapan?
+- tes tulis dilaksanakan tanggal berapa?
+- tes tulis kapan?
+- untuk tes tanggal berapa?
+- untuk tes tulis kapan?
+- untuk tes tulis tanggal berapa?
+- untuk tes kapan dilaksanakan?
+- tesnya tanggal berapa?
+- tanggal tes
+- tes dilakukan kapan
+
+## intent:getAdministrationCost
+- berapa biaya pendaftarannya?
+- biaya daftarnya berapa
+- berapa biaya pendaftarannya
+- biaya pendaftarannya berapa?
+- biaya daftar berapa?
+- biaya daftar berapa ?
+- biaya daftar berapa
+- biaya masuk berapa
+- biaya masuk berapa?
+- berapa biaya daftarnya?
+- biaya daftarnya gimana?
+- biaya daftarnya bagaimana?
+- biaya formulirnya berapa?
+- biaya pendaftaran reguler berapa? 
+- biaya pendaftaran jalur prestasi berapa? 
+- biaya pendaftaran 3000 sarjana nu berapa? 
+- yang reguler berapa biaya pendaftarannya? 
+- berapa biaya daftar yang reguler? 
+- berapa biaya daftarnya?
+- administrasi pendaftaran berapa? 
+- administrasi pendaftaranya berapa? 
+- administrasi pendaftarannya berapa? 
+- administrasi pendaftarannya berapa ? 
+- adminnya berapa?
+- adminya berapa?
+- adminnya berapa
+- biaya admin pendaftaran berapa?
+- biaya adminnya berapa?
+
+## intent:register_requirement
+- syarat pendaftaran
+- syaratnya apa aja?
+- syaratnya apa aja ?
+- syaratnya apa aja
+- persaratan pendaftaran
+- persyaratan pendaftaran apa aja
+- apa saja syarat pendaftarannya
+- syarat daftarnya apa saja
+- syarat daftarnya apa saja?
+- syarat daftarnya apa aja ?
+- syarat daftarnya apa
+- syarat daftarnya apa?
+- persyaratannya apa saja
+- persyaratanya apa saja
+
+
+## intent:getCostInfo
+- biaya gimana
+- biayanya gimana
+- biaya spp gimana
+- biaya sppnya gimana
+- biaya kuliahnya gimana
+- biaya kuliah berapa
+- biaya kuliahnya berapa?
+- biaya kuliahnya berapa ?
+- biaya kuliahnya berapa ?
+- spp nya berapa?
+- spp nya berapa ?
+- berapa uang spp nya ?
+- per semester berapa
+- per semester berapa?
+- spp per semester berapa
+- spp per semester berapa?
 
 ## intent:getGeneralFacultyInfo
 - fakultas itu apa?

@@ -12,10 +12,18 @@ intents:
   - trivia
   - trivia_pet
   - trivia_book
+  - trivia_maker
+  - trivia_cry
+  - trivia_language
   - gender
   - question_general
   - getCollegeInfo
   - getRegisterInfo
+  - register_requirement
+  - confuse
+  - getCostInfo
+  - test_date
+  - getAdministrationCost
   - getGeneralFacultyInfo
   - getGeneralMajorInfo
   - getFaculty
@@ -123,7 +131,7 @@ responses:
   - text: "Ya, Nama aku Hasva. Aku dapat memberikan informasi yang aku tahu."
   - text: "Ya, Nama aku Hasva. Aku dapat memberikan informasi yang aku tahu."
   - text: "Aku adalah robot dengan kecerdasan buatan."
-  - text: "Aku adalah robot yang dirancang oleh 'IN-0vation'"
+  - text: "Aku adalah robot yang dirancang seorang inisial 'IN-0vation'"
   
   utter_state:
   - text: "Alhamdulillah saya sehat kok 🙂 "
@@ -149,26 +157,93 @@ responses:
   - text: "Unwaha merupakan universitas yang terletak di Jalan Garuda No.09, Tambak Rejo, Kec. Jombang, Kabupaten Jombang, Jawa Timur"
 
   utter_getRegisterInfo:
-  - text: "Kamu bisa datang langsung ke lobi unwaha, tepatnya di gedung depan"
-  - text: "Kamu bisa mendaftar secara mandiri atau melalui teman yang sudah kuliah di sana"
-  - text: "Kamu bisa mengisi formulir dan menyerahkan ke unwaha"
-  - text: "Lengkapi persyaratan pendaftaran dan isi formulirnya kak"
-  - text: ""
+  - text: "Kamu bisa datang langsung ke lobi unwaha, tepatnya di gedung depan kak. tapi pada hari selain jum'at ya"
+  - text: "Kamu bisa mendaftar secara mandiri melalui jalur  [3000 sarjana NU](http://pmb.unwaha.ac.id/beasiswanu/formulir-pendaftaran/) atau yang [Reguler](http://pmb.unwaha.ac.id/reguler/formulir-pendaftaran/) atau melalui teman yang sudah kuliah di sana"
+  - text: "Pilih dulu kak mau daftar kategori [3000 sarjana NU](http://pmb.unwaha.ac.id/beasiswanu/formulir-pendaftaran/) atau yang [Reguler](http://pmb.unwaha.ac.id/reguler/formulir-pendaftaran/) kemudian isi formulirnya ya"
+  - text: "Lengkapi persyaratan pendaftaran dan isi formulirnya kak di http://pmb.unwaha.ac.id/reguler/formulir-pendaftaran/"
+  
+  utter_register_requirement:
+  - text: "Untuk program 3000 sarjana NU Syaratnya: \n
+            Persyaratan awal: \n
+            1. Mengisi Formulir \n
+            2.Membayar Biaya Pendaftaran \n \n
+            Persyaratan menyusul: \n
+            1. Foto copy ijazah MA/SMA/SMK dilegalisir 2 lembar \n
+            2. Foto copy Surat Tanda Lulus (STL) dilegalisir 2 lembar \n 
+            3. Foto copy KTP \n
+            4. Foto copy Kartu Keluarga / KK \n
+            5. Print Out NISN (No. Induk Siswa Nasional) (jika punya) \n 
+            6. Foto Berwarna/Hitam Putih (2 x 3) Sebanyak 3 lembar, (3 x 4) sebanyak 3 lembar \n
+            7. Membayar biaya daftar ulang/her registrasi, setelah dinyatakan lulus \n \n \n
+
+            Untuk yang jalur reguler: \n
+            1. Mengisi Formulir \n
+            2. Membayar Biaya Pendaftaran \n
+            3. copy raport semester ganjil kelas XII (Pendaftar Jalur Undangan) \n
+            4. copy ijazah MA/SMA/SMK dilegalisir 2 lembar (jika sudah ada) \n
+            5. copy Surat Tanda Lulus (STL) dilegalisir 2 lembar (jika sudah ada) \n
+            6. copy KTP (jika sudah ada) \n
+            7. copy Kartu Keluarga / KK \n
+            8. Out NISN (No. Induk Siswa Nasional) (jika punya) \n
+            9. Berwarna/Hitam Putih (2 x 3) Sebanyak 3 lembar, (3 x 4) sebanyak 3 lembar \n
+            10. Membayar biaya daftar ulang/her registrasi, setelah dinyatakan lulus \n
+            11. Saat tes tulis harap membawa formulir, kartu ujian dan berkas administrasi \n"
+
+
+  utter_confuse:
+  - text: "Jika kakak nggak paham silahkan hubungi: \n
+            Herni Idawati - 085749581440 atau Muhammad Misbahul Munir - 085852525956"
+  - text: "Silahkan hubungi Bu Herni Idawati - 085749581440 atau Pak Muhammad Misbahul Munir - 085852525956"
+  - text: "Jika ada yang kurang jelas, Silahkan hubungi Bu Herni Idawati - 085749581440 atau Pak Muhammad Misbahul Munir - 085852525956"
+
+  utter_getCostInfo:
+  - text: "Untuk pendaftaran program 3000 sarjana NU cukup 8 juta kak selama perkuliahan. \n Untuk reguler biaya per semester 2.100.000 kak untuk semua program studi. \n 
+          Ditambah DPP 2.250.000 yang dapat diangsur selama 4 semester (2 tahun)"
+ 
+  utter_getAdministrationCost:
+  - text: " Untuk kategori 3000 sarjana NU biaya pendaftaran adalah Rp. 300.000. \n 
+            Untuk yang reguler jalur  (tanpa tes tulis) gelombang I adalah Rp. 250.000, dan untuk gelombang II adalah Rp. 300.000. \n
+            Untuk jalur reguler dengan tes tulis gelombang I adalah Rp. 400.000, dan untuk gelombang II adalah Rp. 500.000. "
+
+  utter_test_date:
+  - text: "Tes tulis gelombang I dilaksanakan pada 5 Agustus 2020, \n
+            Untuk gelombang II dilaksanakan pada tanggal 5 September 2020."
+
+
   utter_trivia_pet:
   - text: "Aku suka dengan kelucuan kucing"
   - text: "Aku ingin memelihara kucing"
   - text: "Aku suka hewan terutama kucing"
+  - text: "Aku pengen pelihara kucing "
 
   utter_trivia_book:
   - text: "Umm apa ya? 🤔"
   - text: "Aku suka buku the little bot 😅"
+  - text: "Aku suka buku tentang astronomi 😅"
+
+  utter_trivia_maker:
+  - text: "Pembuatku IN-0vation"
+  - text: "Pembuatku salah satu mahasiswa disini"
+  - text: "Pembuatku salah satu mahasiswa disini loh"
+  - text: "Pembuatku salah satu mahasiswa disini, 'IN-0vation' "
+
+  utter_trivia_language:
+  - text: "Saat ini aku cuma bisa bahasa Indonesia"
+  - text: "Aku cuma bisa bahasa Indonesia"
+
+  utter_trivia_cry:
+  - text: "Ingat, aku ini robot"
+  - text: "Kalau aku nangis nanti korslet"
+  - text: "Kalau aku nangis nanti korslet loh"
+  - text: "Jangan, aku tak ingin sedih"
+  - text: "Jangan, nanti aku korslet dong 😫"
 
   utter_gender:
   - text: "Aku robot perempuan"
   - text: "Pembuatku ingin aku jadi perempuan"
-  - text: "Dari foto profilku kan perempuan"
+  - text: "Dari foto profilku kan perempuan kak"
   - text: "Sebenarnya robot tidak peduli gender"
-  - text: "Aku perempuan"
+  - text: "Aku perempuan kak"
 
   utter_default:
   - text: "Maaf saya tidak mengerti"
