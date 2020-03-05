@@ -1,13 +1,14 @@
 # hasva-bot
-Hasva virtual assistant for wahab hasbullah university
+Hasva an AI virtual assistant for wahab hasbullah university. 
 
-##Tujuan Projek
+##T ujuan Projek
 
 1. Membuat asisten virtual yang membantu para calon mahasiswa untuk medapatkan informasi calon kampus (unwaha).
 2. Calon mahasiswa akan mendapatkan informasi secara cepat karena asisten virtual yang siaga 24 jam.
 3. Calon mahasiswa dapat menghubungi atau berinteraksi dengan asisten virtual melalui Telegram atau Facebook Messenger.
+4. Asisten virtual dengan AI.
 
-##Latar Belakang
+## Latar Belakang
 
 1. Calon mahasiswa baru (selanjutnya: camaba) biasanya menghubungi contact person kampus saat jam 9 malam, sehingga membuat camaba menunggu esok hari agar pesannya dibalas.
 2. Contact person biasanya membalas lama karena kesibukan masing-masing.
@@ -15,7 +16,7 @@ Hasva virtual assistant for wahab hasbullah university
 
 
 
-##Cakupan Percakapan
+## Cakupan Percakapan
 
 1. Pertanyaan seputar kampus
   1. a)Alamat
@@ -35,20 +36,22 @@ Hasva virtual assistant for wahab hasbullah university
   1. a)Pendaftaran
   2. b)Prodi yang cocok untuk camaba
 
-##Diluar cakupan/trivia
+## Diluar cakupan/trivia
 
 1. Kondisi bot
 2. Nama bot
 3. Pembuat bot
 4. Menghibur pengguna
 
-##Sesuatu yang lain diluar cakupan, misal masalah yang membutuhkan hal teknis dengan staf
+## Sesuatu yang lain diluar cakupan, misal masalah yang membutuhkan hal teknis dengan staf
 
 1. Memberikan rujukan nomor staff
 2. Bot tidak mengerti
 
-##Aplikasi teknis
+## Aplikasi teknis
 
 1. Python3
 2. Rasa
 3. Set data kemungkinan percakapan
+
+### kedepan jika memungkinkan akan saya tambah dataset + platform chat yang disupport
