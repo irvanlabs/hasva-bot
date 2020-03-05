@@ -181,13 +181,32 @@
 - kabar kamu bagaimana?
 - kabarnya gimana?
 
-## intent:trivia
-- Kalau warna favorit mu?
-- Bahasa apa yang sering kamu gunakan?
-- Apanya yang mengganggu mu?
-- Apakah kamu seorang programer?
-- Bagaimana cara kerja mu?
-- Apa kamu bisa menangis?
+## intent:trivia_eat_drink
+- kamu sudah makan?
+- kamu sudah makan ?
+- makan yuk
+- makan dulu sana
+- makan dulu sana!
+- makanan favoritmu apa?
+- kamu suka makan apa?
+- kamu suka makan apa ?
+- suka jus
+- suka minuman apa?
+- kamu suka minuman apa?
+- kamu suka minum apa?
+- kamu suka minum apa ?
+- kamu suka minum?
+- kamu suka?
+- apa kamu juga makan
+- apa kamu makan
+- kamu minum ya?
+- kamu minum juga?
+- apa kamu minum juga?
+- apa kamu juga minum?
+- apa juga minum?
+- apa kamu minum?
+- kamu minum apa?
+- kamu minum
 
 ## intent:trivia_language
 - kamu bisa bahasa apa?
@@ -371,6 +390,7 @@ data/lookup/fakultas.txt
 - biaya formulirnya berapa?
 - biaya pendaftaran reguler berapa? 
 - biaya pendaftaran jalur prestasi berapa? 
+- biaya pendaftaran jalur undangan berapa? 
 - biaya pendaftaran 3000 sarjana nu berapa? 
 - yang reguler berapa biaya pendaftarannya? 
 - berapa biaya daftar yang reguler? 
@@ -422,6 +442,8 @@ data/lookup/fakultas.txt
 
 ## intent:getGeneralFacultyInfo
 - fakultas itu apa?
+- fakultas itu apa
+- fakultas seperti itu apa
 - fakultas itu bagaimana?
 - apa perbedaan dari fakultas?
 - fakultas itu yang bagaimana?
@@ -429,6 +451,8 @@ data/lookup/fakultas.txt
 - fakultas itu yang gimana?
 - aku bingung dengan fakultas?
 - apa itu fakultas?
+- jelaskan fakultas
+- pengertian fakultas
 
 ## intent:getGeneralMajorInfo
 - prodi itu apa?
@@ -441,11 +465,34 @@ data/lookup/fakultas.txt
 - maksud dari prodi itu apa?
 - maksud dari program studi itu apa?
 - apa itu prodi?
+- apa itu prodi
+- apa itu program studi?
+- prodi itu gimana maksudnya?
+
+## intent:getDifferentProdi-Faculty
+- perbedaan prodi dan fakultas apa?
+- perbedaan prodi dan fakultas apa
+- apa prodi dan fakultas itu sama?
+- apa prodi dan fakultas itu sama
+- apa prodi dan fakultas itu sama ?
+- perbedaan prodi dan fakultas apa ?
+- perbedaan fakultas dan prodi apa ?
+- perbedaan fakultas dan prodi apa?
+- perbedaan fakultas dan prodi apa
+- perbedaan fakultas dan program studi itu apa
+- bedanya fakultas dan program studi itu apa
+- beda nya fakultas dan program studi itu apa
+- bedanya fakultas dan prodi itu apa?
+- bedanya fakultas dan prodi itu apa ?
+- apa fakultas dan prodi itu sama?
+- apa fakultas dan prodi itu sama
+- apa fakultas dan prodi itu satu jenis
+- apa prodi sama dengan fakultas?
+- apa prodi sama dengan fakultas
+- apa prodi sama dengan fakultas ?
 
 ## intent:getFaculty
 - apa saja fakultas yang ada?
-- apa itu [fp](fakultas)
-- ngapain aja di [FP](fakultas)?
 - fakultasnya apa aja?
 - fakultasnya gimana?
 - bagaimana fakultasnya?
@@ -456,6 +503,16 @@ data/lookup/fakultas.txt
 - jelaskan fakultasnya
 - jelaskan fakultas
 - gimana fakultasnya
+- daftar fakultas
+- daftar fakultasnya apa saja
+- fakultasnya apa saja
+- fakultas di sini apa saja
+- fakultas di unwaha apa saja
+- fakultas disini apa saja
+- fakultas disini apa?
+- kalau fakultasnya
+- kalau fakultas
+- kalo fakultasnya
 
 <!-- start synonym prodi -->
 
@@ -567,7 +624,10 @@ data/lookup/prodi-fip.txt
 ## intent:getProdiInFIP
 - fip itu apa aja?
 - apa itu fip?
+- apa saja prodi di fip?
+- apa saja prodi di fip
 - apasih fip itu?
+- prodi di fip apa aja?
 - fakultas ilmu pendidikan itu bagaimana?
 - fip itu singkatannya apa?
 - singkatan dari fip?

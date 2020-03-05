@@ -30,6 +30,6 @@
 * bot_challenge
   - utter_iamabot
 
-## qustion_state
+## question_state
 * question_state
   - utter_state

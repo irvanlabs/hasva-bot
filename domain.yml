@@ -9,7 +9,7 @@ intents:
   - bot_challenge
   - how_old
   - question_state
-  - trivia
+  - trivia_eat_drink
   - trivia_pet
   - trivia_book
   - trivia_maker
@@ -26,6 +26,7 @@ intents:
   - getAdministrationCost
   - getGeneralFacultyInfo
   - getGeneralMajorInfo
+  - getDifferentProdi-Faculty
   - getFaculty
   - getProdiGeneral
   - getProdiInFIP
@@ -110,6 +111,7 @@ responses:
   - text: "Keren kak, lanjutt 👍"
   - text: "Cakep, lanjutt kak 👍"
   - text: "Bagus, aku ikut senang kak 👍"
+  - text: "Bagus kak 👍"
 
   utter_thanks:
   - text: "Sama-sama 😊"
@@ -127,12 +129,18 @@ responses:
   utter_iamabot:
   - text: "Aku adalah robot, tapi aku lebih suka kamu anggap temanmu 😊"
   - text: "Ya, Aku adalah robot, tapi aku lebih suka kamu anggap temanmu 😊"
-  - text: "Ya, Nama aku Hasva. Aku robot 🤖"
+  - text: "Ya, Nama aku Hasva. Aku robot yang dapat membantumu 🤖"
   - text: "Ya, Nama aku Hasva. Aku dapat memberikan informasi yang aku tahu."
   - text: "Ya, Nama aku Hasva. Aku dapat memberikan informasi yang aku tahu."
   - text: "Aku adalah robot dengan kecerdasan buatan."
   - text: "Aku adalah robot yang dirancang seorang inisial 'IN-0vation'"
   
+  utter_trvia_eat_drink:
+  - text: "Robot tidak perlu kak 😁"
+  - text: "Aku kan robot kak 😁"
+  - text: "Saya robot kak,jadi tidak bisa 😁 "
+  - text: "Saya robot kak,jadi tidak perlu  😁"
+
   utter_state:
   - text: "Alhamdulillah saya sehat kok 🙂 "
   - text: "Syukurlah aku sehat sekarang"
@@ -209,7 +217,56 @@ responses:
   - text: "Tes tulis gelombang I dilaksanakan pada 5 Agustus 2020, \n
             Untuk gelombang II dilaksanakan pada tanggal 5 September 2020."
 
+  utter_getGeneralFacultyInfo:
+  - text: "Fakultas merupakan divisi khusus dalam universitas yang membawahi beberapa program studi/jurusan yang berkaitan. Misalnya Fakultas Ilmu Pendidikan (FIP)"
 
+  utter_getGeneralMajorInfo:
+  - text: "Prodi atau Program Studi merupakan kesatuan rencana belajar yang digunakan sebagai pedoman jalannya pendidikan akademik yang penyelenggaraannya berdasarkan suatu kurikulum."
+
+  utter_getDifferentProdi-Faculty:
+  - text: "Fakultas adalah divisi besarnya sedangkan Prodi adalah bagian-bagian kecil dari divisi besar tersebut."
+  - text: "Prodi/ Program Studi adalah divisi dibawah Fakultas"
+
+  utter_getFaculty:
+  - text: "Untuk saat ini Unwaha memiliki 5 fakultas yaitu: 
+          Fakultas Agama Islam (FAI) \n
+          Fakultas Ekonomi (FE) \n
+          Fakultas Ilmu Pendidikan (FIP) \n
+          Fakultas Pertanian (FP) \n
+          Fakultas Teknik Informatika (FIP) \n"
+
+  utter_getProdiGeneral:
+  - text: "Program studi yang ada di Unwaha saat ini sejumlah 14 yaitu: \n"
+
+  utter_getProdiInFIP:
+  - text: "Program studi di Fakultas Ilmu Pendidikan: \n
+          Pendidikan Matematika (PM) \n
+          Pendidikan Biologi (PB) \n
+          Pendidikan Fisika (PF) \n
+          Pendidikan Bahasa Inggris (PBI) \n"
+
+  utter_getProdiInFAI:
+  - text: "Program studi di Fakultas Agama Islam: \n
+            Pendidikan Agama Islam (PAI) \n
+            Pendidikan Bahasa Arab (PBA) \n
+            Ekonomi Syariah (ES) \n"
+
+  utter_getProdiInFE:
+  - text: "Program studi di Fakultas Agama Islam: \n
+            Manajemen \n"
+
+  utter_getProdiInFAI:
+  - text: "Program studi di Fakultas Pertanian:
+            Agrobisnis (AB) \n
+            Agroekoteknologi (AE) \n
+            Teknologi Hasil Pertanian (THP) \n
+            Rakayasa Pertanian Dan Biosistem (RPB) \n"
+
+  utter_getProdiInFAI:
+  - text: "Program studi di Fakultas Teknik Informatika: \n
+            Teknik Informatika (TI) \n
+            Sistem Informasi (SI) \n"
+# UNTUK TRIVIA
   utter_trivia_pet:
   - text: "Aku suka dengan kelucuan kucing"
   - text: "Aku ingin memelihara kucing"
@@ -244,6 +301,7 @@ responses:
   - text: "Dari foto profilku kan perempuan kak"
   - text: "Sebenarnya robot tidak peduli gender"
   - text: "Aku perempuan kak"
+  - text: "Aku di desain sebagai perempuan kak"
 
   utter_default:
   - text: "Maaf saya tidak mengerti"
@@ -251,7 +309,7 @@ responses:
   - text: "Maaf saya tidak paham"
   - text: "Maaf saya tidak mengerti maksud kamu 🤔"
   - text: "Maaf saya tidak mengerti maksud kamu 🤔, silahkan coba masukkan sesuatu yang bisa aku mengerti"
-
+  - text: "Untuk saat ini Hasva belum mengerti"
 
 
 
