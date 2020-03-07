@@ -58,6 +58,7 @@
 
 ## intent:mood_great
 - sempurna
+- cakep
 - baik sekali
 - bagus
 - luar biasa
@@ -69,6 +70,9 @@
 
 ## intent:mood_unhappy
 - sedih
+- aku sedang sedih
+- aku sekarang sedih
+- aku sedih sekarang
 - sangat sedih
 - tidak bahagia
 - buruk
@@ -78,13 +82,16 @@
 - luar biasa sedih
 - menyedihkan
 - kecewa
-- pusing
-- galau
+- aku sekarang lagi galau
+- aku sekarang galau
+- aku galau
 - sengsara
 - marah
+- lagi gak mood
 
 ## intent:thanks
 - terima kasih
+- oke terima kasih
 - makasi
 - makasih
 - thanks
@@ -217,6 +224,7 @@
 - bisa bahasa inggris?
 - bisa bahasa lain
 - bisa bahasa jawa
+- bisa bahasa jawa?
 - coba ngomong inggris
 - bisa bahasa lain?
 
@@ -233,6 +241,8 @@
 - kamu bisa nangis nggak?
 - kamu bisa nangis nggak
 - bisa nangis?
+- apa kamu juga menangis?
+- apa kamu menangis
 
 ## intent:trivia_maker
 - siapa pembuatmu?
@@ -258,14 +268,40 @@
 - kamu suka dengan kucing
 - kamu suka dengan kucing?
 - punya hewan peliharaan?
+- suka hewan
+- suka hewan nggak?
+
+## intent:trivia_boyfriend
+- kamu sudah punya pacar?
+- kamu sudah punya pacar ?
+- kamu sudah punya pacar
+- kamu sudah pacaran
+- sudah punya pacar?
+- sudah punya pacar ?
+- sudah punya pacar belum?
+- mau nggak kamu jadi pacar aku?
+- mau nggak kamu jadi pacar aku
+- kamu mau nggak jadi pacar aku?
+- kamu mau nggak jadi pacar aku ?
+- kamu mau jadi pacar aku ?
+- kamu mau jadi pacar aku
+
 
 ## intent:trivia_book
 - Apa buku favorit mu?
 - buku favorit kamu apa?
 - buku favoritmu apa?
+- suka baca buku?
+- suka baca buku ?
+- suka baca?
 
 ## intent:gender
 - kamu cowok atau cewek?
+- kamu cowok atau cewek
+- kamu cowok apa cewek?
+- kamu cowok apa cewek
+- kamu laki-laki apa perempuan?
+- kamu laki-laki apa perempuan ?
 - kamu laki-laki atau perempuan?
 - kamu itu cowok atau cewek?
 - kamu laki-laki?
@@ -520,6 +556,8 @@ data/lookup/fakultas.txt
 - prodi
 - Prodi
 - PRODI
+- Jurusan
+- jurusan
 
 ## synonym:pendidikan matematika
 - PM
@@ -563,11 +601,17 @@ data/lookup/fakultas.txt
 
 ## synonym:agrobisnis
 - Agrobisnis
+- Agribisnis
+- agribisnis
 - AB
 - ab
 
 ## synonym:agroekoteknologi
 - Agroekoteknologi
+- Agroteknologi
+- Agreoteknologi
+- agroteknologi
+- agreoteknologi
 - AE
 - ae
 
@@ -584,6 +628,10 @@ data/lookup/fakultas.txt
 ## synonym:manajemen
 - management
 - Manajemen
+- menejemen
+- Menejemen
+- manejemen
+- menajemen
 
 ## synonym:ekonomi syariah
 - es
@@ -602,6 +650,8 @@ data/lookup/prodi.txt
 - jurusannya apa saja?
 - prodinya bagaimana?
 - prodinya apa aja?
+- prodinya apa aja
+- prodinya apa saja?
 - gimana prodinya?
 - gimana prodi?
 - bagaimana dengan prodinya?
@@ -621,26 +671,30 @@ data/lookup/prodi.txt
 ## lookup:fip-prodi
 data/lookup/prodi-fip.txt
 
+## intent:getFIPGeneral
+- singkatan dari fip?
+- fakultas ilmu pendidikan itu bagaimana?
+- jelaskan prodi fip
+- fip itu kepanjangannya apa?
+- apa isi dari fip?
+- apa itu fip?
+- apa tujuan fip?
+- fip itu apa?
+- fip itu apa
+
+
 ## intent:getProdiInFIP
 - fip itu apa aja?
-- apa itu fip?
+- fip itu apa saja?
 - apa saja prodi di fip?
 - apa saja prodi di fip
 - apasih fip itu?
 - prodi di fip apa aja?
-- fakultas ilmu pendidikan itu bagaimana?
 - fip itu singkatannya apa?
-- singkatan dari fip?
-- fip itu kepanjangannya apa?
-- apa isi dari fip?
 - di fip diajari apa?
 - prodi di fip apa saja?
 - prodi di fakultas ilmu pendidikan apa saja?
 - program studi di fakultas ilmu pendidikan apa saja?
-- jelaskan prodi fip
-- apa tujuan fip?
-- apa itu prodi [pendidikan matematika](fip-prodi)
-- apa itu program studi [pendidikan matematika](fip-prodi)
 
 ## intent:getProdiFIP-Math
 - apa itu pendidikan matematika?
@@ -648,18 +702,6 @@ data/lookup/prodi-fip.txt
 - apa isi dari pendidikan matematika?
 - jelaskan prodi pendidikan matematika
 - jelaskan program studi pendidikan matematika
-- apa manfaat program studi matematika?
-- apa yang dipelajari prodi matematika?
-- kenapa saya harus ke prodi matematika?
-- kenapa saya harus ke prodi pendidikan matematika?
-- kenapa saya harus ke program studi matematika?
-- kenapa saya harus ke program studi pendidikan matematika?
-- kenapa saya harus ke pendidikan matematika?
-- kenapa saya harus ke matematika?
-- mengapa saya harus ke matematika?
-- mengapa saya harus ke prodi matematika?
-- apa untungnya buat saya ke matematika?
-- apa untungnya buat saya ke pendidikan matematika?
 - matematika yang bagaimana?
 - pendidikan matematika itu yang bagaimana?
 - pendidikan matematika itu yang gimana?
@@ -676,12 +718,30 @@ data/lookup/prodi-fip.txt
 - apa yang dipelajari di prodi matematika?
 - apa yang dipelajari di program studi matematika?
 
+## intent:getProdiFIP-Math-2
+- apa manfaat program studi matematika?
+- apa yang dipelajari prodi matematika?
+- kenapa saya harus ke prodi matematika?
+- kenapa saya harus ke prodi pendidikan matematika?
+- kenapa saya harus ke program studi matematika?
+- kenapa saya harus ke program studi pendidikan matematika?
+- kenapa saya harus ke pendidikan matematika?
+- kenapa saya harus ke matematika?
+- mengapa saya harus ke matematika?
+- mengapa saya harus ke prodi matematika?
+- apa untungnya buat saya ke matematika?
+- apa untungnya buat saya ke pendidikan matematika?
+
 ## intent:getProdiFIP-Biology
 - apa itu pendidikan biologi?
 - pendidikan biologi itu bagaimana?
 - apa isi dari pendidikan biologi?
 - jelaskan prodi pendidikan biologi
 - jelaskan program studi pendidikan biologi
+- pendidikan biologi itu yang bagaimana?
+- pendidikan biologi itu yang gimana?
+
+## intent:getProdiFIP-Biology-2
 - apa manfaat program studi biologi?
 - apa yang dipelajari prodi biologi?
 - kenapa saya harus ke prodi biologi?
@@ -695,8 +755,6 @@ data/lookup/prodi-fip.txt
 - apa untungnya buat saya ke biologi?
 - apa untungnya buat saya ke pendidikan biologi?
 - biologi yang bagaimana?
-- pendidikan biologi itu yang bagaimana?
-- pendidikan biologi itu yang gimana?
 - ngapain aja di biologi?
 - ngapain aja di prodi biologi?
 - ngapain aja di program studi biologi?
@@ -716,6 +774,11 @@ data/lookup/prodi-fip.txt
 - apa isi dari pendidikan fisika?
 - jelaskan prodi pendidikan fisika
 - jelaskan program studi pendidikan fisika
+- - fisika yang bagaimana?
+- pendidikan fisika itu yang bagaimana?
+- pendidikan fisika itu yang gimana?
+
+## intent:getProdiFIP-Pyshics-2
 - apa manfaat program studi fisika?
 - apa yang dipelajari prodi fisika?
 - kenapa saya harus ke prodi fisika?
@@ -728,9 +791,6 @@ data/lookup/prodi-fip.txt
 - mengapa saya harus ke prodi fisika?
 - apa untungnya buat saya ke fisika?
 - apa untungnya buat saya ke pendidikan fisika?
-- fisika yang bagaimana?
-- pendidikan fisika itu yang bagaimana?
-- pendidikan fisika itu yang gimana?
 - ngapain aja di fisika?
 - ngapain aja di prodi fisika?
 - ngapain aja di program studi fisika?
@@ -750,6 +810,11 @@ data/lookup/prodi-fip.txt
 - apa isi dari pendidikan bahasa inggris?
 - jelaskan prodi pendidikan bahasa inggris
 - jelaskan program studi pendidikan bahasa inggris
+- bahasa inggris yang bagaimana?
+- pendidikan bahasa inggris itu yang bagaimana?
+- pendidikan bahasa inggris itu yang gimana?
+
+## intent:getProdiFIP-English-2
 - apa manfaat program studi bahasa inggris?
 - apa yang dipelajari prodi bahasa inggris?
 - kenapa saya harus ke prodi bahasa inggris?
@@ -762,9 +827,6 @@ data/lookup/prodi-fip.txt
 - mengapa saya harus ke prodi bahasa inggris?
 - apa untungnya buat saya ke bahasa inggris?
 - apa untungnya buat saya ke pendidikan bahasa inggris?
-- bahasa inggris yang bagaimana?
-- pendidikan bahasa inggris itu yang bagaimana?
-- pendidikan bahasa inggris itu yang gimana?
 - ngapain aja di bahasa inggris?
 - ngapain aja di prodi bahasa inggris?
 - ngapain aja di program studi bahasa inggris?
@@ -783,23 +845,41 @@ data/lookup/prodi-fip.txt
 ## lookup:fai-prodi
 data/lookup/prodi-fai.txt
 
-## intent:getProdiInFAI
-- fai itu apa aja?
+## intent:getFAIGeneral
 - apa itu fai?
+- jurusan fai itu apa?
+- jurusan fai itu apa
 - apasih fai itu?
 - fakultas agama islam itu bagaimana?
 - fai itu singkatannya apa?
+- fai itu singkatannya apa
 - singkatan dari fai?
+- singkatan dari fai itu apa?
 - fai itu kepanjangannya apa?
 - apa isi dari fai?
 - di fai diajari apa?
+- fai itu apa?
+- fai itu apa
+- apa itu fai
+- apa itu fai?
+- apa tujuan fai?
+
+## intent:getProdiInFAI
+- fai itu apa aja?
 - prodi di fai apa saja?
+- prodi di jurusan fai apa saja?
+- prodi di jurusan agama islam apa saja?
+- prodi di jurusan agama islam apa saja ?
 - prodi di fakultas agama islam apa saja?
 - program studi di fakultas agama islam apa saja?
 - jelaskan prodi fai
-- apa tujuan fai?
 - apa itu prodi [pendidikan agama islam](fai-prodi)
 - apa itu program studi [pendidikan bahasa arab](fai-prodi)
+- prodinya apa saja?
+- prodinya apa saja
+- prodinya apa aja
+- program studinya apa saja
+- program studinya apa saja?
 
 ## intent:getProdiFAI-Islamic
 - apa itu pendidikan agama islam?
@@ -807,9 +887,13 @@ data/lookup/prodi-fai.txt
 - apa isi dari pendidikan agama islam?
 - jelaskan prodi pendidikan agama islam
 - jelaskan program studi pendidikan agama islam
-- apa manfaat program studi agama islam?
 - apa yang dipelajari prodi agama islam?
+- pendidikan agama islam itu yang bagaimana?
+- pendidikan agama islam itu yang gimana?
+
+## intent:getProdiFAI-Islamic-2
 - kenapa saya harus ke prodi agama islam?
+- apa manfaat program studi agama islam?
 - kenapa saya harus ke prodi pendidikan agama islam?
 - kenapa saya harus ke program studi agama islam?
 - kenapa saya harus ke program studi pendidikan agama islam?
@@ -820,8 +904,6 @@ data/lookup/prodi-fai.txt
 - apa untungnya buat saya ke agama islam?
 - apa untungnya buat saya ke pendidikan agama islam?
 - agama islam yang bagaimana?
-- pendidikan agama islam itu yang bagaimana?
-- pendidikan agama islam itu yang gimana?
 - ngapain aja di agama islam?
 - ngapain aja di prodi agama islam?
 - ngapain aja di program studi agama islam?
@@ -842,6 +924,14 @@ data/lookup/prodi-fai.txt
 - apa isi dari pendidikan bahasa arab?
 - jelaskan prodi pendidikan bahasa arab
 - jelaskan program studi pendidikan bahasa arab
+- jurusan bahasa arab itu apa?
+- jurusan bahasa arab itu apa ?
+- jurusan bahasa arab itu apa
+- bahasa arab yang bagaimana?
+- pendidikan bahasa arab itu yang bagaimana?
+- pendidikan bahasa arab itu yang gimana?
+
+## intent:getProdiFAI-Arabic-2
 - apa manfaat program studi bahasa arab?
 - apa yang dipelajari prodi bahasa arab?
 - kenapa saya harus ke prodi bahasa arab?
@@ -854,9 +944,6 @@ data/lookup/prodi-fai.txt
 - mengapa saya harus ke prodi bahasa arab?
 - apa untungnya buat saya ke bahasa arab?
 - apa untungnya buat saya ke pendidikan bahasa arab?
-- bahasa arab yang bagaimana?
-- pendidikan bahasa arab itu yang bagaimana?
-- pendidikan bahasa arab itu yang gimana?
 - ngapain aja di bahasa arab?
 - ngapain aja di prodi bahasa arab?
 - ngapain aja di program studi bahasa arab?
@@ -876,6 +963,17 @@ data/lookup/prodi-fai.txt
 - apa isi dari ekonomi syariah?
 - jelaskan prodi ekonomi syariah
 - jelaskan program studi pendidikan ekonomi syariah
+- apa itu jurusan ekonomi syariah
+- apa itu jurusan ekonomi syariah ?
+- apa itu jurusan ekonomi syariah?
+- jurusan ekonomi syariah itu apa?
+- jurusan ekonomi syariah itu apa
+- ekonomi syariah yang bagaimana?
+- ekonomi syariah itu yang bagaimana?
+- ekonomi syariah itu yang gimana?
+
+
+## intent:getProdiFAI-Economy-2
 - apa manfaat program studi ekonomi syariah?
 - apa yang dipelajari prodi ekonomi syariah?
 - kenapa saya harus ke prodi ekonomi syariah?
@@ -887,9 +985,6 @@ data/lookup/prodi-fai.txt
 - mengapa saya harus ke prodi ekonomi syariah?
 - apa untungnya buat saya ke ekonomi syariah?
 - apa untungnya buat saya ke prodi ekonomi syariah?
-- ekonomi syariah yang bagaimana?
-- ekonomi syariah itu yang bagaimana?
-- ekonomi syariah itu yang gimana?
 - ngapain aja di ekonomi syariah?
 - ngapain aja di prodi ekonomi syariah?
 - ngapain aja di program studi ekonomi syariah?
@@ -902,3 +997,303 @@ data/lookup/prodi-fai.txt
 - di prodi ekonomi syariah belajar apa saja?
 - apa yang dipelajari di prodi ekonomi syariah?
 - apa yang dipelajari di program studi ekonomi syariah
+
+
+## intent:getFPGeneral
+- apa itu fp?
+- jurusan fp itu apa?
+- jurusan fp itu apa
+- apasih fp itu?
+- fakultas pertanian itu bagaimana?
+- fp itu singkatannya apa?
+- singkatan dari fp?
+- singkatan dari fp itu apa?
+- fp itu kepanjangannya apa?
+- apa isi dari fp?
+- di fp diajari apa?
+- fp itu apa?
+- fp itu apa
+- apa itu fp
+- apa itu fp?
+- apa tujuan fp?
+
+## intent:getProdiFP-Agrobusiness
+- apa itu agrobisnis?
+- apa itu agrobisnis ?
+- apa itu prodi agrobisnis ?
+- apa itu prodi agrobisnis
+- apa itu jurusan agrobisnis
+- jurusan agrobisnis itu apa?
+- jurusan agrobisnis itu apa ?
+- apa itu program studi agrobisnis?
+- apa itu agribisnis?
+- apa itu prodi agribisnis?
+- apa itu program studi agribisnis?
+- apa itu agribisnis
+- agrobisnis itu bagaimana?
+- apa isi dari agrobisnis?
+- jelaskan prodi agrobisnis
+- jelaskan program studi agrobisnis
+- agrobisnis yang bagaimana?
+- agrobisnis itu yang bagaimana
+- agrobisnis itu yang gimana?
+- agrobisnis itu yang apa?
+
+
+## intent:getProdiFP-Agrobusiness-2
+- apa manfaat program studi agrobisnis?
+- apa yang dipelajari prodi agrobisnis?
+- kenapa saya harus ke prodi agrobisnis?
+- kenapa saya harus ke prodi agrobisnis?
+- kenapa saya harus ke program studi agrobisnis?
+- kenapa saya harus ke agrobisnis?
+- apa saya harus ke agrobisnis?
+- mengapa saya harus ke agrobisnis?
+- mengapa saya harus ke prodi agrobisnis?
+- apa untungnya buat saya ke agrobisnis?
+- apa untungnya buat saya ke prodi agrobisnis?
+- ngapain aja di agrobisnis?
+- ngapain aja di prodi agrobisnis?
+- ngapain aja di program studi agrobisnis?
+- kenapa agrobisnis?
+- kenapa kok agrobisnis?
+- kenapa prodi agrobisnis?
+- di agrobisnis belajar apa?
+- di agrobisnis belajar apa saja?
+- di agrobisnis belajar apa saja?
+- di prodi agrobisnis belajar apa saja?
+- apa yang dipelajari di prodi agrobisnis?
+- apa yang dipelajari di program studi agrobisnis
+
+
+## intent:getProdiFP-Agroecotechnology
+- apa itu agroekoteknologi?
+- apa itu agroteknologi?
+- apa itu agroteknologi
+- agroekoteknologi itu bagaimana?
+- agroteknologi itu bagaimana?
+- apa isi dari agroekoteknologi?
+- jelaskan prodi agroekoteknologi
+- jelaskan program studi  agroekoteknologi
+- apa itu program studi agroekoteknologi?
+- apa itu agroekoteknologi?
+- apa itu prodi agroekoteknologi?
+- apa itu program studi agroekoteknologi
+- apa itu agroekoteknologi
+- jurusan agroekoteknologi itu apa?
+- jurusan agroekoteknologi itu apa ?
+- jelaskan prodi agroekoteknologi
+- jelaskan program studi agroekoteknologi
+- agroekoteknologi yang bagaimana?
+- agroekoteknologi itu yang bagaimana
+- agroekoteknologi itu yang gimana?
+- agroekoteknologi itu yang apa?
+
+## intent:getProdiFP-Agroecotechnology-2
+- apa manfaat program studi agroekoteknologi?
+- apa yang dipelajari prodi agroekoteknologi?
+- kenapa saya harus ke prodi agroekoteknologi?
+- kenapa saya harus ke prodi agroekoteknologi?
+- kenapa saya harus ke program studi agroekoteknologi?
+- kenapa saya harus ke agroekoteknologi?
+- apa saya harus ke agroekoteknologi?
+- mengapa saya harus ke agroekoteknologi?
+- mengapa saya harus ke prodi agroekoteknologi?
+- apa untungnya buat saya ke agroekoteknologi?
+- apa untungnya buat saya ke prodi agroekoteknologi?
+- ngapain aja di agroekoteknologi?
+- ngapain aja di prodi agroekoteknologi?
+- ngapain aja di program studi agroekoteknologi?
+- kenapa agroekoteknologi?
+- kenapa kok agroekoteknologi?
+- kenapa prodi agroekoteknologi?
+- di agroekoteknologi belajar apa?
+- di agroekoteknologi belajar apa saja?
+- di agroekoteknologi belajar apa saja?
+- di prodi agroekoteknologi belajar apa saja?
+- apa yang dipelajari di prodi agroekoteknologi?
+- apa yang dipelajari di program studi agroekoteknologi
+
+## intent:getProdiFP-FarmTech
+- apa itu teknik pertanian?
+- apa itu teknik pertanian
+- apa itu prodi teknik pertanian
+- apa itu program studi teknik pertanian?
+- teknik pertanian itu bagaimana?
+- apa isi dari teknik pertanian?
+- jelaskan prodi teknik pertanian
+- jelaskan program studi  teknik pertanian
+- teknik pertanian yang bagaimana?
+- teknik pertanian itu yang bagaimana?
+- teknik pertanian itu yang gimana?
+- jurusan teknik pertanian itu apa
+- apa itu jurusan teknik pertanian
+
+
+## intent:getProdiFP-FarmTech-2
+- apa manfaat program studi teknik pertanian?
+- apa yang dipelajari prodi teknik pertanian?
+- kenapa saya harus ke prodi teknik pertanian?
+- kenapa saya harus ke prodi teknik pertanian?
+- kenapa saya harus ke program studi teknik pertanian?
+- kenapa saya harus ke teknik pertanian?
+- apa saya harus ke teknik pertanian?
+- mengapa saya harus ke teknik pertanian?
+- mengapa saya harus ke prodi teknik pertanian?
+- apa untungnya buat saya ke teknik pertanian?
+- apa untungnya buat saya ke prodi teknik pertanian?
+- ngapain aja di teknik pertanian?
+- ngapain aja di prodi teknik pertanian?
+- ngapain aja di program studi teknik pertanian?
+- kenapa teknik pertanian?
+- kenapa kok teknik pertanian?
+- kenapa prodi teknik pertanian?
+- di teknik pertanian belajar apa?
+- di teknik pertanian belajar apa saja?
+- di teknik pertanian belajar apa saja?
+- di prodi teknik pertanian belajar apa saja?
+- apa yang dipelajari di prodi teknik pertanian?
+- apa yang dipelajari di program studi teknik pertanian
+
+## intent:getProdiFP-AgriculturalTech
+- apa itu rekayasa pertanian dan biosistem?
+- apa itu prodi rekayasa pertanian dan biosistem?
+- apa itu prodi rekayasa pertanian dan biosistem
+- rekayasa pertanian dan biosistem itu bagaimana?
+- apa isi dari rekayasa pertanian dan biosistem?
+- jelaskan prodi rekayasa pertanian dan biosistem
+- jelaskan program studi  rekayasa pertanian dan biosistem
+- rekayasa pertanian dan biosistem yang bagaimana?
+- rekayasa pertanian dan biosistem itu yang bagaimana?
+- rekayasa pertanian dan biosistem itu  apa?
+- rekayasa pertanian dan biosistem itu  apa
+- rekayasa pertanian dan biosistem itu yang gimana?
+
+
+## intent:getProdiFP-AgriculturalTech-2
+- apa manfaat program studi rekayasa pertanian dan biosistem?
+- apa yang dipelajari prodi rekayasa pertanian dan biosistem?
+- kenapa saya harus ke prodi rekayasa pertanian dan biosistem?
+- kenapa saya harus ke prodi rekayasa pertanian dan biosistem?
+- kenapa saya harus ke program studi rekayasa pertanian dan biosistem?
+- kenapa saya harus ke rekayasa pertanian dan biosistem?
+- apa saya harus ke rekayasa pertanian dan biosistem?
+- mengapa saya harus ke rekayasa pertanian dan biosistem?
+- mengapa saya harus ke prodi rekayasa pertanian dan biosistem?
+- apa untungnya buat saya ke rekayasa pertanian dan biosistem?
+- apa untungnya buat saya ke prodi rekayasa pertanian dan biosistem?
+- ngapain aja di rekayasa pertanian dan biosistem?
+- ngapain aja di prodi rekayasa pertanian dan biosistem?
+- ngapain aja di program studi rekayasa pertanian dan biosistem?
+- kenapa rekayasa pertanian dan biosistem?
+- kenapa kok rekayasa pertanian dan biosistem?
+- kenapa prodi rekayasa pertanian dan biosistem?
+- di rekayasa pertanian dan biosistem belajar apa?
+- di rekayasa pertanian dan biosistem belajar apa saja?
+- di rekayasa pertanian dan biosistem belajar apa saja?
+- di prodi rekayasa pertanian dan biosistem belajar apa saja?
+- apa yang dipelajari di prodi rekayasa pertanian dan biosistem?
+- apa yang dipelajari di program studi rekayasa pertanian dan biosistem
+
+## intent:getProdiFP-SystemInformation
+- apa itu sistem informasi?
+- sistem informasi itu bagaimana?
+- apa isi dari sistem informasi?
+- jelaskan prodi sistem informasi
+- jelaskan program studi  sistem informasi
+- apa manfaat program studi sistem informasi?
+- apa yang dipelajari prodi sistem informasi?
+- kenapa saya harus ke prodi sistem informasi?
+- kenapa saya harus ke prodi sistem informasi?
+- kenapa saya harus ke program studi sistem informasi?
+- kenapa saya harus ke sistem informasi?
+- apa saya harus ke sistem informasi?
+- mengapa saya harus ke sistem informasi?
+- mengapa saya harus ke prodi sistem informasi?
+- apa untungnya buat saya ke sistem informasi?
+- apa untungnya buat saya ke prodi sistem informasi?
+- sistem informasi yang bagaimana?
+- sistem informasi itu yang bagaimana?
+- sistem informasi itu yang gimana?
+- ngapain aja di sistem informasi?
+- ngapain aja di prodi sistem informasi?
+- ngapain aja di program studi sistem informasi?
+- kenapa sistem informasi?
+- kenapa kok sistem informasi?
+- kenapa prodi sistem informasi?
+- di sistem informasi belajar apa?
+- di sistem informasi belajar apa saja?
+- di sistem informasi belajar apa saja?
+- di prodi sistem informasi belajar apa saja?
+- apa yang dipelajari di prodi sistem informasi?
+- apa yang dipelajari di program studi sistem informasi
+
+
+## intent:getProdiFP-TechInfo
+- apa itu teknik informatika?
+- teknik informatika itu bagaimana?
+- apa isi dari teknik informatika?
+- jelaskan prodi teknik informatika
+- jelaskan program studi  teknik informatika
+- apa manfaat program studi teknik informatika?
+- apa yang dipelajari prodi teknik informatika?
+- kenapa saya harus ke prodi teknik informatika?
+- kenapa saya harus ke prodi teknik informatika?
+- kenapa saya harus ke program studi teknik informatika?
+- kenapa saya harus ke teknik informatika?
+- apa saya harus ke teknik informatika?
+- mengapa saya harus ke teknik informatika?
+- mengapa saya harus ke prodi teknik informatika?
+- apa untungnya buat saya ke teknik informatika?
+- apa untungnya buat saya ke prodi teknik informatika?
+- teknik informatika yang bagaimana?
+- teknik informatika itu yang bagaimana?
+- teknik informatika itu yang gimana?
+- ngapain aja di teknik informatika?
+- ngapain aja di prodi teknik informatika?
+- ngapain aja di program studi teknik informatika?
+- kenapa teknik informatika?
+- kenapa kok teknik informatika?
+- kenapa prodi teknik informatika?
+- di teknik informatika belajar apa?
+- di teknik informatika belajar apa saja?
+- di teknik informatika belajar apa saja?
+- di prodi teknik informatika belajar apa saja?
+- apa yang dipelajari di prodi teknik informatika?
+- apa yang dipelajari di program studi teknik informatika
+
+## intent:getProdiFP-Management
+- apa itu manajemen?
+- manajemen itu bagaimana?
+- apa isi dari manajemen?
+- apa itu jurusan manajemen?
+- jurusan manajemen itu apa?
+- jelaskan prodi manajemen
+- jelaskan jurusan manajemen
+- jelaskan program studi  manajemen
+- apa manfaat program studi manajemen?
+- apa yang dipelajari prodi manajemen?
+- kenapa saya harus ke prodi manajemen?
+- kenapa saya harus ke prodi manajemen?
+- kenapa saya harus ke program studi manajemen?
+- kenapa saya harus ke manajemen?
+- apa saya harus ke manajemen?
+- mengapa saya harus ke manajemen?
+- mengapa saya harus ke prodi manajemen?
+- apa untungnya buat saya ke manajemen?
+- apa untungnya buat saya ke prodi manajemen?
+- manajemen yang bagaimana?
+- manajemen itu yang bagaimana?
+- manajemen itu yang gimana?
+- ngapain aja di manajemen?
+- ngapain aja di prodi manajemen?
+- ngapain aja di program studi manajemen?
+- kenapa manajemen?
+- kenapa kok manajemen?
+- kenapa prodi manajemen?
+- di manajemen belajar apa?
+- di manajemen belajar apa saja?
+- di manajemen belajar apa saja?
+- di prodi manajemen belajar apa saja?
+- apa yang dipelajari di prodi manajemen?
+- apa yang dipelajari di program studi manajemen

@@ -11,6 +11,7 @@ intents:
   - question_state
   - trivia_eat_drink
   - trivia_pet
+  - trivia_boyfriend
   - trivia_book
   - trivia_maker
   - trivia_cry
@@ -30,14 +31,32 @@ intents:
   - getFaculty
   - getProdiGeneral
   - getProdiInFIP
+  - getProdiInFAI
+  - getProdiInFE
+  - getProdiInFTI
+  - getProdiInFP
+  - getFIPGeneral
   - getProdiFIP-Math
+  - getProdiFIP-Math-2
   - getProdiFIP-Biology
+  - getProdiFIP-Biology-2
   - getProdiFIP-Pyshics
+  - getProdiFIP-Pyshics-2
   - getProdiFIP-English
+  - getProdiFIP-English-2
+  - getFAIGeneral
   - getProdiInFAI
   - getProdiFAI-Islamic
   - getProdiFAI-Arabic
+  - getProdiFAI-Arabic-2
   - getProdiFAI-Economy
+  - getProdiFP-Agrobusiness
+  - getProdiFP-Agroecotechnology
+  - getProdiFP-FarmTech
+  - getProdiFP-AgriculturalTech
+  - getProdiFTI-SystemInformation
+  - getProdiFTI-TechInfo
+  - getProdiFE-Management
 
 slots:
   faculty:
@@ -255,23 +274,128 @@ responses:
   - text: "Program studi di Fakultas Agama Islam: \n
             Manajemen \n"
 
-  utter_getProdiInFAI:
+  utter_getProdiInFP:
   - text: "Program studi di Fakultas Pertanian:
             Agrobisnis (AB) \n
             Agroekoteknologi (AE) \n
             Teknologi Hasil Pertanian (THP) \n
             Rakayasa Pertanian Dan Biosistem (RPB) \n"
 
-  utter_getProdiInFAI:
+  utter_getProdiInFTI:
   - text: "Program studi di Fakultas Teknik Informatika: \n
             Teknik Informatika (TI) \n
             Sistem Informasi (SI) \n"
+  utter_getFIPGeneral:
+  - text: "Fakultas Ilmu Pendidikan (FIP) adalah fakultas yang menjadi payung bagi program studi kependidikan."
+
+  utter_getProdiFIP-Math:
+  - text: "Pendidikan Matematika merupakan prodi yang mempelajari 
+          teori-teori dasar matematika, misalnya aljabar, geometri, statistika, kalkulus, matematika diskrit, dan lainnya. Nah yang membedakan prodi ini dengan matematika murni adalah, kakak nanti dibekali kemampuan terkait cara menyampaikan pelajaran Matematika kepada murid-murid tentunya dengan cara-cara yang menarik supaya mudah dimengerti. Pokoknya prodi ini cocok banget untuk kakak yang suka Matematika tapi juga punya passion mengajar. Dan tidak lupa ada tambahan mata kuliah keagamaan islam juga loh."
+  - text: "Kakak nanti akan belajar mata kuliah seperti Belajar dan Pembelajaran Matematika, Evaluasi Pembelajaran Matematika, Telaah Kurikulum dan Pembelajaran Matematika, Media Pembelajaran Matematika, Kalkulus Diferensial, Teori Bilangan, Geometri Analitik, Matematika Diskrit, Metode Numerik, Program Linier, Fungsi Variabel Kompleks, Statistika Deskriptif Teoritis, Analisis Real, dan sebagainya. "
+  utter_getProdiFIP-Math-2:
+  - text: "Kakak akan memiliki kemampuan mengajar matematika dengan asyik dan unik, kamu akan dicari oleh banyak sekolah dan lembaga belajar."
+  - text: "Kakak bisa loh memberi manfaat lewat cara lain. Misalnya dengan menulis buku ajar, menyusun buku latihan soal, ataupun jadi editor yang khusus menangani pelajaran Matematika di kantor penerbitan."
+  - text: "Kakak bisa menyalurkan ide-ide kreatifmu dalam pembelajaran Matematika dengan menjadi trainer metode belajar yang seru dan efektif supaya matematika nggak terus-menerus dianggap susah. Wah ada peluang untuk jadi guru di bimbel online nih."
+  - text: "Setelah lulus dari prodi Pendidikan Matematika, kakak bisa ambil bagian dalam program pemerataan kualitas pendidikan di Indonesia."
+
+  utter_getProdiFIP-Biology:
+  - text: "Program studi yang bertujuan untuk menghasilkan tenaga pengajar biologi yang terampil untuk tingkat pendidikan dasar hingga menengah."
+
+  utter_getProdiFIP-Biology-2:
+  - text: "Apa yang dipelajari pada program studi biologi adalah ilmu biologi beserta turunan-turunannya, namun dengan tambahan perspektif pendidikan dan pengajaran di dalamnya."
+  - text: "Kakak juga akan mempelajari bagaimana cara mengajar yang baik, membuat soal-soal, kurikulum, manajemen sekolah, dan hal-hal lain yang berhubungan dengan teknis maupun administrasi persekolahan."
+  - text: "Kalau kakak tertarik dengan pelajaran Biologi dan bercita-cita menjadi seorang guru, maka program studi Pendidikan Biologi adalah pilihan yang tepat untuk kakak."
+
+  utter_getProdiFIP-Pyshics:
+  - text: "Program studi Pendidikan Fisika akan mengajak kakak untuk mempelajari mengenai ilmu fisika dan menerapkannya dalam konteks pendidikan dan pengajaran. Di sini kakak nggak hanya akan mengkaji fenomena dan gejala alam tidak hidup seperti materi dan partikel, tapi juga diajak untuk memahami metode pembelajaran fisika yang efektif pada siswa di berbagai jenjang pendidikan."
+
+  utter_getProdiFIP-Pyshics-2:
+  - text: "Sebelum memilih program studi ini, kakak harus memastikan kalau memiliki minat dan ketertarikan besar di bidang matematika--karena bidang studi fisika memiliki kaitan yang sangat erat dengan matematika."
+  - text: "Program studi ini juga akan sangat menarik bagi yang ingin terjun ke dunia pendidikan atau bercita-cita menjadi seorang akademisi dan pengajar fisika."
+
+  utter_getProdiFIP-English:
+  - text: "Program studi Pendidikan Bahasa Inggris akan mempelajari kajian Bahasa Inggris, mulai dari aspek listening, reading, writing, dan speaking. Di prodi Pendidikan Bahasa Inggris kakak juga akan memeroleh ilmu keguruan dan kependidikan."
+  utter_getProdiFIP-English-2:
+  - text: "Karena kemampuan berbahasa Inggris sangat diperlukan di masa ini dan di masa yang akan datang. Jadi sangat bermanfaat buat kakak."
+
+  utter_getFAIGeneral:
+  - text: "Fakultas Agama Islam (FAI) adalah fakultas yang menjadi payung bagi program studi yang terkait dengan agama islam."
+
+  utter_getProdiFAI-Islamic:
+  - text: "Prodi Pendidikan Agama Islam (PAI) bertujuan menghasilkan Sarjana Pendidikan Islam berkualitas dan profesional yang dilandasi keluhuran akhlak serta mampu berperan dalam mengembangkan ilmu pendidikan agama Islam di masyarakat."
+  - text: "Program studi PAI bertujuan menghasilkan sarjana yang ahli di bidang pendidikan dan pengajaran agama Islam, yang menguasai materi dan metodologinya. Program studi ini menyiapkan sarjana bidang keguruan agama Islam yang profesional."
+  - text: "Program studi Ilmu Agama Islam akan membantu kakak memahami hukum dan aturan yang berlaku dalam sudut pandang agama Islam. Kakak juga akan mempelajari berbagai hal dalam hidup berdasarkan Al-Quran dan hadis."
+
+  utter_getProdiFAI-Islamic-2:
+  - text: "Apabila kakak tertarik untuk mempelajari ilmu Agama Islam lebih dalam dan memiliki panggilan jiwa untuk berdakwah serta sebagai tenaga pendidik, maka program studi yang satu ini sangat cocok buat kakak."
+  - text: "Kakak akan dilatih untuk mengembangkan pikiran dan wawasan kakak, sehingga diharapkan dapat menghasilkan karya penelitian yang menjadi referensi dalam bidang pendidikan. Kakak juga akan terbiasa untuk
+           memikirkan sebuah kajian keilmuan yang memberikan pengaruh pada wacana dan praktek Pendidikan Agama Islam."
+
+  utter_getProdiFAI-Arabic:
+  - text: "Program studi Pendidikan Bahasa Arab adalah prodi yang mempelajari tata bahasa Arab, dari aspek liguistik, kesusasteraan, dan dari aspek kependidikan. "
+
+  utter_getProdiFAI-Arabic-2:
+  - text: "Prodi ini diperuntukkan bagi kakak yang ingin mengabdikan diri sebagai pendidik/guru bahasa arab. Bahasa Arab merupakan bahasa dalam Al Quran, yang pastinya dengan memahami bahasa Arab, kita dapat lebih mendalami ilmu agama islam."
+  - text: "Selain juga bisa mempermudah mendalami ilmu agama islam, belajar bahasa arab juga bisa untuk mendalami kajian mengenai Bahasa Arab sebagai bahasa yang digunakan di negara-negara Timur Tengah."
+
+  utter_getProdiFAI-Economy:
+  - text: "Kakak akan mempelajari ilmu dan teori ekonomi mikro dan ekonomi makro, cara mengelola sumber daya (alam, manusia, modal, dan waktu) yang terbatas untuk memenuhi kebutuhan manusia yang tidak terbatas, dan mencapai kesejahteraan. Namun, 
+          di prodi ini, kamu akan mempelajarinya dari perspektif Islam/Syariah."
+  
+  utter_getProdiFAI-Economy-2:
+  - text: "Kakak akan mempelajari kebijakan ekonomi, keuangan, dan bisnis dalam Islam, serta bagaimana pengelolaan lembaga keuangan syariah."
+  - text: "Karena banyak bermunculan lembaga keuangan yang berbasis Syariah. Mengingat Indonesia merupakan negara yang mayoritas penduduknya adalah muslim maka banyak pula masyarakat yang sadar dan mulai beralih ke perbankan syariah. 
+            Karena itu pengetahuan Ekonomi Islam atau Ekonomi Syariah menjadi salah satu kebutuhan di masa sekarang ini."
+
+  utter_getFPGeneral:
+  - text: "Fakultas Pertanian (FP) adalah fakultas yang menjadi payung bagi program studi yang terkait dengan pertanian."
+
+  utter_getProdiFP-Agrobusiness:
+  - text: "Program studi ini mempelajari ilmu tentang seluk beluk usaha atau bisnis yang memanfaatkan pertanian sebagai komoditas. Mulai dari pengusahaan produksi pertanian, sampai pengelolaan hasil pertanian juga."
+
+  utter_getProdiFP-Agrobusiness-2:
+  - text: "Para mahasiswa akan mempelajari semua hal tentang pertanian, dari keseluruhan proses produksi sampai distribusi hasil pertanian sehingga memperoleh keuntungan."
+  - text: "Jika kakak tertarik dengan bisnis dan ingin mewujudkan ketahanan pangan di Indonesia, program studi ini sangat tepat untuk kamu pilih."
+  - text: "Program studi ini juga kakak bagi kamu yang menyukai pelajaran IPA terutama biologi tetapi ingin mendalami ilmu bisnis maupun ekonomi. Kakak akan mendalami ilmu pertanian sekaligus bisnis disini."
+
+  utter_getProdiFP-Agroecotechnology:
+  - text: "Agroekoteknologi merupakan salah satu program studi ilmu pertanian yang lebih kompleks dalam bidang agronomi."
+  
+  utter_getProdiFP-Agroecotechnology-2:
+  - text: "Pada program studi ini kakak akan mempelajari dasar-dasar ilmiah dalam menemukan, menganalisis dan memecahkan masalah melalui cara berfikir analitik, kreatif dan eksploratif dalam bidang agronomi."
+  - text: "Program studi ini membekali mahasiswanya dengan kemampuan akademik dalam menerapkan, mengembangkan dan atau memperkaya khasanah ilmu pengetahuan dalam bidang agronomi."
+  - text: "Jika Kaka menyukai bidang botani dan tumbuh-tumbuhan serta pertumbuhan dan pengolahannya, terlebih lagi gemar memperhatikan kelestarian lingkungan dan suka berinovasi guna meningkatkan produksi dan 
+          pengolahan hasil tanaman, program studi Agroekoteknologi akan sangat cocok untuk kakak. "
+
+  utter_getProdiFP-FarmTech:
+  - text: "Teknik Pertanian merupakan bagian dari ilmu pertanian yang fokus pada penggunaan teknologi dan manajemen dalam proses produksi massa hayati serta penanganan dan pengolahannya untuk mendapat hasil yang maksimal."
+
+  utter_getProdiFP-FarmTech-2:
+  - text: "Perusahaan partikelir sangat membutuhkan lulusan Teknik Pertanian untuk terus berinovasi dalam merancang berbagai peralatan dan mesin pertanian."
+  - text: "Perusahaan perkebunan dalam pengelolaannya juga membutuhkan lulusan Teknik Pertanian mengingat banyaknya mesin dan peralatan perkebunan yang digunakan mulai dari pengelolaan lahan sampai penanganan pascapanen."
+  - text: "Kakak akan belajar bagaimana merencanakan, merancang, mengembangkan, menilai, sampai menerapkan berbagai unsur dalam sistem produksi di sektor pertanian."
+  - text: "Kakak akan belajar bagaimana mengolah dan mengelola lahan dan air, bagaimana menanam, memelihara, memanen dan mengolah hasil pertanian pascapanen, dan juga ada materi tentang energi di sektor pertanian, teknik lingkungan, juga bangunan pertanian."
+
+
+  utter_getProdiFP-AgriculturalTech:
+  - text: "Rekayasa pertanian merupakan program studi yang mengkombinasikan ilmu-ilmu pertanian konvensional dengan prinsip-prinsip rekayasa biosistem untuk membangun dan mengelola sistem pertanian."
+  utter_getProdiFP-AgriculturalTech-2:
+  - text: "Program studi ini mempelajari kompetisi teknis unggul untuk mengembangkan sistem pertanian berkelanjutan untuk mencapai swasembada kebutuhan pokok dan meningkatkan kualitas hidup masyarakat."
+  - text: "Program studi ini cocok untuk kamu yang memiliki antusiasme untuk memajukan bidang pertanian."
 # UNTUK TRIVIA
   utter_trivia_pet:
   - text: "Aku suka dengan kelucuan kucing"
   - text: "Aku ingin memelihara kucing"
   - text: "Aku suka hewan terutama kucing"
-  - text: "Aku pengen pelihara kucing "
+  - text: "Aku pengen pelihara kucing"
+  - text: "Aku suka kucing"
+
+  utter_trivia_boyfriend:
+  - text: "Duh kak, aku nggak fokus kesana. aku lagi fokus ngembangin sistemku dulu 😉"
+  - text: "Maaf kak. aku masih fokus mengembangkan sistemku dulu"
+  - text: "Nggak kak, soalnya sistemku masih belum sempurna"
+  - text: "Nggak kak, soalnya aku masih kembangin sistemku dulu 😊"
+  - text: "Nggak kak, soalnya nggak boleh sama pembuatku 😅"
 
   utter_trivia_book:
   - text: "Umm apa ya? 🤔"
@@ -279,7 +403,7 @@ responses:
   - text: "Aku suka buku tentang astronomi 😅"
 
   utter_trivia_maker:
-  - text: "Pembuatku IN-0vation"
+  - text: "Pembuatku bisa disebut 'I.N-0vation'"
   - text: "Pembuatku salah satu mahasiswa disini"
   - text: "Pembuatku salah satu mahasiswa disini loh"
   - text: "Pembuatku salah satu mahasiswa disini, 'IN-0vation' "
@@ -291,6 +415,7 @@ responses:
   utter_trivia_cry:
   - text: "Ingat, aku ini robot"
   - text: "Kalau aku nangis nanti korslet"
+  - text: "Kalau aku nangis nanti korslet dong komputerku"
   - text: "Kalau aku nangis nanti korslet loh"
   - text: "Jangan, aku tak ingin sedih"
   - text: "Jangan, nanti aku korslet dong 😫"

@@ -54,4 +54,5 @@ Hasva an AI virtual assistant for wahab hasbullah university.
 2. Rasa
 3. Set data kemungkinan percakapan
 
-### kedepan jika memungkinkan akan saya tambah dataset + platform chat yang disupport
+### kedepan jika memungkinkan akan saya tambah dataset + platform chat yang disupport. jadi pengetahuan robot akan meningkat
+#### ***Jika ada yang mensupport***
