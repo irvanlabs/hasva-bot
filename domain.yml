@@ -45,42 +45,53 @@ intents:
   - getProdiFIP-English
   - getProdiFIP-English-2
   - getFAIGeneral
-  - getProdiInFAI
   - getProdiFAI-Islamic
   - getProdiFAI-Arabic
   - getProdiFAI-Arabic-2
   - getProdiFAI-Economy
+  - getProdiFAI-Economy-2
+  - getFPGeneral
   - getProdiFP-Agrobusiness
+  - getProdiFP-Agrobusiness-2
   - getProdiFP-Agroecotechnology
+  - getProdiFP-Agroecotechnology-2
   - getProdiFP-FarmTech
+  - getProdiFP-FarmTech-2
   - getProdiFP-AgriculturalTech
+  - getProdiFP-AgriculturalTech-2
+  - getFTIGeneral
   - getProdiFTI-SystemInformation
+  - getProdiFTI-SystemInformation-2
   - getProdiFTI-TechInfo
+  - getProdiFTI-TechInfo-
+  - getFEGeneral
   - getProdiFE-Management
+  - getProdiFE-Management-2
 
-slots:
-  faculty:
-    type: categorical
-    values:
-    - fip
-    - fai
-    - fp
-    - fti
-    - fe
-  prodi:
-    type: text
-  fip-prodi:
-    type: text
-  fai-prodi:
-    type: text
-  fp-prodi:
-    type: text
-  fe-prodi:
-    type: text
-  fti-prodi:
-    type: text
+# slots:
+#   faculty:
+#     type: categorical
+#     values:
+#     - fip
+#     - fai
+#     - fp
+#     - fti
+#     - fe
+#   prodi:
+#     type: text
+#   fip-prodi:
+#     type: text
+#   fai-prodi:
+#     type: text
+#   fp-prodi:
+#     type: text
+#   fe-prodi:
+#     type: text
+#   fti-prodi:
+#     type: text
 
-
+actions:
+  - utter_default
 
 
 
@@ -382,6 +393,29 @@ responses:
   utter_getProdiFP-AgriculturalTech-2:
   - text: "Program studi ini mempelajari kompetisi teknis unggul untuk mengembangkan sistem pertanian berkelanjutan untuk mencapai swasembada kebutuhan pokok dan meningkatkan kualitas hidup masyarakat."
   - text: "Program studi ini cocok untuk kamu yang memiliki antusiasme untuk memajukan bidang pertanian."
+
+
+  utter_getFTIGeneral:
+  - text: "Fakultas Teknologi Informasi adalah pencetak ahli dengan kemampuan teknologi komputer yang mendalam dan menguasai penyelesaian masalah teknis yang dibutuhkan, seiring modernitas zaman. Program Studi yang bernaung
+           dalam Fakultas Teknologi Informasi adalah Teknik Informatika dan Sistem Informasi."
+  utter_getProdiFTI-SystemInformation:
+  - text: "Program studi sistem informasi adalah gabungan dari Ilmu Komputer, Ekonomi Manajemen, dan Bisnis. Fokusnya tetap di bidang software (programming), tapi lebih ke arah penerapan ke bisnis perusahaan."
+  utter_getProdiFTI-SystemInformation-2:
+  - text: "Pada program studi Sistem Informasi (SI) akan dipelajari tentang bagaimana mendesain sistem yang tepat berdasarkan tujuan organisasi atau perusahaan sesuai dengan kebutuhan dan proses bisnis."
+  - text: "Pada prodi ini kakak ini diarahkan agar dapat mengembangkan, memanfaatkan, dan mengelola software dan hardware yang ada dalam dunia bisnis maupun perseorangan."
+  - text: "Pada prodi ini kakak nggak cuma dibekali dengan ilmu pemrograman tapi juga manajemen dan bisnis."
+  - text: "Program studi ini cocok untuk kakak yang ingin terjun ke ranah IT, namun tidak terlalu ingin mendalami seluk-beluk programming, atau malah ingin sekaligus dapat ilmu bisnis dan manajemen. "
+
+  utter_getFEGeneral:
+  - text: "Di sini kakak akan diberi kesempatan untuk mendedah dan menelaah perekonomian dari sudut pandang makro, atau kebijakan-kebijakan yang diterapkan dalam lingkup regional, nasional, dan bahkan lintas-negara."
+
+  utter_getProdiFE-Management:
+  - text: "Manajemen merupakan program studi yang mempelajari mengenai bagaimana mengelola suatu perusahaan atau organisasi."
+
+  utter_getProdiFE-Management-2:
+  - text: "Prodi Manajemen ini merupakan program studi umum yang mempelajari semua bidang, seperti manajemen keuangan, dan manajemen pemasaran."
+  - text: "Prodi ini juga tidak hanya mempelajari teori, tetapi juga praktik yang akan diterapkan dalam program magang (internship)."
+  - text: "Mempelajari bagaimana cara mengelola organisasi dan ilmu ekonomi supaya target suatu organisasi tercapai."
 # UNTUK TRIVIA
   utter_trivia_pet:
   - text: "Aku suka dengan kelucuan kucing"
