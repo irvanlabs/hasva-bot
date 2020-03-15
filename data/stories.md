@@ -126,6 +126,11 @@
 * getRegisterInfo
   - utter_getRegisterInfo
 
+## cara daftar
+* getRegisterInfo
+  - utter_getRegisterInfo
+  - utter_getRegisterInfo-2
+
 ## tanggal test
 * test_date
   - utter_test_date

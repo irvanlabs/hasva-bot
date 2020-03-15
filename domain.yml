@@ -75,6 +75,7 @@ intents:
 - getFEGeneral
 - getProdiFE-Management
 - getProdiFE-Management-2
+- maker_purpose
 responses:
   utter_greet:
   - text: Hai.
@@ -175,6 +176,7 @@ responses:
   utter_getRegisterInfo:
   - text: Kamu bisa datang langsung ke lobi unwaha, tepatnya di gedung depan kak.
       tapi pada hari selain jum'at ya
+  utter_getRegisterInfo-2:
   - text: Kamu bisa mendaftar secara mandiri melalui jalur  [3000 sarjana NU](http://pmb.unwaha.ac.id/beasiswanu/formulir-pendaftaran/)
       atau yang [Reguler](http://pmb.unwaha.ac.id/reguler/formulir-pendaftaran/) atau
       melalui teman yang sudah kuliah di sana
@@ -183,22 +185,20 @@ responses:
       isi formulirnya ya
   - text: Lengkapi persyaratan pendaftaran dan isi formulirnya kak di http://pmb.unwaha.ac.id/reguler/formulir-pendaftaran/
   utter_register_requirement:
-  - text: "Untuk program 3000 sarjana NU Syaratnya: \n Persyaratan awal: \n 1. Mengisi\
-      \ Formulir \n 2.Membayar Biaya Pendaftaran \n \n Persyaratan menyusul: \n 1.\
-      \ Foto copy ijazah MA/SMA/SMK dilegalisir 2 lembar \n 2. Foto copy Surat Tanda\
-      \ Lulus (STL) dilegalisir 2 lembar \n 3. Foto copy KTP \n 4. Foto copy Kartu\
-      \ Keluarga / KK \n 5. Print Out NISN (No. Induk Siswa Nasional) (jika punya)\
-      \ \n 6. Foto Berwarna/Hitam Putih (2 x 3) Sebanyak 3 lembar, (3 x 4) sebanyak\
-      \ 3 lembar \n 7. Membayar biaya daftar ulang/her registrasi, setelah dinyatakan\
-      \ lulus \n \n \n\nUntuk yang jalur reguler: \n 1. Mengisi Formulir \n 2. Membayar\
-      \ Biaya Pendaftaran \n 3. copy raport semester ganjil kelas XII (Pendaftar Jalur\
-      \ Undangan) \n 4. copy ijazah MA/SMA/SMK dilegalisir 2 lembar (jika sudah ada)\
-      \ \n 5. copy Surat Tanda Lulus (STL) dilegalisir 2 lembar (jika sudah ada) \n\
-      \ 6. copy KTP (jika sudah ada) \n 7. copy Kartu Keluarga / KK \n 8. Out NISN\
-      \ (No. Induk Siswa Nasional) (jika punya) \n 9. Berwarna/Hitam Putih (2 x 3)\
-      \ Sebanyak 3 lembar, (3 x 4) sebanyak 3 lembar \n 10. Membayar biaya daftar\
-      \ ulang/her registrasi, setelah dinyatakan lulus \n 11. Saat tes tulis harap\
-      \ membawa formulir, kartu ujian dan berkas administrasi \n"
+  - text: 'Persyaratan awal:  1. Mengisi Formulir  2.Membayar Biaya Pendaftaran   Persyaratan
+      menyusul:  1. Foto copy ijazah MA/SMA/SMK dilegalisir 2 lembar  2. Foto copy
+      Surat Tanda Lulus (STL) dilegalisir 2 lembar  3. Foto copy KTP  4. Foto copy
+      Kartu Keluarga / KK  5. Print Out NISN (No. Induk Siswa Nasional) (jika punya)  6.
+      Foto Berwarna/Hitam Putih (2 x 3) Sebanyak 3 lembar, (3 x 4) sebanyak 3 lembar  7.
+      Membayar biaya daftar ulang/her registrasi, setelah dinyatakan lulus   Untuk
+      yang jalur reguler:  1. Mengisi Formulir  2. Membayar Biaya Pendaftaran  3.
+      copy raport semester ganjil kelas XII (Pendaftar Jalur Undangan)  4. copy ijazah
+      MA/SMA/SMK dilegalisir 2 lembar (jika sudah ada)  5. copy Surat Tanda Lulus
+      (STL) dilegalisir 2 lembar (jika sudah ada)  6. copy KTP (jika sudah ada)  7.
+      copy Kartu Keluarga / KK  8. Out NISN (No. Induk Siswa Nasional) (jika punya)  9.
+      Berwarna/Hitam Putih (2 x 3) Sebanyak 3 lembar, (3 x 4) sebanyak 3 lembar  10.
+      Membayar biaya daftar ulang/her registrasi, setelah dinyatakan lulus  11. Saat
+      tes tulis harap membawa formulir, kartu ujian dan berkas administrasi'
   utter_confuse:
   - text: "Jika kakak nggak paham silahkan hubungi: \n Herni Idawati - 085749581440\
       \ atau Muhammad Misbahul Munir - 085852525956"
@@ -532,6 +532,7 @@ actions:
 - utter_getCollegeInfo
 - utter_getCollegeAddressInfo
 - utter_getRegisterInfo
+- utter_getRegisterInfo-2
 - utter_register_requirement
 - utter_confuse
 - utter_getCostInfo

@@ -1,17 +1,18 @@
 # Configuration for Rasa NLU.
 # https://rasa.com/docs/rasa/nlu/components/
-language: id
-pipeline: supervised_embeddings
-# - name: "WhitespaceTokenizer"
-# - name: "RegexFeaturizer"
-# - name: "CRFEntityExtractor"
-# - name: "EntitySynonymMapper"
-# - name: "CountVectorsFeaturizer"
-# - name: "CountVectorsFeaturizer"
-#   analyzer: "char_wb"
-#   min_ngram: 1
-#   max_ngram: 4
-# - name: "EmbeddingIntentClassifier"
+language: en
+pipeline: 
+  # supervised_embeddings
+- name: "WhitespaceTokenizer"
+- name: "RegexFeaturizer"
+- name: "CRFEntityExtractor"
+- name: "EntitySynonymMapper"
+- name: "CountVectorsFeaturizer"
+- name: "CountVectorsFeaturizer"
+  analyzer: "char_wb"
+  min_ngram: 1
+  max_ngram: 4
+- name: "EmbeddingIntentClassifier"
   # - name: WhitespaceTokenizer
   # - name: RegexFeaturizer
   # - name: LexicalSyntacticFeaturizer

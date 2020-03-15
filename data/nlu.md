@@ -403,6 +403,8 @@
 - bagaimana cara saya mendaftar di unwaha
 - cara kuliah gimana?
 - cara daftarnya gimana?
+- daftar online caranya
+- cara daftar online gimana?
 
 ## intent:confuse
 - aku gak paham
@@ -489,6 +491,7 @@
 - syarat daftarnya apa?
 - persyaratannya apa saja
 - persyaratanya apa saja
+- persyaratan pendaftaran apa saja kak
 
 ## intent:getCostInfo
 - biaya gimana
@@ -632,6 +635,7 @@
 - prodi fip apa saja
 - prodinya fip apa saja
 - program studinya fip apa saja
+- prodi di fip apa aja
 
 ## intent:getProdiFIP-Math
 - prodi pendidikan matematika
@@ -647,6 +651,7 @@
 - ngapain aja di matematika?
 - ngapain aja di prodi matematika?
 - ngapain aja di program studi matematika?
+- jelaskan prodi matematika
 
 ## intent:getProdiFIP-Math-2
 - apa manfaat program studi matematika?
@@ -991,6 +996,7 @@
 - agrobisnis itu yang bagaimana
 - agrobisnis itu yang gimana?
 - agrobisnis itu yang apa?
+- jelaskan tentang agrobisnis
 
 ## intent:getProdiFP-Agrobusiness-2
 - apa manfaat program studi agrobisnis?
@@ -1348,7 +1354,7 @@
 - kenapa kamu dibuat
 - apa tujuan kamu dibuat?
 - apa tujuan kamu dibuat
-- tujuan kamu di desain 
+- tujuan kamu di desain
 - tujuan kamu di desain apa?
 - kenapa pembuatmu membuat kamu
 - kenapa pembuatmu membuatmu
@@ -1358,93 +1364,99 @@
 - tujuan kak hasva dibuat kenapa?
 - apa tujuan hasva dibuat?
 - tujuan hasva dibuat
+- mengapa kamu dibuat
+- kenapa kamu ada
+- jelaskan kenapa kamu dibuat
+- jelaskan tujuan kamu dibuat
+- tujuan kamu dibuat apa
+- jelaskan kenapa pembuatmu membuatmu
 
 ## synonym:agrobisnis
-- Agribisnis
-- agribisnis
 - Agrobisnis
 - ab
+- Agribisnis
 - AB
+- agribisnis
 
 ## synonym:agroekoteknologi
-- agreoteknologi
-- ae
 - Agroekoteknologi
-- Agroteknologi
 - AE
-- Agreoteknologi
+- agreoteknologi
 - agroteknologi
+- Agreoteknologi
+- ae
+- Agroteknologi
 
 ## synonym:ekonomi syariah
+- EKONOMI SYARIAH
 - es
 - ES
-- EKONOMI SYARIAH
 - Ekonomi Syariah
 
 ## synonym:fakultas agama islam
-- fai
 - FAI
+- fai
 
 ## synonym:fakultas ilmu pendidikan
 - FIP
 - fip
 
 ## synonym:fakultas pertanian
-- FP
 - fp
+- FP
 
 ## synonym:fakultas teknologi informatika
 - FTI
 - fti
 
 ## synonym:kamu
-- kakak
-- bu
-- anda
-- mbak
-- elo
 - lo
-- kak
+- elo
+- bu
 - kaka
 - mas
+- anda
+- kakak
+- kak
+- mbak
 
 ## synonym:lokasi
-- alamat
 - tempat
-- letak
 - tepatnya
+- letak
+- alamat
 
 ## synonym:manajemen
 - manejemen
 - Manajemen
-- Menejemen
 - management
+- Menejemen
 - menejemen
 - menajemen
 
 ## synonym:pendidikan agama islam
 - Pendidikan agama islam
-- PAI
 - pai
+- PAI
 
 ## synonym:pendidikan bahasa arab
-- Pendidikan Bahasa Arab
-- pba
 - PBA
+- pba
+- Pendidikan Bahasa Arab
 
 ## synonym:pendidikan bahasa inggris
-- PBI
 - Pendidikan Bahasa Inggris
+- PBI
 - pbi
 
 ## synonym:pendidikan biologi
-- pb
 - PB
+- pb
 - Pendidikan Biologi
 
 ## synonym:pendidikan fisika
-- Pendidikan Fisika
 - pf
+- Pendidikan Fisika
 - PF
 
 ## synonym:pendidikan matematika
@@ -1454,32 +1466,32 @@
 
 ## synonym:program studi
 - jurusan
-- PRODI
-- Prodi
 - Jurusan
+- PRODI
 - prodi
+- Prodi
 
 ## synonym:rekayasa pertanian dan biosistem
+- Rekayasa Pertanian dan Biosistem
 - rpb
 - RPB
-- Rekayasa Pertanian dan Biosistem
 
 ## synonym:sistem informasi
-- SI
-- si
 - Sistem Informasi
+- si
+- SI
 
 ## synonym:sudah
 - udah
-- Sudah
 - dah
+- Sudah
 
 ## synonym:teknik informatika
 - ti
-- TI
 - Teknik Informatika
+- TI
 
 ## synonym:teknologi hasil pertanian
 - THP
-- Teknologi Hasil Pertanian
 - thp
+- Teknologi Hasil Pertanian
