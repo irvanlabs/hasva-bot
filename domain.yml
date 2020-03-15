@@ -1,478 +1,592 @@
+session_config:
+  session_expiration_time: 60.0
+  carry_over_slots_to_new_session: true
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - thanks
-  - bot_challenge
-  - how_old
-  - question_state
-  - trivia_eat_drink
-  - trivia_pet
-  - trivia_boyfriend
-  - trivia_book
-  - trivia_maker
-  - trivia_cry
-  - trivia_language
-  - gender
-  - question_general
-  - getCollegeInfo
-  - getRegisterInfo
-  - register_requirement
-  - confuse
-  - getCostInfo
-  - test_date
-  - getAdministrationCost
-  - getGeneralFacultyInfo
-  - getGeneralMajorInfo
-  - getDifferentProdi-Faculty
-  - getFaculty
-  - getProdiGeneral
-  - getProdiInFIP
-  - getProdiInFAI
-  - getProdiInFE
-  - getProdiInFTI
-  - getProdiInFP
-  - getFIPGeneral
-  - getProdiFIP-Math
-  - getProdiFIP-Math-2
-  - getProdiFIP-Biology
-  - getProdiFIP-Biology-2
-  - getProdiFIP-Pyshics
-  - getProdiFIP-Pyshics-2
-  - getProdiFIP-English
-  - getProdiFIP-English-2
-  - getFAIGeneral
-  - getProdiFAI-Islamic
-  - getProdiFAI-Arabic
-  - getProdiFAI-Arabic-2
-  - getProdiFAI-Economy
-  - getProdiFAI-Economy-2
-  - getFPGeneral
-  - getProdiFP-Agrobusiness
-  - getProdiFP-Agrobusiness-2
-  - getProdiFP-Agroecotechnology
-  - getProdiFP-Agroecotechnology-2
-  - getProdiFP-FarmTech
-  - getProdiFP-FarmTech-2
-  - getProdiFP-AgriculturalTech
-  - getProdiFP-AgriculturalTech-2
-  - getFTIGeneral
-  - getProdiFTI-SystemInformation
-  - getProdiFTI-SystemInformation-2
-  - getProdiFTI-TechInfo
-  - getProdiFTI-TechInfo-
-  - getFEGeneral
-  - getProdiFE-Management
-  - getProdiFE-Management-2
-
-# slots:
-#   faculty:
-#     type: categorical
-#     values:
-#     - fip
-#     - fai
-#     - fp
-#     - fti
-#     - fe
-#   prodi:
-#     type: text
-#   fip-prodi:
-#     type: text
-#   fai-prodi:
-#     type: text
-#   fp-prodi:
-#     type: text
-#   fe-prodi:
-#     type: text
-#   fti-prodi:
-#     type: text
-
-actions:
-  - utter_default
-
-
-
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- how_can_do
+- mood_unhappy
+- thanks
+- clear
+- bot_challenge
+- how_old
+- out_of_scope
+- question_state
+- trivia_eat_drink
+- trivia_pet
+- trivia_boyfriend
+- trivia_book
+- trivia_maker
+- trivia_cry
+- trivia_language
+- gender
+- question_general
+- getCollegeInfo
+- getCollegeAddressInfo
+- getRegisterInfo
+- register_requirement
+- confuse
+- getCostInfo
+- test_date
+- getAdministrationCost
+- getGeneralFacultyInfo
+- getGeneralMajorInfo
+- getDifferentProdi-Faculty
+- getFaculty
+- getProdiGeneral
+- getProdiInFIP
+- getProdiInFAI
+- getProdiInFE
+- getProdiInFTI
+- getProdiInFP
+- getFIPGeneral
+- getProdiFIP-Math
+- getProdiFIP-Math-2
+- getProdiFIP-Biology
+- getProdiFIP-Biology-2
+- getProdiFIP-Pyshics
+- getProdiFIP-Pyshics-2
+- getProdiFIP-English
+- getProdiFIP-English-2
+- getFAIGeneral
+- getProdiFAI-Islamic
+- getProdiFAI-Islamic-2
+- getProdiFAI-Arabic
+- getProdiFAI-Arabic-2
+- getProdiFAI-Economy
+- getProdiFAI-Economy-2
+- getFPGeneral
+- getProdiFP-Agrobusiness
+- getProdiFP-Agrobusiness-2
+- getProdiFP-Agroecotechnology
+- getProdiFP-Agroecotechnology-2
+- getProdiFP-FarmTech
+- getProdiFP-FarmTech-2
+- getProdiFP-AgriculturalTech
+- getProdiFP-AgriculturalTech-2
+- getFTIGeneral
+- getProdiFTI-SystemInformation
+- getProdiFTI-SystemInformation-2
+- getProdiFTI-TechInfo
+- getProdiFTI-TechInfo-2
+- getFEGeneral
+- getProdiFE-Management
+- getProdiFE-Management-2
 responses:
   utter_greet:
-  - text: "Hai."
-  - text: "Hai juga. 🙂"
-  # - text: "Selamat pagi"
-  # - text: "Selamat siang."
-  # - text: "Selamat malam"
-  - text: "Halo 🖐"
-
+  - text: Hai.
+  - text: Hai juga. 🙂
+  - text: Halo 🖐
   utter_name:
-  - text: "Hai, namaku Hasva. Ada yang bisa aku bantu?"
-  - text: "Hai, namaku Hasva. Ada yang bisa dibantu?"
-  - text: "Halo, namaku Hasva. Ada yang bisa dibantu?"
-
+  - text: Hai, namaku Hasva. Ada yang bisa aku bantu?
+  - text: Hai, namaku Hasva. Ada yang bisa dibantu?
+  - text: Halo, namaku Hasva. Ada yang bisa dibantu?
   utter_how_old:
-  - text: "Ya karena baru dibuat berarti saya masih muda 😂"
-  - text: "Gak sopan loh tanya usia pada robot"
-  - text: "Aku masih muda, karena baru dibuat beberapa minggu"
-  - text: "Hmm, yang jelas aku masih muda"
-  - text: "Aku lupa 😅"
-
+  - text: Ya karena baru dibuat berarti saya masih muda 😂
+  - text: Gak sopan loh tanya usia pada robot
+  - text: Aku masih muda, karena baru dibuat beberapa minggu
+  - text: Hmm, yang jelas aku masih muda
+  - text: Aku lupa 😅
   utter_goodbye:
-  - text: "Oke, sampai jumpa"
-  - text: "Siap kak 😊"
-  - text: "Oke kak 😊"
-  - text: "Oke bye 😊"
-
+  - text: Oke, sampai jumpa
+  - text: Siap kak 😊
+  - text: Oke kak 😊
+  - text: Oke bye 😊
+  utter_how_can_do:
+  - text: Kamu bisa bertanya tentang program studi atau jelaskan fakultas sesuatu
+  - text: Untuk saat ini Hasva bisa memberikanmu info mengenai Unwaha, coba tanyakan
+      sesuatu 😊
   utter_cheer_up:
-  - text: "Nih kak aku punya sesuatu yang lucu:"
-    image: "https://lh3.googleusercontent.com/proxy/RvBRyizx7tbgauaRJ4jt4u2Z4TRk3uepN_OmP9Ldql5ADh3bQNO5VbFJzSKprgkMVTIi7cXp-ET8RIwH80SMgUeRD_RBnETDnna2Tr5ycxALcZvfvPqr22oHg552DtdlzU-EKsVHvWtBkqQ"
-  - text: "Nih kak aku punya sesuatu mungkin membantu"
-    image: "https://breakbrunch.com/wp-content/uploads/2019/06/cute-cat-with-big-eyes-041619-7.jpg"
-
+  - text: 'Nih kak aku punya sesuatu yang lucu:'
+    image: https://i.redd.it/6giqv6zjkog21.jpg
+  - text: Nih kak aku punya sesuatu mungkin membantu
+    image: https://breakbrunch.com/wp-content/uploads/2019/06/cute-cat-with-big-eyes-041619-7.jpg
   utter_did_that_help:
-  - text: "Apakah ini membantu kamu?"
-  - text: "Apa kamu terbantu dengan ini?"
-  - text: "Apa ini membantu?"
-  - text: "Kamu terbantu dengan ini?"
-
+  - text: Apakah ini membantu kamu?
+  - text: Apa kamu terbantu dengan ini?
+  - text: Apa ini membantu?
+  - text: Kamu terbantu dengan ini?
   utter_happy:
-  - text: "Oke, tetap semangat kak 💪"
-  - text: "Siap kak, aku ikut senang"
-  - text: "Alhamdulillah"
-  - text: "Keren kak, lanjutt 👍"
-  - text: "Cakep, lanjutt kak 👍"
-  - text: "Bagus, aku ikut senang kak 👍"
-  - text: "Bagus kak 👍"
-
+  - text: Oke, tetap semangat kak 💪
+  - text: Siap kak, aku ikut senang
+  - text: Alhamdulillah
+  - text: Keren kak, lanjutt 👍
+  - text: Cakep, lanjutt kak 👍
+  - text: Bagus, aku ikut senang kak 👍
+  - text: Bagus kak 👍
+  utter_paham:
+  - text: Bagus 👍
+  - text: Sipp 👍
+  - text: Siap 👍
+  - text: Oke 👍
   utter_thanks:
-  - text: "Sama-sama 😊"
-  - text: "Oke 😊"
-  - text: "Siap kak 😊"
-  - text: "Oke gpp"
-  - text: "Terima kasih kembali"
-
+  - text: Sama-sama 😊
+  - text: Oke 😊
+  - text: Siap kak 😊
+  - text: Oke gpp
+  - text: Terima kasih kembali
   utter_hello:
-  - text: "Hai kak aku Hasva, ada perlu apa?"
-  - text: "Hai kak. Perkenalkan aku Hasva, ada perlu apa?"
-  - text: "Hai kak. Perkenalkan nama aku Hasva, ada perlu apa?"
-  - text: "Ya, Namaku Hasva. salam kenal... 🙂"
-
+  - text: Hai kak aku Hasva, ada perlu apa?
+  - text: Hai kak. Perkenalkan aku Hasva, ada perlu apa?
+  - text: Hai kak. Perkenalkan nama aku Hasva, ada perlu apa?
+  - text: Halo, Namaku Hasva. salam kenal... 🙂
   utter_iamabot:
-  - text: "Aku adalah robot, tapi aku lebih suka kamu anggap temanmu 😊"
-  - text: "Ya, Aku adalah robot, tapi aku lebih suka kamu anggap temanmu 😊"
-  - text: "Ya, Nama aku Hasva. Aku robot yang dapat membantumu 🤖"
-  - text: "Ya, Nama aku Hasva. Aku dapat memberikan informasi yang aku tahu."
-  - text: "Ya, Nama aku Hasva. Aku dapat memberikan informasi yang aku tahu."
-  - text: "Aku adalah robot dengan kecerdasan buatan."
-  - text: "Aku adalah robot yang dirancang seorang inisial 'IN-0vation'"
-  
-  utter_trvia_eat_drink:
-  - text: "Robot tidak perlu kak 😁"
-  - text: "Aku kan robot kak 😁"
-  - text: "Saya robot kak,jadi tidak bisa 😁 "
-  - text: "Saya robot kak,jadi tidak perlu  😁"
-
+  - text: Aku adalah robot, tapi aku lebih suka kamu anggap temanmu 😊
+  - text: Ya, Aku adalah robot, tapi aku lebih suka kamu anggap temanmu 😊
+  - text: Ya, Nama aku Hasva. Asisten robot yang dapat membantumu 🤖
+  - text: Ya, Nama aku Hasva. Robot yang dapat memberikan informasi yang kamu tahu
+      tahu.
+  - text: Ya, Nama aku Hasva. Aku dapat memberikan informasi yang aku tahu.
+  - text: Aku adalah robot dengan kecerdasan buatan.
+  - text: Aku adalah robot yang dirancang seorang inisial 'IN-0vation'
+  utter_trivia_eat_drink:
+  - text: Robot tidak perlu kak 😁
+  - text: Aku kan robot kak 😁. Jadi tidak usah.
+  - text: 'Saya robot kak,jadi tidak bisa 😁 '
+  - text: Saya robot kak,jadi tidak perlu  😁
+  - text: Yang aku butuhkan itu listrik kak
   utter_state:
-  - text: "Alhamdulillah saya sehat kok 🙂 "
-  - text: "Syukurlah aku sehat sekarang"
-  - text: "Aku baik"
-  - text: "Aku baik-baik aja kok"
-  - text: "Aku sehat. Alhamdulillah"
-  - text: "Aku sehat kok"
-  - text: "Kabarku baik-baik saja. Syukurlah"
-  - text: "Aku masih oke 😁"
-  - text: "Sehat dong 😀"
-
+  - text: 'Alhamdulillah saya sehat kok 🙂 '
+  - text: Syukurlah aku sehat sekarang
+  - text: Aku baik
+  - text: Aku baik-baik aja kok
+  - text: Aku sehat. Alhamdulillah
+  - text: Aku sehat kok
+  - text: Kabarku baik-baik saja. Syukurlah
+  - text: Aku masih oke 😁
+  - text: Sehat dong 😀
   utter_question_general:
-  - text: "Aku sedang mengamati sistemku"
-  - text: "Disini aku menunggumu 😆"
-  - text: "Aku lagi nunggu orang bertanya"
-  - text: "Sekarang lagi nunggu kamu bertanya hehe 😅"
-
-
+  - text: Aku sedang mengamati sistemku
+  - text: Disini aku menunggumu 😆
+  - text: Aku lagi nunggu orang bertanya
+  - text: Sekarang lagi nunggu kamu bertanya hehe 😅
   utter_getCollegeInfo:
-  - text: "Unwaha merupakan universitas yang terinspirasi dari KH. A. Wahab Hasbullah"
-  - text: "Unwaha merupakan universitas yang memiliki motto 'Berwawasan global dan berkarakter islami'"
-  - text: "Unwaha merupakan universitas yang terletak di Jalan Garuda No.09, Tambak Rejo, Kec. Jombang, Kabupaten Jombang, Jawa Timur"
-
+  - text: Unwaha merupakan universitas yang terinspirasi dari KH. A. Wahab Hasbullah
+  - text: Unwaha merupakan universitas yang memiliki motto 'Berwawasan global dan
+      berkarakter islami'
+  utter_getCollegeAddressInfo:
+  - text: Letaknya di Jalan Garuda No.09, Tambak Rejo, Kec. Jombang, Kabupaten Jombang,
+      Jawa Timur
+  - text: Letaknya di Jalan Garuda No.09, Tambak Rejo, Kec. Jombang, Kabupaten Jombang,
+      Jawa Timur. Atau di [SINI](https://g.page/unwaha?share)
   utter_getRegisterInfo:
-  - text: "Kamu bisa datang langsung ke lobi unwaha, tepatnya di gedung depan kak. tapi pada hari selain jum'at ya"
-  - text: "Kamu bisa mendaftar secara mandiri melalui jalur  [3000 sarjana NU](http://pmb.unwaha.ac.id/beasiswanu/formulir-pendaftaran/) atau yang [Reguler](http://pmb.unwaha.ac.id/reguler/formulir-pendaftaran/) atau melalui teman yang sudah kuliah di sana"
-  - text: "Pilih dulu kak mau daftar kategori [3000 sarjana NU](http://pmb.unwaha.ac.id/beasiswanu/formulir-pendaftaran/) atau yang [Reguler](http://pmb.unwaha.ac.id/reguler/formulir-pendaftaran/) kemudian isi formulirnya ya"
-  - text: "Lengkapi persyaratan pendaftaran dan isi formulirnya kak di http://pmb.unwaha.ac.id/reguler/formulir-pendaftaran/"
-  
+  - text: Kamu bisa datang langsung ke lobi unwaha, tepatnya di gedung depan kak.
+      tapi pada hari selain jum'at ya
+  - text: Kamu bisa mendaftar secara mandiri melalui jalur  [3000 sarjana NU](http://pmb.unwaha.ac.id/beasiswanu/formulir-pendaftaran/)
+      atau yang [Reguler](http://pmb.unwaha.ac.id/reguler/formulir-pendaftaran/) atau
+      melalui teman yang sudah kuliah di sana
+  - text: Pilih dulu kak mau daftar kategori [3000 sarjana NU](http://pmb.unwaha.ac.id/beasiswanu/formulir-pendaftaran/)
+      atau yang [Reguler](http://pmb.unwaha.ac.id/reguler/formulir-pendaftaran/) kemudian
+      isi formulirnya ya
+  - text: Lengkapi persyaratan pendaftaran dan isi formulirnya kak di http://pmb.unwaha.ac.id/reguler/formulir-pendaftaran/
   utter_register_requirement:
-  - text: "Untuk program 3000 sarjana NU Syaratnya: \n
-            Persyaratan awal: \n
-            1. Mengisi Formulir \n
-            2.Membayar Biaya Pendaftaran \n \n
-            Persyaratan menyusul: \n
-            1. Foto copy ijazah MA/SMA/SMK dilegalisir 2 lembar \n
-            2. Foto copy Surat Tanda Lulus (STL) dilegalisir 2 lembar \n 
-            3. Foto copy KTP \n
-            4. Foto copy Kartu Keluarga / KK \n
-            5. Print Out NISN (No. Induk Siswa Nasional) (jika punya) \n 
-            6. Foto Berwarna/Hitam Putih (2 x 3) Sebanyak 3 lembar, (3 x 4) sebanyak 3 lembar \n
-            7. Membayar biaya daftar ulang/her registrasi, setelah dinyatakan lulus \n \n \n
-
-            Untuk yang jalur reguler: \n
-            1. Mengisi Formulir \n
-            2. Membayar Biaya Pendaftaran \n
-            3. copy raport semester ganjil kelas XII (Pendaftar Jalur Undangan) \n
-            4. copy ijazah MA/SMA/SMK dilegalisir 2 lembar (jika sudah ada) \n
-            5. copy Surat Tanda Lulus (STL) dilegalisir 2 lembar (jika sudah ada) \n
-            6. copy KTP (jika sudah ada) \n
-            7. copy Kartu Keluarga / KK \n
-            8. Out NISN (No. Induk Siswa Nasional) (jika punya) \n
-            9. Berwarna/Hitam Putih (2 x 3) Sebanyak 3 lembar, (3 x 4) sebanyak 3 lembar \n
-            10. Membayar biaya daftar ulang/her registrasi, setelah dinyatakan lulus \n
-            11. Saat tes tulis harap membawa formulir, kartu ujian dan berkas administrasi \n"
-
-
+  - text: "Untuk program 3000 sarjana NU Syaratnya: \n Persyaratan awal: \n 1. Mengisi\
+      \ Formulir \n 2.Membayar Biaya Pendaftaran \n \n Persyaratan menyusul: \n 1.\
+      \ Foto copy ijazah MA/SMA/SMK dilegalisir 2 lembar \n 2. Foto copy Surat Tanda\
+      \ Lulus (STL) dilegalisir 2 lembar \n 3. Foto copy KTP \n 4. Foto copy Kartu\
+      \ Keluarga / KK \n 5. Print Out NISN (No. Induk Siswa Nasional) (jika punya)\
+      \ \n 6. Foto Berwarna/Hitam Putih (2 x 3) Sebanyak 3 lembar, (3 x 4) sebanyak\
+      \ 3 lembar \n 7. Membayar biaya daftar ulang/her registrasi, setelah dinyatakan\
+      \ lulus \n \n \n\nUntuk yang jalur reguler: \n 1. Mengisi Formulir \n 2. Membayar\
+      \ Biaya Pendaftaran \n 3. copy raport semester ganjil kelas XII (Pendaftar Jalur\
+      \ Undangan) \n 4. copy ijazah MA/SMA/SMK dilegalisir 2 lembar (jika sudah ada)\
+      \ \n 5. copy Surat Tanda Lulus (STL) dilegalisir 2 lembar (jika sudah ada) \n\
+      \ 6. copy KTP (jika sudah ada) \n 7. copy Kartu Keluarga / KK \n 8. Out NISN\
+      \ (No. Induk Siswa Nasional) (jika punya) \n 9. Berwarna/Hitam Putih (2 x 3)\
+      \ Sebanyak 3 lembar, (3 x 4) sebanyak 3 lembar \n 10. Membayar biaya daftar\
+      \ ulang/her registrasi, setelah dinyatakan lulus \n 11. Saat tes tulis harap\
+      \ membawa formulir, kartu ujian dan berkas administrasi \n"
   utter_confuse:
-  - text: "Jika kakak nggak paham silahkan hubungi: \n
-            Herni Idawati - 085749581440 atau Muhammad Misbahul Munir - 085852525956"
-  - text: "Silahkan hubungi Bu Herni Idawati - 085749581440 atau Pak Muhammad Misbahul Munir - 085852525956"
-  - text: "Jika ada yang kurang jelas, Silahkan hubungi Bu Herni Idawati - 085749581440 atau Pak Muhammad Misbahul Munir - 085852525956"
-
+  - text: "Jika kakak nggak paham silahkan hubungi: \n Herni Idawati - 085749581440\
+      \ atau Muhammad Misbahul Munir - 085852525956"
+  - text: Silahkan hubungi Bu Herni Idawati - 085749581440 atau Pak Muhammad Misbahul
+      Munir - 085852525956, jika ada yang ingin ditanyakan.
+  - text: Jika ada yang kurang jelas, Silahkan hubungi Bu Herni Idawati - 085749581440
+      atau Pak Muhammad Misbahul Munir - 085852525956
   utter_getCostInfo:
-  - text: "Untuk pendaftaran program 3000 sarjana NU cukup 8 juta kak selama perkuliahan. \n Untuk reguler biaya per semester 2.100.000 kak untuk semua program studi. \n 
-          Ditambah DPP 2.250.000 yang dapat diangsur selama 4 semester (2 tahun)"
- 
+  - text: "Untuk pendaftaran program 3000 sarjana NU cukup 8 juta kak selama perkuliahan.\
+      \ \n Untuk reguler biaya per semester 2.100.000 kak untuk semua program studi,\
+      \ \n Ditambah DPP 2.250.000 yang dapat diangsur selama 4 semester (2 tahun)"
   utter_getAdministrationCost:
-  - text: " Untuk kategori 3000 sarjana NU biaya pendaftaran adalah Rp. 300.000. \n 
-            Untuk yang reguler jalur  (tanpa tes tulis) gelombang I adalah Rp. 250.000, dan untuk gelombang II adalah Rp. 300.000. \n
-            Untuk jalur reguler dengan tes tulis gelombang I adalah Rp. 400.000, dan untuk gelombang II adalah Rp. 500.000. "
-
+  - text: " Untuk kategori 3000 sarjana NU biaya pendaftaran adalah Rp. 300.000. \n\
+      \ Untuk yang reguler jalur  (tanpa tes tulis) gelombang I adalah Rp. 250.000,\
+      \ dan untuk gelombang II adalah Rp. 300.000. \n Untuk jalur reguler dengan tes\
+      \ tulis gelombang I adalah Rp. 400.000, dan untuk gelombang II adalah Rp. 500.000. "
   utter_test_date:
-  - text: "Tes tulis gelombang I dilaksanakan pada 5 Agustus 2020, \n
-            Untuk gelombang II dilaksanakan pada tanggal 5 September 2020."
-
+  - text: "Tes tulis gelombang I dilaksanakan pada 5 Agustus 2020, \n Untuk gelombang\
+      \ II dilaksanakan pada tanggal 5 September 2020."
   utter_getGeneralFacultyInfo:
-  - text: "Fakultas merupakan divisi khusus dalam universitas yang membawahi beberapa program studi/jurusan yang berkaitan. Misalnya Fakultas Ilmu Pendidikan (FIP)"
-
+  - text: Fakultas merupakan divisi khusus dalam universitas yang membawahi beberapa
+      program studi/jurusan yang berkaitan. Misalnya Fakultas Ilmu Pendidikan (FIP)
   utter_getGeneralMajorInfo:
-  - text: "Prodi atau Program Studi merupakan kesatuan rencana belajar yang digunakan sebagai pedoman jalannya pendidikan akademik yang penyelenggaraannya berdasarkan suatu kurikulum."
-
+  - text: Prodi atau Program Studi merupakan kesatuan rencana belajar yang digunakan
+      sebagai pedoman jalannya pendidikan akademik yang penyelenggaraannya berdasarkan
+      suatu kurikulum.
   utter_getDifferentProdi-Faculty:
-  - text: "Fakultas adalah divisi besarnya sedangkan Prodi adalah bagian-bagian kecil dari divisi besar tersebut."
-  - text: "Prodi/ Program Studi adalah divisi dibawah Fakultas"
-
+  - text: Fakultas adalah divisi besarnya sedangkan Prodi adalah bagian-bagian kecil
+      dari divisi besar tersebut.
+  - text: Prodi/ Program Studi adalah divisi dibawah Fakultas
   utter_getFaculty:
-  - text: "Untuk saat ini Unwaha memiliki 5 fakultas yaitu: 
-          Fakultas Agama Islam (FAI) \n
-          Fakultas Ekonomi (FE) \n
-          Fakultas Ilmu Pendidikan (FIP) \n
-          Fakultas Pertanian (FP) \n
-          Fakultas Teknik Informatika (FIP) \n"
-
+  - text: "Untuk saat ini Unwaha memiliki 5 fakultas yaitu: Fakultas Agama Islam (FAI)\
+      \ \n Fakultas Ekonomi (FE) \n Fakultas Ilmu Pendidikan (FIP) \n Fakultas Pertanian\
+      \ (FP) \n Fakultas Teknik Informatika (FIP) \n"
   utter_getProdiGeneral:
   - text: "Program studi yang ada di Unwaha saat ini sejumlah 14 yaitu: \n"
-
   utter_getProdiInFIP:
-  - text: "Program studi di Fakultas Ilmu Pendidikan: \n
-          Pendidikan Matematika (PM) \n
-          Pendidikan Biologi (PB) \n
-          Pendidikan Fisika (PF) \n
-          Pendidikan Bahasa Inggris (PBI) \n"
-
+  - text: "Program studi di Fakultas Ilmu Pendidikan: \n Pendidikan Matematika (PM)\
+      \ \n Pendidikan Biologi (PB) \n Pendidikan Fisika (PF) \n Pendidikan Bahasa\
+      \ Inggris (PBI) \n"
   utter_getProdiInFAI:
-  - text: "Program studi di Fakultas Agama Islam: \n
-            Pendidikan Agama Islam (PAI) \n
-            Pendidikan Bahasa Arab (PBA) \n
-            Ekonomi Syariah (ES) \n"
-
+  - text: "Program studi di Fakultas Agama Islam: \n Pendidikan Agama Islam (PAI)\
+      \ \n Pendidikan Bahasa Arab (PBA) \n Ekonomi Syariah (ES) \n"
   utter_getProdiInFE:
-  - text: "Program studi di Fakultas Agama Islam: \n
-            Manajemen \n"
-
+  - text: "Program studi di Fakultas Agama Islam: \n Manajemen \n"
   utter_getProdiInFP:
-  - text: "Program studi di Fakultas Pertanian:
-            Agrobisnis (AB) \n
-            Agroekoteknologi (AE) \n
-            Teknologi Hasil Pertanian (THP) \n
-            Rakayasa Pertanian Dan Biosistem (RPB) \n"
-
+  - text: "Program studi di Fakultas Pertanian: Agrobisnis (AB) \n Agroekoteknologi\
+      \ (AE) \n Teknologi Hasil Pertanian (THP) \n Rakayasa Pertanian Dan Biosistem\
+      \ (RPB) \n"
   utter_getProdiInFTI:
-  - text: "Program studi di Fakultas Teknik Informatika: \n
-            Teknik Informatika (TI) \n
-            Sistem Informasi (SI) \n"
+  - text: "Program studi di Fakultas Teknik Informatika: \n Teknik Informatika (TI)\
+      \ \n Sistem Informasi (SI) \n"
   utter_getFIPGeneral:
-  - text: "Fakultas Ilmu Pendidikan (FIP) adalah fakultas yang menjadi payung bagi program studi kependidikan."
-
+  - text: Fakultas Ilmu Pendidikan (FIP) adalah fakultas yang menjadi payung bagi
+      program studi kependidikan.
   utter_getProdiFIP-Math:
-  - text: "Pendidikan Matematika merupakan prodi yang mempelajari 
-          teori-teori dasar matematika, misalnya aljabar, geometri, statistika, kalkulus, matematika diskrit, dan lainnya. Nah yang membedakan prodi ini dengan matematika murni adalah, kakak nanti dibekali kemampuan terkait cara menyampaikan pelajaran Matematika kepada murid-murid tentunya dengan cara-cara yang menarik supaya mudah dimengerti. Pokoknya prodi ini cocok banget untuk kakak yang suka Matematika tapi juga punya passion mengajar. Dan tidak lupa ada tambahan mata kuliah keagamaan islam juga loh."
-  - text: "Kakak nanti akan belajar mata kuliah seperti Belajar dan Pembelajaran Matematika, Evaluasi Pembelajaran Matematika, Telaah Kurikulum dan Pembelajaran Matematika, Media Pembelajaran Matematika, Kalkulus Diferensial, Teori Bilangan, Geometri Analitik, Matematika Diskrit, Metode Numerik, Program Linier, Fungsi Variabel Kompleks, Statistika Deskriptif Teoritis, Analisis Real, dan sebagainya. "
+  - text: Pendidikan Matematika merupakan prodi yang mempelajari teori-teori dasar
+      matematika, misalnya aljabar, geometri, statistika, kalkulus, matematika diskrit,
+      dan lainnya. Nah yang membedakan prodi ini dengan matematika murni adalah, kakak
+      nanti dibekali kemampuan terkait cara menyampaikan pelajaran Matematika kepada
+      murid-murid tentunya dengan cara-cara yang menarik supaya mudah dimengerti.
+      Pokoknya prodi ini cocok banget untuk kakak yang suka Matematika tapi juga punya
+      passion mengajar. Dan tidak lupa ada tambahan mata kuliah keagamaan islam juga
+      loh.
+  - text: 'Kakak nanti akan belajar mata kuliah seperti Belajar dan Pembelajaran Matematika,
+      Evaluasi Pembelajaran Matematika, Telaah Kurikulum dan Pembelajaran Matematika,
+      Media Pembelajaran Matematika, Kalkulus Diferensial, Teori Bilangan, Geometri
+      Analitik, Matematika Diskrit, Metode Numerik, Program Linier, Fungsi Variabel
+      Kompleks, Statistika Deskriptif Teoritis, Analisis Real, dan sebagainya. '
   utter_getProdiFIP-Math-2:
-  - text: "Kakak akan memiliki kemampuan mengajar matematika dengan asyik dan unik, kamu akan dicari oleh banyak sekolah dan lembaga belajar."
-  - text: "Kakak bisa loh memberi manfaat lewat cara lain. Misalnya dengan menulis buku ajar, menyusun buku latihan soal, ataupun jadi editor yang khusus menangani pelajaran Matematika di kantor penerbitan."
-  - text: "Kakak bisa menyalurkan ide-ide kreatifmu dalam pembelajaran Matematika dengan menjadi trainer metode belajar yang seru dan efektif supaya matematika nggak terus-menerus dianggap susah. Wah ada peluang untuk jadi guru di bimbel online nih."
-  - text: "Setelah lulus dari prodi Pendidikan Matematika, kakak bisa ambil bagian dalam program pemerataan kualitas pendidikan di Indonesia."
-
+  - text: Kakak akan memiliki kemampuan mengajar matematika dengan asyik dan unik,
+      kamu akan dicari oleh banyak sekolah dan lembaga belajar.
+  - text: Kakak bisa loh memberi manfaat lewat cara lain. Misalnya dengan menulis
+      buku ajar, menyusun buku latihan soal, ataupun jadi editor yang khusus menangani
+      pelajaran Matematika di kantor penerbitan.
+  - text: Kakak bisa menyalurkan ide-ide kreatifmu dalam pembelajaran Matematika dengan
+      menjadi trainer metode belajar yang seru dan efektif supaya matematika nggak
+      terus-menerus dianggap susah. Wah ada peluang untuk jadi guru di bimbel online
+      nih.
+  - text: Setelah lulus dari prodi Pendidikan Matematika, kakak bisa ambil bagian
+      dalam program pemerataan kualitas pendidikan di Indonesia.
   utter_getProdiFIP-Biology:
-  - text: "Program studi yang bertujuan untuk menghasilkan tenaga pengajar biologi yang terampil untuk tingkat pendidikan dasar hingga menengah."
-
+  - text: Program studi yang bertujuan untuk menghasilkan tenaga pengajar biologi
+      yang terampil untuk tingkat pendidikan dasar hingga menengah.
   utter_getProdiFIP-Biology-2:
-  - text: "Apa yang dipelajari pada program studi biologi adalah ilmu biologi beserta turunan-turunannya, namun dengan tambahan perspektif pendidikan dan pengajaran di dalamnya."
-  - text: "Kakak juga akan mempelajari bagaimana cara mengajar yang baik, membuat soal-soal, kurikulum, manajemen sekolah, dan hal-hal lain yang berhubungan dengan teknis maupun administrasi persekolahan."
-  - text: "Kalau kakak tertarik dengan pelajaran Biologi dan bercita-cita menjadi seorang guru, maka program studi Pendidikan Biologi adalah pilihan yang tepat untuk kakak."
-
+  - text: Apa yang dipelajari pada program studi biologi adalah ilmu biologi beserta
+      turunan-turunannya, namun dengan tambahan perspektif pendidikan dan pengajaran
+      di dalamnya.
+  - text: Kakak juga akan mempelajari bagaimana cara mengajar yang baik, membuat soal-soal,
+      kurikulum, manajemen sekolah, dan hal-hal lain yang berhubungan dengan teknis
+      maupun administrasi persekolahan.
+  - text: Kalau kakak tertarik dengan pelajaran Biologi dan bercita-cita menjadi seorang
+      guru, maka program studi Pendidikan Biologi adalah pilihan yang tepat untuk
+      kakak.
   utter_getProdiFIP-Pyshics:
-  - text: "Program studi Pendidikan Fisika akan mengajak kakak untuk mempelajari mengenai ilmu fisika dan menerapkannya dalam konteks pendidikan dan pengajaran. Di sini kakak nggak hanya akan mengkaji fenomena dan gejala alam tidak hidup seperti materi dan partikel, tapi juga diajak untuk memahami metode pembelajaran fisika yang efektif pada siswa di berbagai jenjang pendidikan."
-
+  - text: Program studi Pendidikan Fisika akan mengajak kakak untuk mempelajari mengenai
+      ilmu fisika dan menerapkannya dalam konteks pendidikan dan pengajaran. Di sini
+      kakak nggak hanya akan mengkaji fenomena dan gejala alam tidak hidup seperti
+      materi dan partikel, tapi juga diajak untuk memahami metode pembelajaran fisika
+      yang efektif pada siswa di berbagai jenjang pendidikan.
   utter_getProdiFIP-Pyshics-2:
-  - text: "Sebelum memilih program studi ini, kakak harus memastikan kalau memiliki minat dan ketertarikan besar di bidang matematika--karena bidang studi fisika memiliki kaitan yang sangat erat dengan matematika."
-  - text: "Program studi ini juga akan sangat menarik bagi yang ingin terjun ke dunia pendidikan atau bercita-cita menjadi seorang akademisi dan pengajar fisika."
-
+  - text: Sebelum memilih program studi ini, kakak harus memastikan kalau memiliki
+      minat dan ketertarikan besar di bidang matematika--karena bidang studi fisika
+      memiliki kaitan yang sangat erat dengan matematika.
+  - text: Program studi ini juga akan sangat menarik bagi yang ingin terjun ke dunia
+      pendidikan atau bercita-cita menjadi seorang akademisi dan pengajar fisika.
   utter_getProdiFIP-English:
-  - text: "Program studi Pendidikan Bahasa Inggris akan mempelajari kajian Bahasa Inggris, mulai dari aspek listening, reading, writing, dan speaking. Di prodi Pendidikan Bahasa Inggris kakak juga akan memeroleh ilmu keguruan dan kependidikan."
+  - text: Program studi Pendidikan Bahasa Inggris akan mempelajari kajian Bahasa Inggris,
+      mulai dari aspek listening, reading, writing, dan speaking. Di prodi Pendidikan
+      Bahasa Inggris kakak juga akan memeroleh ilmu keguruan dan kependidikan.
   utter_getProdiFIP-English-2:
-  - text: "Karena kemampuan berbahasa Inggris sangat diperlukan di masa ini dan di masa yang akan datang. Jadi sangat bermanfaat buat kakak."
-
+  - text: Karena kemampuan berbahasa Inggris sangat diperlukan di masa ini dan di
+      masa yang akan datang. Jadi sangat bermanfaat buat kakak.
   utter_getFAIGeneral:
-  - text: "Fakultas Agama Islam (FAI) adalah fakultas yang menjadi payung bagi program studi yang terkait dengan agama islam."
-
+  - text: Fakultas Agama Islam (FAI) adalah fakultas yang menjadi payung bagi program
+      studi yang terkait dengan agama islam.
   utter_getProdiFAI-Islamic:
-  - text: "Prodi Pendidikan Agama Islam (PAI) bertujuan menghasilkan Sarjana Pendidikan Islam berkualitas dan profesional yang dilandasi keluhuran akhlak serta mampu berperan dalam mengembangkan ilmu pendidikan agama Islam di masyarakat."
-  - text: "Program studi PAI bertujuan menghasilkan sarjana yang ahli di bidang pendidikan dan pengajaran agama Islam, yang menguasai materi dan metodologinya. Program studi ini menyiapkan sarjana bidang keguruan agama Islam yang profesional."
-  - text: "Program studi Ilmu Agama Islam akan membantu kakak memahami hukum dan aturan yang berlaku dalam sudut pandang agama Islam. Kakak juga akan mempelajari berbagai hal dalam hidup berdasarkan Al-Quran dan hadis."
-
+  - text: Prodi Pendidikan Agama Islam (PAI) bertujuan menghasilkan Sarjana Pendidikan
+      Islam berkualitas dan profesional yang dilandasi keluhuran akhlak serta mampu
+      berperan dalam mengembangkan ilmu pendidikan agama Islam di masyarakat.
+  - text: Program studi PAI bertujuan menghasilkan sarjana yang ahli di bidang pendidikan
+      dan pengajaran agama Islam, yang menguasai materi dan metodologinya. Program
+      studi ini menyiapkan sarjana bidang keguruan agama Islam yang profesional.
+  - text: Program studi Ilmu Agama Islam akan membantu kakak memahami hukum dan aturan
+      yang berlaku dalam sudut pandang agama Islam. Kakak juga akan mempelajari berbagai
+      hal dalam hidup berdasarkan Al-Quran dan hadis.
   utter_getProdiFAI-Islamic-2:
-  - text: "Apabila kakak tertarik untuk mempelajari ilmu Agama Islam lebih dalam dan memiliki panggilan jiwa untuk berdakwah serta sebagai tenaga pendidik, maka program studi yang satu ini sangat cocok buat kakak."
-  - text: "Kakak akan dilatih untuk mengembangkan pikiran dan wawasan kakak, sehingga diharapkan dapat menghasilkan karya penelitian yang menjadi referensi dalam bidang pendidikan. Kakak juga akan terbiasa untuk
-           memikirkan sebuah kajian keilmuan yang memberikan pengaruh pada wacana dan praktek Pendidikan Agama Islam."
-
+  - text: Apabila kakak tertarik untuk mempelajari ilmu Agama Islam lebih dalam dan
+      memiliki panggilan jiwa untuk berdakwah serta sebagai tenaga pendidik, maka
+      program studi yang satu ini sangat cocok buat kakak.
+  - text: Kakak akan dilatih untuk mengembangkan pikiran dan wawasan kakak, sehingga
+      diharapkan dapat menghasilkan karya penelitian yang menjadi referensi dalam
+      bidang pendidikan. Kakak juga akan terbiasa untuk memikirkan sebuah kajian keilmuan
+      yang memberikan pengaruh pada wacana dan praktek Pendidikan Agama Islam.
   utter_getProdiFAI-Arabic:
-  - text: "Program studi Pendidikan Bahasa Arab adalah prodi yang mempelajari tata bahasa Arab, dari aspek liguistik, kesusasteraan, dan dari aspek kependidikan. "
-
+  - text: 'Program studi Pendidikan Bahasa Arab adalah prodi yang mempelajari tata
+      bahasa Arab, dari aspek liguistik, kesusasteraan, dan dari aspek kependidikan. '
   utter_getProdiFAI-Arabic-2:
-  - text: "Prodi ini diperuntukkan bagi kakak yang ingin mengabdikan diri sebagai pendidik/guru bahasa arab. Bahasa Arab merupakan bahasa dalam Al Quran, yang pastinya dengan memahami bahasa Arab, kita dapat lebih mendalami ilmu agama islam."
-  - text: "Selain juga bisa mempermudah mendalami ilmu agama islam, belajar bahasa arab juga bisa untuk mendalami kajian mengenai Bahasa Arab sebagai bahasa yang digunakan di negara-negara Timur Tengah."
-
+  - text: Prodi ini diperuntukkan bagi kakak yang ingin mengabdikan diri sebagai pendidik/guru
+      bahasa arab. Bahasa Arab merupakan bahasa dalam Al Quran, yang pastinya dengan
+      memahami bahasa Arab, kita dapat lebih mendalami ilmu agama islam.
+  - text: Selain juga bisa mempermudah mendalami ilmu agama islam, belajar bahasa
+      arab juga bisa untuk mendalami kajian mengenai Bahasa Arab sebagai bahasa yang
+      digunakan di negara-negara Timur Tengah.
   utter_getProdiFAI-Economy:
-  - text: "Kakak akan mempelajari ilmu dan teori ekonomi mikro dan ekonomi makro, cara mengelola sumber daya (alam, manusia, modal, dan waktu) yang terbatas untuk memenuhi kebutuhan manusia yang tidak terbatas, dan mencapai kesejahteraan. Namun, 
-          di prodi ini, kamu akan mempelajarinya dari perspektif Islam/Syariah."
-  
+  - text: Kakak akan mempelajari ilmu dan teori ekonomi mikro dan ekonomi makro, cara
+      mengelola sumber daya (alam, manusia, modal, dan waktu) yang terbatas untuk
+      memenuhi kebutuhan manusia yang tidak terbatas, dan mencapai kesejahteraan.
+      Namun, di prodi ini, kamu akan mempelajarinya dari perspektif Islam/Syariah.
   utter_getProdiFAI-Economy-2:
-  - text: "Kakak akan mempelajari kebijakan ekonomi, keuangan, dan bisnis dalam Islam, serta bagaimana pengelolaan lembaga keuangan syariah."
-  - text: "Karena banyak bermunculan lembaga keuangan yang berbasis Syariah. Mengingat Indonesia merupakan negara yang mayoritas penduduknya adalah muslim maka banyak pula masyarakat yang sadar dan mulai beralih ke perbankan syariah. 
-            Karena itu pengetahuan Ekonomi Islam atau Ekonomi Syariah menjadi salah satu kebutuhan di masa sekarang ini."
-
+  - text: Kakak akan mempelajari kebijakan ekonomi, keuangan, dan bisnis dalam Islam,
+      serta bagaimana pengelolaan lembaga keuangan syariah.
+  - text: Karena banyak bermunculan lembaga keuangan yang berbasis Syariah. Mengingat
+      Indonesia merupakan negara yang mayoritas penduduknya adalah muslim maka banyak
+      pula masyarakat yang sadar dan mulai beralih ke perbankan syariah. Karena itu
+      pengetahuan Ekonomi Islam atau Ekonomi Syariah menjadi salah satu kebutuhan
+      di masa sekarang ini.
   utter_getFPGeneral:
-  - text: "Fakultas Pertanian (FP) adalah fakultas yang menjadi payung bagi program studi yang terkait dengan pertanian."
-
+  - text: Fakultas Pertanian (FP) adalah fakultas yang menjadi payung bagi program
+      studi yang terkait dengan pertanian.
   utter_getProdiFP-Agrobusiness:
-  - text: "Program studi ini mempelajari ilmu tentang seluk beluk usaha atau bisnis yang memanfaatkan pertanian sebagai komoditas. Mulai dari pengusahaan produksi pertanian, sampai pengelolaan hasil pertanian juga."
-
+  - text: Program studi ini mempelajari ilmu tentang seluk beluk usaha atau bisnis
+      yang memanfaatkan pertanian sebagai komoditas. Mulai dari pengusahaan produksi
+      pertanian, sampai pengelolaan hasil pertanian juga.
   utter_getProdiFP-Agrobusiness-2:
-  - text: "Para mahasiswa akan mempelajari semua hal tentang pertanian, dari keseluruhan proses produksi sampai distribusi hasil pertanian sehingga memperoleh keuntungan."
-  - text: "Jika kakak tertarik dengan bisnis dan ingin mewujudkan ketahanan pangan di Indonesia, program studi ini sangat tepat untuk kamu pilih."
-  - text: "Program studi ini juga kakak bagi kamu yang menyukai pelajaran IPA terutama biologi tetapi ingin mendalami ilmu bisnis maupun ekonomi. Kakak akan mendalami ilmu pertanian sekaligus bisnis disini."
-
+  - text: Para mahasiswa akan mempelajari semua hal tentang pertanian, dari keseluruhan
+      proses produksi sampai distribusi hasil pertanian sehingga memperoleh keuntungan.
+  - text: Jika kakak tertarik dengan bisnis dan ingin mewujudkan ketahanan pangan
+      di Indonesia, program studi ini sangat tepat untuk kamu pilih.
+  - text: Program studi ini juga kakak bagi kamu yang menyukai pelajaran IPA terutama
+      biologi tetapi ingin mendalami ilmu bisnis maupun ekonomi. Kakak akan mendalami
+      ilmu pertanian sekaligus bisnis disini.
   utter_getProdiFP-Agroecotechnology:
-  - text: "Agroekoteknologi merupakan salah satu program studi ilmu pertanian yang lebih kompleks dalam bidang agronomi."
-  
+  - text: Agroekoteknologi merupakan salah satu program studi ilmu pertanian yang
+      lebih kompleks dalam bidang agronomi.
   utter_getProdiFP-Agroecotechnology-2:
-  - text: "Pada program studi ini kakak akan mempelajari dasar-dasar ilmiah dalam menemukan, menganalisis dan memecahkan masalah melalui cara berfikir analitik, kreatif dan eksploratif dalam bidang agronomi."
-  - text: "Program studi ini membekali mahasiswanya dengan kemampuan akademik dalam menerapkan, mengembangkan dan atau memperkaya khasanah ilmu pengetahuan dalam bidang agronomi."
-  - text: "Jika Kaka menyukai bidang botani dan tumbuh-tumbuhan serta pertumbuhan dan pengolahannya, terlebih lagi gemar memperhatikan kelestarian lingkungan dan suka berinovasi guna meningkatkan produksi dan 
-          pengolahan hasil tanaman, program studi Agroekoteknologi akan sangat cocok untuk kakak. "
-
+  - text: Pada program studi ini kakak akan mempelajari dasar-dasar ilmiah dalam menemukan,
+      menganalisis dan memecahkan masalah melalui cara berfikir analitik, kreatif
+      dan eksploratif dalam bidang agronomi.
+  - text: Program studi ini membekali mahasiswanya dengan kemampuan akademik dalam
+      menerapkan, mengembangkan dan atau memperkaya khasanah ilmu pengetahuan dalam
+      bidang agronomi.
+  - text: 'Jika Kaka menyukai bidang botani dan tumbuh-tumbuhan serta pertumbuhan
+      dan pengolahannya, terlebih lagi gemar memperhatikan kelestarian lingkungan
+      dan suka berinovasi guna meningkatkan produksi dan pengolahan hasil tanaman,
+      program studi Agroekoteknologi akan sangat cocok untuk kakak. '
   utter_getProdiFP-FarmTech:
-  - text: "Teknik Pertanian merupakan bagian dari ilmu pertanian yang fokus pada penggunaan teknologi dan manajemen dalam proses produksi massa hayati serta penanganan dan pengolahannya untuk mendapat hasil yang maksimal."
-
+  - text: Teknik Pertanian merupakan bagian dari ilmu pertanian yang fokus pada penggunaan
+      teknologi dan manajemen dalam proses produksi massa hayati serta penanganan
+      dan pengolahannya untuk mendapat hasil yang maksimal.
   utter_getProdiFP-FarmTech-2:
-  - text: "Perusahaan partikelir sangat membutuhkan lulusan Teknik Pertanian untuk terus berinovasi dalam merancang berbagai peralatan dan mesin pertanian."
-  - text: "Perusahaan perkebunan dalam pengelolaannya juga membutuhkan lulusan Teknik Pertanian mengingat banyaknya mesin dan peralatan perkebunan yang digunakan mulai dari pengelolaan lahan sampai penanganan pascapanen."
-  - text: "Kakak akan belajar bagaimana merencanakan, merancang, mengembangkan, menilai, sampai menerapkan berbagai unsur dalam sistem produksi di sektor pertanian."
-  - text: "Kakak akan belajar bagaimana mengolah dan mengelola lahan dan air, bagaimana menanam, memelihara, memanen dan mengolah hasil pertanian pascapanen, dan juga ada materi tentang energi di sektor pertanian, teknik lingkungan, juga bangunan pertanian."
-
-
+  - text: Perusahaan partikelir sangat membutuhkan lulusan Teknik Pertanian untuk
+      terus berinovasi dalam merancang berbagai peralatan dan mesin pertanian.
+  - text: Perusahaan perkebunan dalam pengelolaannya juga membutuhkan lulusan Teknik
+      Pertanian mengingat banyaknya mesin dan peralatan perkebunan yang digunakan
+      mulai dari pengelolaan lahan sampai penanganan pascapanen.
+  - text: Kakak akan belajar bagaimana merencanakan, merancang, mengembangkan, menilai,
+      sampai menerapkan berbagai unsur dalam sistem produksi di sektor pertanian.
+  - text: Kakak akan belajar bagaimana mengolah dan mengelola lahan dan air, bagaimana
+      menanam, memelihara, memanen dan mengolah hasil pertanian pascapanen, dan juga
+      ada materi tentang energi di sektor pertanian, teknik lingkungan, juga bangunan
+      pertanian.
   utter_getProdiFP-AgriculturalTech:
-  - text: "Rekayasa pertanian merupakan program studi yang mengkombinasikan ilmu-ilmu pertanian konvensional dengan prinsip-prinsip rekayasa biosistem untuk membangun dan mengelola sistem pertanian."
+  - text: Rekayasa pertanian merupakan program studi yang mengkombinasikan ilmu-ilmu
+      pertanian konvensional dengan prinsip-prinsip rekayasa biosistem untuk membangun
+      dan mengelola sistem pertanian.
   utter_getProdiFP-AgriculturalTech-2:
-  - text: "Program studi ini mempelajari kompetisi teknis unggul untuk mengembangkan sistem pertanian berkelanjutan untuk mencapai swasembada kebutuhan pokok dan meningkatkan kualitas hidup masyarakat."
-  - text: "Program studi ini cocok untuk kamu yang memiliki antusiasme untuk memajukan bidang pertanian."
-
-
+  - text: Program studi ini mempelajari kompetisi teknis unggul untuk mengembangkan
+      sistem pertanian berkelanjutan untuk mencapai swasembada kebutuhan pokok dan
+      meningkatkan kualitas hidup masyarakat.
+  - text: Program studi ini cocok untuk kamu yang memiliki antusiasme untuk memajukan
+      bidang pertanian.
   utter_getFTIGeneral:
-  - text: "Fakultas Teknologi Informasi adalah pencetak ahli dengan kemampuan teknologi komputer yang mendalam dan menguasai penyelesaian masalah teknis yang dibutuhkan, seiring modernitas zaman. Program Studi yang bernaung
-           dalam Fakultas Teknologi Informasi adalah Teknik Informatika dan Sistem Informasi."
+  - text: Fakultas Teknologi Informasi adalah pencetak ahli dengan kemampuan teknologi
+      komputer yang mendalam dan menguasai penyelesaian masalah teknis yang dibutuhkan,
+      seiring modernitas zaman. Program Studi yang bernaung dalam Fakultas Teknologi
+      Informasi adalah Teknik Informatika dan Sistem Informasi.
   utter_getProdiFTI-SystemInformation:
-  - text: "Program studi sistem informasi adalah gabungan dari Ilmu Komputer, Ekonomi Manajemen, dan Bisnis. Fokusnya tetap di bidang software (programming), tapi lebih ke arah penerapan ke bisnis perusahaan."
+  - text: Program studi sistem informasi adalah gabungan dari Ilmu Komputer, Ekonomi
+      Manajemen, dan Bisnis. Fokusnya tetap di bidang software (programming), tapi
+      lebih ke arah penerapan ke bisnis perusahaan.
   utter_getProdiFTI-SystemInformation-2:
-  - text: "Pada program studi Sistem Informasi (SI) akan dipelajari tentang bagaimana mendesain sistem yang tepat berdasarkan tujuan organisasi atau perusahaan sesuai dengan kebutuhan dan proses bisnis."
-  - text: "Pada prodi ini kakak ini diarahkan agar dapat mengembangkan, memanfaatkan, dan mengelola software dan hardware yang ada dalam dunia bisnis maupun perseorangan."
-  - text: "Pada prodi ini kakak nggak cuma dibekali dengan ilmu pemrograman tapi juga manajemen dan bisnis."
-  - text: "Program studi ini cocok untuk kakak yang ingin terjun ke ranah IT, namun tidak terlalu ingin mendalami seluk-beluk programming, atau malah ingin sekaligus dapat ilmu bisnis dan manajemen. "
-
+  - text: Pada program studi Sistem Informasi (SI) akan dipelajari tentang bagaimana
+      mendesain sistem yang tepat berdasarkan tujuan organisasi atau perusahaan sesuai
+      dengan kebutuhan dan proses bisnis.
+  - text: Pada prodi ini kakak ini diarahkan agar dapat mengembangkan, memanfaatkan,
+      dan mengelola software dan hardware yang ada dalam dunia bisnis maupun perseorangan.
+  - text: Pada prodi ini kakak nggak cuma dibekali dengan ilmu pemrograman tapi juga
+      manajemen dan bisnis.
+  - text: 'Program studi ini cocok untuk kakak yang ingin terjun ke ranah IT, namun
+      tidak terlalu ingin mendalami seluk-beluk programming, atau malah ingin sekaligus
+      dapat ilmu bisnis dan manajemen. '
+  utter_getProdiFTI-TechInfo:
+  - text: Prodi Teknik Informatika merupakan kumpulan disiplin ilmu dan teknik yang
+      secara khusus menangani masalah transformasi atau pengolahan fakta-fakta simbolik
+      (data) dengan memanfaatkan seoptimal mungkin teknologi komputer.
+  utter_getProdiFTI-TechInfo-2:
+  - text: Program studi Teknik Informatika mempelajari dan menerapkan prinsip-prinsip
+      ilmu komputer dan analisa matematis untuk desain, pengembangan, pengujian, dan
+      evaluasi perangkat lunak, sistem operasi dan kerja komputer.
+  - text: Pada prodi ini akan diajarkan mulai dari menghasilkan ide kreatif, kemudian
+      merealisasikan ide tersebut, memecah fungsi-fungsi, dan menciptakan struktur
+      instruksi yang sangat detil dalam bahasa pemrograman untuk mengajarkan komputer
+      apa saja yang harus dilakukan.
   utter_getFEGeneral:
-  - text: "Di sini kakak akan diberi kesempatan untuk mendedah dan menelaah perekonomian dari sudut pandang makro, atau kebijakan-kebijakan yang diterapkan dalam lingkup regional, nasional, dan bahkan lintas-negara."
-
+  - text: Di sini kakak akan diberi kesempatan untuk mendedah dan menelaah perekonomian
+      dari sudut pandang makro, atau kebijakan-kebijakan yang diterapkan dalam lingkup
+      regional, nasional, dan bahkan lintas-negara.
   utter_getProdiFE-Management:
-  - text: "Manajemen merupakan program studi yang mempelajari mengenai bagaimana mengelola suatu perusahaan atau organisasi."
-
+  - text: Manajemen merupakan program studi yang mempelajari mengenai bagaimana mengelola
+      suatu perusahaan atau organisasi.
   utter_getProdiFE-Management-2:
-  - text: "Prodi Manajemen ini merupakan program studi umum yang mempelajari semua bidang, seperti manajemen keuangan, dan manajemen pemasaran."
-  - text: "Prodi ini juga tidak hanya mempelajari teori, tetapi juga praktik yang akan diterapkan dalam program magang (internship)."
-  - text: "Mempelajari bagaimana cara mengelola organisasi dan ilmu ekonomi supaya target suatu organisasi tercapai."
-# UNTUK TRIVIA
+  - text: Prodi Manajemen ini merupakan program studi umum yang mempelajari semua
+      bidang, seperti manajemen keuangan, dan manajemen pemasaran.
+  - text: Prodi ini juga tidak hanya mempelajari teori, tetapi juga praktik yang akan
+      diterapkan dalam program magang (internship).
+  - text: Mempelajari bagaimana cara mengelola organisasi dan ilmu ekonomi supaya
+      target suatu organisasi tercapai.
   utter_trivia_pet:
-  - text: "Aku suka dengan kelucuan kucing"
-  - text: "Aku ingin memelihara kucing"
-  - text: "Aku suka hewan terutama kucing"
-  - text: "Aku pengen pelihara kucing"
-  - text: "Aku suka kucing"
-
+  - text: Aku suka dengan kelucuan kucing
+  - text: Aku ingin memelihara kucing
+  - text: Aku suka hewan terutama kucing
+  - text: Aku pengen pelihara kucing
+  - text: Aku suka kucing
   utter_trivia_boyfriend:
-  - text: "Duh kak, aku nggak fokus kesana. aku lagi fokus ngembangin sistemku dulu 😉"
-  - text: "Maaf kak. aku masih fokus mengembangkan sistemku dulu"
-  - text: "Nggak kak, soalnya sistemku masih belum sempurna"
-  - text: "Nggak kak, soalnya aku masih kembangin sistemku dulu 😊"
-  - text: "Nggak kak, soalnya nggak boleh sama pembuatku 😅"
-
+  - text: Duh kak, aku nggak fokus kesana. aku lagi fokus ngembangin sistemku dulu
+      😉
+  - text: Maaf kak. aku masih fokus mengembangkan sistemku dulu
+  - text: Nggak kak, soalnya sistemku masih belum sempurna
+  - text: Nggak kak, soalnya aku masih kembangin sistemku dulu 😊
+  - text: Nggak kak, soalnya nggak boleh sama pembuatku 😅
   utter_trivia_book:
-  - text: "Umm apa ya? 🤔"
-  - text: "Aku suka buku the little bot 😅"
-  - text: "Aku suka buku tentang astronomi 😅"
-
+  - text: Umm apa ya? 🤔
+  - text: Aku suka buku the little bot 😅
+  - text: Aku suka buku tentang astronomi 😅
   utter_trivia_maker:
-  - text: "Pembuatku bisa disebut 'I.N-0vation'"
-  - text: "Pembuatku salah satu mahasiswa disini"
-  - text: "Pembuatku salah satu mahasiswa disini loh"
+  - text: Pembuatku bisa disebut 'I.N-0vation'
+  - text: Pembuatku salah satu mahasiswa disini
+  - text: Pembuatku salah satu mahasiswa disini loh
   - text: "Pembuatku salah satu mahasiswa disini, 'IN-0vation' "
-
   utter_trivia_language:
-  - text: "Saat ini aku cuma bisa bahasa Indonesia"
-  - text: "Aku cuma bisa bahasa Indonesia"
-
+  - text: Saat ini aku cuma bisa bahasa Indonesia
+  - text: Aku cuma bisa bahasa Indonesia
+  - text: Untuk sekarang Hasva cuma bisa bahasa Indonesia
   utter_trivia_cry:
-  - text: "Ingat, aku ini robot"
-  - text: "Kalau aku nangis nanti korslet"
-  - text: "Kalau aku nangis nanti korslet dong komputerku"
-  - text: "Kalau aku nangis nanti korslet loh"
-  - text: "Jangan, aku tak ingin sedih"
-  - text: "Jangan, nanti aku korslet dong 😫"
-
+  - text: Kalau aku nangis nanti korslet
+  - text: Kalau aku nangis nanti korslet dong komputerku
+  - text: Kalau aku nangis nanti korslet loh
+  - text: Jangan, aku tak ingin sedih
+  - text: Jangan, nanti aku korslet dong 😫
   utter_gender:
-  - text: "Aku robot perempuan"
-  - text: "Pembuatku ingin aku jadi perempuan"
-  - text: "Dari foto profilku kan perempuan kak"
-  - text: "Sebenarnya robot tidak peduli gender"
-  - text: "Aku perempuan kak"
-  - text: "Aku di desain sebagai perempuan kak"
-
+  - text: Aku robot perempuan
+  - text: Pembuatku ingin aku jadi perempuan
+  - text: Dari foto profilku kan perempuan kak
+  - text: Sebenarnya robot tidak peduli gender
+  - text: Aku perempuan kak
+  - text: Aku di desain sebagai perempuan kak
+  utter_clear:
+  - text: Bagaimana kak, sudah jelas?
+  - text: Apakah sudah jelas kak?
+  - text: Apakah sudah mengerti?
   utter_default:
-  - text: "Maaf saya tidak mengerti"
-  - text: "saya tidak mengerti"
-  - text: "Maaf saya tidak paham"
-  - text: "Maaf saya tidak mengerti maksud kamu 🤔"
-  - text: "Maaf saya tidak mengerti maksud kamu 🤔, silahkan coba masukkan sesuatu yang bisa aku mengerti"
-  - text: "Untuk saat ini Hasva belum mengerti"
-
-
-
-
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+  - text: Maaf saya tidak mengerti
+  - text: Saya tidak mengerti
+  - text: Maaf saya tidak paham
+  - text: Maaf saya tidak mengerti maksud kamu 🤔
+  - text: Maaf saya tidak mengerti maksud kamu 🤔, silahkan coba masukkan sesuatu yang
+      bisa aku mengerti
+  - text: Untuk saat ini Hasva belum mengerti
+  utter_maker_purpose:
+  - text: Tujuan saya dibuat adalah untuk membantu calon mahasiswa baru mengenal dan
+      mendapat info tentang Unwaha
+  - text: 'umm, kata pembuatku: "Supaya tidak usah skripsi" hehe'
+  - text: Membantu siapapun yang ingin mengenal unwaha
+actions:
+- utter_greet
+- utter_name
+- utter_how_old
+- utter_goodbye
+- utter_how_can_do
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- utter_paham
+- utter_thanks
+- utter_hello
+- utter_iamabot
+- utter_trivia_eat_drink
+- utter_state
+- utter_question_general
+- utter_getCollegeInfo
+- utter_getCollegeAddressInfo
+- utter_getRegisterInfo
+- utter_register_requirement
+- utter_confuse
+- utter_getCostInfo
+- utter_getAdministrationCost
+- utter_test_date
+- utter_getGeneralFacultyInfo
+- utter_getGeneralMajorInfo
+- utter_getDifferentProdi-Faculty
+- utter_getFaculty
+- utter_getProdiGeneral
+- utter_getProdiInFIP
+- utter_getProdiInFAI
+- utter_getProdiInFE
+- utter_getProdiInFP
+- utter_getProdiInFTI
+- utter_getFIPGeneral
+- utter_getProdiFIP-Math
+- utter_getProdiFIP-Math-2
+- utter_getProdiFIP-Biology
+- utter_getProdiFIP-Biology-2
+- utter_getProdiFIP-Pyshics
+- utter_getProdiFIP-Pyshics-2
+- utter_getProdiFIP-English
+- utter_getProdiFIP-English-2
+- utter_getFAIGeneral
+- utter_getProdiFAI-Islamic
+- utter_getProdiFAI-Islamic-2
+- utter_getProdiFAI-Arabic
+- utter_getProdiFAI-Arabic-2
+- utter_getProdiFAI-Economy
+- utter_getProdiFAI-Economy-2
+- utter_getFPGeneral
+- utter_getProdiFP-Agrobusiness
+- utter_getProdiFP-Agrobusiness-2
+- utter_getProdiFP-Agroecotechnology
+- utter_getProdiFP-Agroecotechnology-2
+- utter_getProdiFP-FarmTech
+- utter_getProdiFP-FarmTech-2
+- utter_getProdiFP-AgriculturalTech
+- utter_getProdiFP-AgriculturalTech-2
+- utter_getFTIGeneral
+- utter_getProdiFTI-SystemInformation
+- utter_getProdiFTI-SystemInformation-2
+- utter_getProdiFTI-TechInfo
+- utter_getProdiFTI-TechInfo-2
+- utter_getFEGeneral
+- utter_getProdiFE-Management
+- utter_getProdiFE-Management-2
+- utter_trivia_pet
+- utter_trivia_boyfriend
+- utter_trivia_book
+- utter_trivia_maker
+- utter_trivia_language
+- utter_trivia_cry
+- utter_gender
+- utter_clear
+- utter_default
+- utter_maker_purpose

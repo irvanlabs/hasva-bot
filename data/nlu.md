@@ -1,9 +1,11 @@
-
-
 ## intent:greet
 - assalamualaikum
+- assalamu'alaikum
 - halo
+- halo kak
+- halo kakak
 - hai
+- hai kak
 - selamat pagi
 - selamat siang
 - selamat sore
@@ -14,11 +16,15 @@
 - woy
 - bro
 - sis
+- Halo kak
+- Hai kak
 
 ## intent:goodbye
 - bye
+- bye kak
 - selamat tinggal
 - sampai jumpa
+- sampai jumpa kak
 - sampai jumpa lagi
 - sampai bertemu lagi
 - sampai nanti
@@ -35,10 +41,13 @@
 - betul sekali
 - benar banget
 - setuju
+- oke kak
 - oke
 - yup
 - betul
+- betul kak
 - bener banget
+- bener banget kak
 - cantik
 
 ## intent:deny
@@ -68,6 +77,18 @@
 - aku baik
 - alhamdulillah
 
+## intent:how_can_do
+- apa yang bisa kamu lakukan?
+- hal apa yang bisa kamu lakukan?
+- hal apa yang bisa kamu lakukan
+- apa yang bisa kamu lakukan
+- kamu bisa apa?
+- kamu bisa apa ?
+- kamu bisa apa aja
+- kamu bisa apa aja?
+- kamu bisa apa saja?
+- kamu bisa apa saja
+
 ## intent:mood_unhappy
 - sedih
 - aku sedang sedih
@@ -88,6 +109,7 @@
 - sengsara
 - marah
 - lagi gak mood
+- aku lagi galau nih
 
 ## intent:thanks
 - terima kasih
@@ -107,6 +129,25 @@
 - Trims ya
 - terima kasih hasva
 - terimakasih!
+
+## intent:clear
+- sudah jelas
+- paham
+- paham kak
+- mengerti
+- ngerti
+- ngerti kak
+- sudah
+- sudah kak
+- faham
+- faham kak
+- sudah mengerti
+- sudah paham
+- sudah faham
+- ya paham
+- ya paham kak
+- ya faham
+- ya ngerti
 
 ## intent:bot_challenge
 - apa kamu ai?
@@ -135,6 +176,7 @@
 - kamu beneran robot ?
 - kamu beneran bot
 - kamu bot ya
+- kakak bot ya
 
 ## intent:how_old
 - umur kamu berapa?
@@ -157,10 +199,12 @@
 ## intent:question_state
 - Selamat pagi, apa kabarnya?
 - hei apa kabar?
+- hei kak apa kabar?
 - bagaimana kabarmu?
 - bagaimana keadaanmu?
 - apa kamu baik-baik saja?
 - apa kabar?
+- apa kabar kak
 - apa kabar
 - apa kabarnya
 - apa kamu sehat?
@@ -246,6 +290,7 @@
 - dimana kamu dibuat?
 - pembuatmu siapa?
 - siapa yang memprogram kamu
+- siapa yang memrogram kamu?
 - siapa yang meprogram kamu
 - siapa yang membuatmu
 - siapa yang membuatmu?
@@ -255,7 +300,7 @@
 - kamu dibuat siapa?
 - kamu dibuat oleh siapa
 - kamu dibuat oleh siapa ?
-
+- siapa pembuat kakak?
 
 ## intent:trivia_pet
 - kamu suka kucing?
@@ -282,7 +327,9 @@
 - kamu mau nggak jadi pacar aku ?
 - kamu mau jadi pacar aku ?
 - kamu mau jadi pacar aku
-
+- kamu udah punya pacar?
+- kamu udah punya pacar ?
+- apa kamu punya pacar
 
 ## intent:trivia_book
 - Apa buku favorit mu?
@@ -291,6 +338,7 @@
 - suka baca buku?
 - suka baca buku ?
 - suka baca?
+- Kamu suka buku apa
 
 ## intent:gender
 - kamu cowok atau cewek?
@@ -319,33 +367,17 @@
 - sekarang lagi ngapain?
 - ngapain sekarang?
 
-## lookup:fakultas
-data/lookup/fakultas.txt
-
-## synonym:fakultas ilmu pendidikan
-- fip
-- FIP
-
-## synonym:fakultas teknologi informatika
-- fti
-- FTI
-
-## synonym:fakultas agama islam
-- fai
-- FAI
-
-## synonym:fakultas pertanian
-- fp
-- FP
-
 ## intent:getCollegeInfo
 - apa itu unwaha?
-- dimana unwaha?
-- dimana letak unwaha?
-- alamat unwaha?
 - unwaha itu kampus apa?
 - jelaskan unwaha
 - unwaha itu gimana?
+- jelaskan kampus unwaha
+
+## intent:getCollegeAddressInfo
+- dimana unwaha?
+- dimana letak unwaha?
+- alamat unwaha?
 - unwaha alamatnya dimana?
 - alamat unwaha apa?
 - alamat unwaha
@@ -354,6 +386,11 @@ data/lookup/fakultas.txt
 - letak univnya dimana
 - lokasi
 - lokasi unwaha dimana?
+- dimana lokasi unwaha
+- alamatnya unwaha dimana
+- dimana alamat unwaha?
+- lokasi unwaha dimana kak?
+- Lokasi unwaha dimana
 
 ## intent:getRegisterInfo
 - bagaimana cara daftar?
@@ -421,16 +458,16 @@ data/lookup/fakultas.txt
 - biaya daftarnya gimana?
 - biaya daftarnya bagaimana?
 - biaya formulirnya berapa?
-- biaya pendaftaran reguler berapa? 
-- biaya pendaftaran jalur prestasi berapa? 
-- biaya pendaftaran jalur undangan berapa? 
-- biaya pendaftaran 3000 sarjana nu berapa? 
-- yang reguler berapa biaya pendaftarannya? 
-- berapa biaya daftar yang reguler? 
-- administrasi pendaftaran berapa? 
-- administrasi pendaftaranya berapa? 
-- administrasi pendaftarannya berapa? 
-- administrasi pendaftarannya berapa ? 
+- biaya pendaftaran reguler berapa?
+- biaya pendaftaran jalur prestasi berapa?
+- biaya pendaftaran jalur undangan berapa?
+- biaya pendaftaran 3000 sarjana nu berapa?
+- yang reguler berapa biaya pendaftarannya?
+- berapa biaya daftar yang reguler?
+- administrasi pendaftaran berapa?
+- administrasi pendaftaranya berapa?
+- administrasi pendaftarannya berapa?
+- administrasi pendaftarannya berapa ?
 - adminnya berapa?
 - adminya berapa?
 - adminnya berapa
@@ -452,7 +489,6 @@ data/lookup/fakultas.txt
 - syarat daftarnya apa?
 - persyaratannya apa saja
 - persyaratanya apa saja
-
 
 ## intent:getCostInfo
 - biaya gimana
@@ -546,100 +582,6 @@ data/lookup/fakultas.txt
 - kalau fakultas
 - kalo fakultasnya
 
-<!-- start synonym prodi -->
-
-## synonym:program studi
-- prodi
-- Prodi
-- PRODI
-- Jurusan
-- jurusan
-
-## synonym:pendidikan matematika
-- PM
-- pm
-- Pendidikan Matematika
-
-## synonym:pendidikan bahasa inggris
-- pbi
-- PBI
-- Pendidikan Bahasa Inggris
-
-## synonym:pendidikan biologi
-- pb
-- PB
-- Pendidikan Biologi
-
-## synonym:pendidikan fisika
-- pf
-- PF
-- Pendidikan Fisika
-
-## synonym:sistem informasi
-- si
-- SI
-- Sistem Informasi
-
-## synonym:teknik informatika
-- ti
-- TI
-- Teknik Informatika
-
-## synonym:pendidikan bahasa arab
-- pba
-- PBA
-- Pendidikan Bahasa Arab
-
-## synonym:pendidikan agama islam
-- pai
-- PAI
-- Pendidikan agama islam
-
-## synonym:agrobisnis
-- Agrobisnis
-- Agribisnis
-- agribisnis
-- AB
-- ab
-
-## synonym:agroekoteknologi
-- Agroekoteknologi
-- Agroteknologi
-- Agreoteknologi
-- agroteknologi
-- agreoteknologi
-- AE
-- ae
-
-## synonym:teknologi hasil pertanian
-- Teknologi Hasil Pertanian
-- THP
-- thp
-
-## synonym:rekayasa pertanian dan biosistem
-- Rekayasa Pertanian dan Biosistem
-- RPB
-- rpb
-
-## synonym:manajemen
-- management
-- Manajemen
-- menejemen
-- Menejemen
-- manejemen
-- menajemen
-
-## synonym:ekonomi syariah
-- es
-- ES
-- EKONOMI SYARIAH
-- Ekonomi Syariah
-
-<!-- synonym prodi -->
-
-## lookup:prodi
-data/lookup/prodi.txt
-
 ## intent:getProdiGeneral
 - ada prodi apa saja?
 - ada program studi apa saja?
@@ -661,15 +603,11 @@ data/lookup/prodi.txt
 - kalau prodinya?
 - kalau program studi?
 - jelaskan program studinya
-<!-- - apa itu [fti](prodi)
-- jelaskan prodi [fti](prodi) -->
-
-## lookup:fip-prodi
-data/lookup/prodi-fip.txt
 
 ## intent:getFIPGeneral
 - singkatan dari fip?
 - fakultas ilmu pendidikan itu bagaimana?
+- fakultas ilmu pendidikan itu
 - jelaskan prodi fip
 - fip itu kepanjangannya apa?
 - apa isi dari fip?
@@ -677,20 +615,23 @@ data/lookup/prodi-fip.txt
 - apa tujuan fip?
 - fip itu apa?
 - fip itu apa
-
+- apasih fip itu?
+- di fip diajari apa?
+- fip itu singkatannya apa?
 
 ## intent:getProdiInFIP
 - fip itu apa aja?
 - fip itu apa saja?
 - apa saja prodi di fip?
 - apa saja prodi di fip
-- apasih fip itu?
 - prodi di fip apa aja?
-- fip itu singkatannya apa?
-- di fip diajari apa?
 - prodi di fip apa saja?
 - prodi di fakultas ilmu pendidikan apa saja?
 - program studi di fakultas ilmu pendidikan apa saja?
+- prodi fip apa saja?
+- prodi fip apa saja
+- prodinya fip apa saja
+- program studinya fip apa saja
 
 ## intent:getProdiFIP-Math
 - prodi pendidikan matematika
@@ -706,15 +647,6 @@ data/lookup/prodi-fip.txt
 - ngapain aja di matematika?
 - ngapain aja di prodi matematika?
 - ngapain aja di program studi matematika?
-- kenapa matematika?
-- kenapa pendidikan matematika?
-- kenapa prodi matematika?
-- di pendidikan matematika belajar apa?
-- di prodi pendidikan matematika belajar apa?
-- di pendidikan matematika belajar apa saja?
-- di prodi pendidikan matematika belajar apa saja?
-- apa yang dipelajari di prodi matematika?
-- apa yang dipelajari di program studi matematika?
 
 ## intent:getProdiFIP-Math-2
 - apa manfaat program studi matematika?
@@ -729,6 +661,16 @@ data/lookup/prodi-fip.txt
 - mengapa saya harus ke prodi matematika?
 - apa untungnya buat saya ke matematika?
 - apa untungnya buat saya ke pendidikan matematika?
+- di pendidikan matematika belajar apa?
+- di prodi pendidikan matematika belajar apa?
+- di pendidikan matematika belajar apa saja?
+- di prodi pendidikan matematika belajar apa saja?
+- apa yang dipelajari di prodi matematika?
+- apa yang dipelajari di program studi matematika?
+- kenapa matematika?
+- kenapa pendidikan matematika?
+- kenapa prodi matematika?
+- di prodi matematika belajar apa saja
 
 ## intent:getProdiFIP-Biology
 - apa itu pendidikan biologi?
@@ -844,11 +786,6 @@ data/lookup/prodi-fip.txt
 - apa yang dipelajari di prodi bahasa inggris?
 - apa yang dipelajari di program studi bahasa inggris?
 
-<!-- Fakultas Agama Islam -->
-
-## lookup:fai-prodi
-data/lookup/prodi-fai.txt
-
 ## intent:getFAIGeneral
 - apa itu fai?
 - jurusan fai itu apa?
@@ -876,9 +813,7 @@ data/lookup/prodi-fai.txt
 - prodi di fakultas agama islam apa saja?
 - program studi di fakultas agama islam apa saja?
 - jelaskan prodi fai
-<!-- - apa itu prodi [pendidikan agama islam](fai-prodi)
-- apa itu program studi [pendidikan bahasa arab](fai-prodi) -->
-- prodinya apa saja
+- prodinya fai apa saja
 - program studinya apa saja
 - program studinya apa saja?
 
@@ -958,6 +893,7 @@ data/lookup/prodi-fai.txt
 - di bahasa arab belajar apa saja?
 - di pendidikan bahasa arab belajar apa saja?
 - di prodi pendidikan bahasa arab belajar apa saja?
+- kenapa jurusan bahasa arab
 - apa yang dipelajari di prodi bahasa arab?
 - apa yang dipelajari di program studi bahasa arab?
 
@@ -976,7 +912,6 @@ data/lookup/prodi-fai.txt
 - ekonomi syariah yang bagaimana?
 - ekonomi syariah itu yang bagaimana?
 - ekonomi syariah itu yang gimana?
-
 
 ## intent:getProdiFAI-Economy-2
 - apa manfaat program studi ekonomi syariah?
@@ -1003,7 +938,6 @@ data/lookup/prodi-fai.txt
 - apa yang dipelajari di prodi ekonomi syariah?
 - apa yang dipelajari di program studi ekonomi syariah
 
-
 ## intent:getFPGeneral
 - apa itu fp?
 - jurusan fp itu apa?
@@ -1020,6 +954,20 @@ data/lookup/prodi-fai.txt
 - fp itu apa
 - apa itu fp
 - apa tujuan fp?
+
+## intent:getProdiInFP
+- fp itu apa aja?
+- fp itu apa saja?
+- apa saja prodi di fp?
+- apa saja prodi di fp
+- prodi di fp apa aja?
+- prodi di fp apa saja?
+- prodi di fakultas pertanian apa saja?
+- program studi di fakultas pertanian apa saja?
+- prodi fp apa saja?
+- prodi fp apa saja
+- prodinya fp apa saja
+- program studinya fp apa saja
 
 ## intent:getProdiFP-Agrobusiness
 - apa itu agrobisnis?
@@ -1043,7 +991,6 @@ data/lookup/prodi-fai.txt
 - agrobisnis itu yang bagaimana
 - agrobisnis itu yang gimana?
 - agrobisnis itu yang apa?
-
 
 ## intent:getProdiFP-Agrobusiness-2
 - apa manfaat program studi agrobisnis?
@@ -1069,7 +1016,6 @@ data/lookup/prodi-fai.txt
 - di prodi agrobisnis belajar apa saja?
 - apa yang dipelajari di prodi agrobisnis?
 - apa yang dipelajari di program studi agrobisnis
-
 
 ## intent:getProdiFP-Agroecotechnology
 - prodi agroekoteknologi
@@ -1137,7 +1083,6 @@ data/lookup/prodi-fai.txt
 - jurusan teknik pertanian itu apa
 - apa itu jurusan teknik pertanian
 
-
 ## intent:getProdiFP-FarmTech-2
 - apa manfaat program studi teknik pertanian?
 - apa yang dipelajari prodi teknik pertanian?
@@ -1175,7 +1120,6 @@ data/lookup/prodi-fai.txt
 - rekayasa pertanian dan biosistem itu  apa?
 - rekayasa pertanian dan biosistem itu  apa
 - rekayasa pertanian dan biosistem itu yang gimana?
-
 
 ## intent:getProdiFP-AgriculturalTech-2
 - apa manfaat program studi rekayasa pertanian dan biosistem?
@@ -1220,6 +1164,21 @@ data/lookup/prodi-fai.txt
 - fti itu apa
 - apa itu fti
 - apa tujuan fti?
+
+## intent:getProdiInFTI
+- fti itu apa aja?
+- fti itu apa saja?
+- apa saja prodi di fti?
+- apa saja prodi di fti
+- prodi di fti apa aja?
+- prodi di fti apa saja?
+- prodi di fakultas teknologi informasi apa saja?
+- program studi di fakultas teknologi informatika apa saja?
+- program studi di fakultas teknologi informasi apa saja?
+- prodi fti apa saja?
+- prodi fti apa saja
+- prodinya fti apa saja
+- program studinya fti apa saja
 
 ## intent:getProdiFTI-SystemInformation
 - apa itu sistem informasi?
@@ -1329,6 +1288,19 @@ data/lookup/prodi-fai.txt
 - apa itu fe?
 - apa tujuan fe?
 
+## intent:getProdiInFE
+- fe itu apa aja?
+- fe itu apa saja?
+- apa saja prodi di fe?
+- apa saja prodi di fe
+- prodi di fe apa aja?
+- prodi di fe apa saja?
+- prodi di fakultas ekonomi apa saja?
+- program studi di fakultas ekonomi apa saja?
+- prodi fe apa saja?
+- prodi fe apa saja
+- prodinya fe apa saja
+- program studinya fe apa saja
 
 ## intent:getProdiFE-Management
 - apa itu manajemen?
@@ -1369,3 +1341,145 @@ data/lookup/prodi-fai.txt
 - di prodi manajemen belajar apa saja?
 - apa yang dipelajari di prodi manajemen?
 - apa yang dipelajari di program studi manajemen
+
+## intent:maker_purpose
+- apa tujuan pembuatmu?
+- mengapa kamu dibuat?
+- kenapa kamu dibuat
+- apa tujuan kamu dibuat?
+- apa tujuan kamu dibuat
+- tujuan kamu di desain 
+- tujuan kamu di desain apa?
+- kenapa pembuatmu membuat kamu
+- kenapa pembuatmu membuatmu
+- kenapa Hasva dibuat
+- kenapa kak Hasva dibuat
+- tujuan kak hasva dibuat apa
+- tujuan kak hasva dibuat kenapa?
+- apa tujuan hasva dibuat?
+- tujuan hasva dibuat
+
+## synonym:agrobisnis
+- Agribisnis
+- agribisnis
+- Agrobisnis
+- ab
+- AB
+
+## synonym:agroekoteknologi
+- agreoteknologi
+- ae
+- Agroekoteknologi
+- Agroteknologi
+- AE
+- Agreoteknologi
+- agroteknologi
+
+## synonym:ekonomi syariah
+- es
+- ES
+- EKONOMI SYARIAH
+- Ekonomi Syariah
+
+## synonym:fakultas agama islam
+- fai
+- FAI
+
+## synonym:fakultas ilmu pendidikan
+- FIP
+- fip
+
+## synonym:fakultas pertanian
+- FP
+- fp
+
+## synonym:fakultas teknologi informatika
+- FTI
+- fti
+
+## synonym:kamu
+- kakak
+- bu
+- anda
+- mbak
+- elo
+- lo
+- kak
+- kaka
+- mas
+
+## synonym:lokasi
+- alamat
+- tempat
+- letak
+- tepatnya
+
+## synonym:manajemen
+- manejemen
+- Manajemen
+- Menejemen
+- management
+- menejemen
+- menajemen
+
+## synonym:pendidikan agama islam
+- Pendidikan agama islam
+- PAI
+- pai
+
+## synonym:pendidikan bahasa arab
+- Pendidikan Bahasa Arab
+- pba
+- PBA
+
+## synonym:pendidikan bahasa inggris
+- PBI
+- Pendidikan Bahasa Inggris
+- pbi
+
+## synonym:pendidikan biologi
+- pb
+- PB
+- Pendidikan Biologi
+
+## synonym:pendidikan fisika
+- Pendidikan Fisika
+- pf
+- PF
+
+## synonym:pendidikan matematika
+- pm
+- Pendidikan Matematika
+- PM
+
+## synonym:program studi
+- jurusan
+- PRODI
+- Prodi
+- Jurusan
+- prodi
+
+## synonym:rekayasa pertanian dan biosistem
+- rpb
+- RPB
+- Rekayasa Pertanian dan Biosistem
+
+## synonym:sistem informasi
+- SI
+- si
+- Sistem Informasi
+
+## synonym:sudah
+- udah
+- Sudah
+- dah
+
+## synonym:teknik informatika
+- ti
+- TI
+- Teknik Informatika
+
+## synonym:teknologi hasil pertanian
+- THP
+- Teknologi Hasil Pertanian
+- thp
