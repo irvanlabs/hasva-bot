@@ -82,15 +82,15 @@ responses:
   - text: Hai juga. 🙂
   - text: Halo 🖐
   utter_name:
-  - text: Hai, namaku Hasva. Ada yang bisa aku bantu?
-  - text: Hai, namaku Hasva. Ada yang bisa dibantu?
-  - text: Halo, namaku Hasva. Ada yang bisa dibantu?
+  - text: Namaku Hasva. Ada yang bisa aku bantu?
+  - text: Namaku Hasva. Ada yang bisa dibantu?
+  - text: Namaku Hasva. Ada yang bisa dibantu?
   utter_how_old:
   - text: Ya karena baru dibuat berarti saya masih muda 😂
   - text: Gak sopan loh tanya usia pada robot
   - text: Aku masih muda, karena baru dibuat beberapa minggu
   - text: Hmm, yang jelas aku masih muda
-  - text: Aku lupa 😅
+  - text: Aku lupa. Soalnya waktu itu aku masih kecil 😅
   utter_goodbye:
   - text: Oke, sampai jumpa
   - text: Siap kak 😊
