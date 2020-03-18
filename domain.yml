@@ -25,6 +25,9 @@ intents:
 - gender
 - question_general
 - getCollegeInfo
+- getVisiMisiUnwaha
+- getVisiUnwaha
+- getMisiUnwaha
 - getCollegeAddressInfo
 - getRegisterInfo
 - register_requirement
@@ -76,7 +79,17 @@ intents:
 - getProdiFE-Management
 - getProdiFE-Management-2
 - maker_purpose
+- getUKMGeneral
+- getUKMIsAvailable
+- getUKMList
+- getUKMBem
+- getUKMKsr
+- getUKMPenalaran
 responses:
+  utter_available:
+  - text: Ada
+  - text: Ada kak
+  - text: Ada dong
   utter_greet:
   - text: Hai.
   - text: Hai juga. 🙂
@@ -173,6 +186,12 @@ responses:
       Jawa Timur
   - text: Letaknya di Jalan Garuda No.09, Tambak Rejo, Kec. Jombang, Kabupaten Jombang,
       Jawa Timur. Atau di [SINI](https://g.page/unwaha?share)
+  utter_getVisiUnwaha:
+  - text: Visi Unwaha adalah pada tahun 2035 menjadi institusi pendidikan tinggi berstandar internasional yang berperan aktif dalam pengembangan IPTEK, pengelolaan sumber daya alam, dan peningkatan kualitas sumber daya manusia seutuhnya.
+  utter_getMisiUnwaha:
+  - text: "1. Menyelenggarakan pendidikan, penelitian dan pengabdian kepada masyarakat dan pengelolaan Sumber Daya Alam berbasis iman dan taqwa \n
+          2. Mengembangkan dan menerapkan IPTEK yang berkualitas handal yang mampu bersaing secara internasional dan berwawasan lingkungan \n
+          3. Meningkatkan kualitas sumber daya manusia. \n" 
   utter_getRegisterInfo:
   - text: Kamu bisa datang langsung ke lobi unwaha, tepatnya di gedung depan kak.
       tapi pada hari selain jum'at ya
@@ -508,12 +527,28 @@ responses:
   - text: Maaf saya tidak mengerti maksud kamu 🤔, silahkan coba masukkan sesuatu yang
       bisa aku mengerti
   - text: Untuk saat ini Hasva belum mengerti
+  utter_getUKMGeneral:
+  - text: Unit Kegiatan Mahasiswa (disingkat UKM) adalah wadah aktivitas kemahasiswaan luar kelas untuk mengembangkan minat, bakat dan keahlian tertentu. 
+  utter_getUKMList:
+  - text: "Berikut adalah UKM yang ada di unwaha saat ini:\n
+          1. Bidang keorganisasian yaitu BEM, Pramuka, KSR \n
+          2. Bidang karya ilmiah yaitu Penalaran \n
+          3. Bidang keagamaan yaitu Sholawat dan MTQ \n
+          4. Bidang kesenian yaitu Musik Etnik, Teater, Gambus, Al Banjari \n
+          5. Bidang olahraga yaitu Futsal, Volly, Sepak Takraw, Badminton, dan Silat PN \n"
+  utter_getUKMBem:
+  - text: Badan eksekutif mahasiswa (disingkat BEM) adalah organisasi mahasiswa intra kampus yang merupakan lembaga eksekutif di tingkat pendidikan tinggi. Dalam melaksanakan program-programnya, umumnya BEM memiliki beberapa kementerian dan departemen.
+  utter_getUKMPenalaran:
+  - text: "Unit Kegiatan Mahasiswa (UKM) Penalaran adalah sebuah lembaga mahasiswa ditingkat Universitas yang bergerak dalam bidang penelitian ilmiah dan menjadi wadah diskusi ilmiah dan non ilmiah bagi mahasiswa."
+  utter_getUKMKsr:
+  - text: Korps Sukarela (KSR). Wadah ini dimaksud untuk menyiapkan tenaga yang berada dalam keadaan siaga. Dengan rasa senang dan tulus ikhlas setiap saat menyediakan diri untuk memberi bantuan dan pertolongan sesuai dengan kemampuannya bagi sesama umat yang memerlukan.
   utter_maker_purpose:
   - text: Tujuan saya dibuat adalah untuk membantu calon mahasiswa baru mengenal dan
       mendapat info tentang Unwaha
   - text: 'umm, kata pembuatku: "Supaya tidak usah skripsi" hehe'
   - text: Membantu siapapun yang ingin mengenal unwaha
 actions:
+- utter_available
 - utter_greet
 - utter_name
 - utter_how_old
@@ -591,3 +626,10 @@ actions:
 - utter_clear
 - utter_default
 - utter_maker_purpose
+- utter_getVisiUnwaha
+- utter_getMisiUnwaha
+- utter_getUKMGeneral
+- utter_getUKMList
+- utter_getUKMBem
+- utter_getUKMKsr
+- utter_getUKMPenalaran

@@ -392,6 +392,53 @@
 - lokasi unwaha dimana kak?
 - Lokasi unwaha dimana
 
+## intent:getVisiMisiUnwaha
+- visi misi unwaha apa?
+- apa visi misinya unwaha?
+- visi misi unwaha apa kak
+- visi misi unwaha apa saja?
+- visi dan misi unwaha apa?
+- misi dan visi unwaha apa?
+- visi misi kampus ini apa
+- visi misi univ ini apa
+- visi misi universitas ini apa
+- visi misi universitas ini apa ?
+- apa visi misi kampus unwaha
+- apa visi misi kampus ini?
+- jelaskan visi dan misi unwaha
+- tolong jelaskan visi dan misi unwaha
+- bisa jelaskan visi misi unwaha
+
+## intent:getVisiUnwaha
+- visi unwaha apa?
+- apa visinya unwaha?
+- visi unwaha apa kak
+- visi unwaha apa saja?
+- visi kampus ini apa
+- visi univ ini apa
+- visi universitas ini apa
+- visi universitas ini apa ?
+- apa visi kampus unwaha
+- apa visi kampus ini?
+- jelaskan visi unwaha
+- tolong jelaskan visi unwaha
+- bisa jelaskan visi unwaha
+
+## intent:getMisiUnwaha
+- misi unwaha apa?
+- apa misinya unwaha?
+- misi unwaha apa kak
+- misi unwaha apa saja?
+- misi kampus ini apa
+- misi univ ini apa
+- misi universitas ini apa
+- misi universitas ini apa ?
+- apa misi kampus unwaha
+- apa misi kampus ini?
+- jelaskan misi unwaha
+- tolong jelaskan misi unwaha
+- bisa jelaskan misi unwaha
+
 ## intent:getRegisterInfo
 - bagaimana cara daftar?
 - saya ingin masuk ke unwaha
@@ -1348,6 +1395,42 @@
 - apa yang dipelajari di prodi manajemen?
 - apa yang dipelajari di program studi manajemen
 
+## intent:getUKMGeneral
+- ukm itu apa?
+- apa itu ukm
+- jelaskan ukm
+- pengertian ukm itu apa?
+- ukm itu apasih?
+- ukm itu apa sih?
+- ukm itu apa ?
+
+## intent:getUKMIsAvailable
+- unwaha punya ukm?
+- unwaha punya ekstra gak?
+- ada ekstrakulikuler di unwaha
+- ada ekstrakurikuler di unwaha
+- ada ekstr gak di unwaha?
+- apakah di unwaha punya ukm
+- apakah unwaha punya ekstra
+- apakah unwaha punya Ekstra?
+- ada ukm kah?
+- ada ukm di unwaha?
+
+
+## intent:getUKMList
+- ukm di unwaha apa aja
+- ukm di unwaha apa saja?
+- ukmnya unwaha apa saja
+- daftar ukm unwaha
+- unit kegiatan mahasiswa unwaha apa saja?
+- ekstrakulikuler unwaha apa aja?
+- eskulnya unwaha apa saja?
+- eskulnya unwaha apa saja ?
+- ekstra di unwaha saja?
+- di unwaha ekstranya apa saja
+- unwaha ukmnya apa aja?
+- unwaha ukmnya apa saja
+
 ## intent:maker_purpose
 - apa tujuan pembuatmu?
 - mengapa kamu dibuat?
@@ -1370,6 +1453,95 @@
 - jelaskan tujuan kamu dibuat
 - tujuan kamu dibuat apa
 - jelaskan kenapa pembuatmu membuatmu
+
+
+## intent:getUKMBem
+- ukm bem singkatan dari
+- singkatan bem itu apa
+- ukm bem artinya
+- singkatan dari ukm bem itu apa
+- kepanjangan bem itu apa
+- apa itu ukm bem?
+- apa itu ukm bem
+- ukm bem itu apa ?
+- ekstra bem itu gimana
+- ekstra bem itu bagaimana
+- ekstra bem itu seperti apa?
+- ukm bem seperti apa?
+- maksud dari bem itu apa
+- maksudnya bem itu bagaimana
+- kegiatan di ukm bem apa saja?
+- kegiatan di ukm bem apa aja
+- ukm bem itu gimana kak?
+- jelaskan maksud dari ukm bem
+- bisa jelaskan ukm bem itu apa
+- bisa jelaskan ukm bem itu bagaimana
+
+## intent:getUKMKsr
+- ukm ksr singkatan dari
+- singkatan ksr itu apa
+- ukm ksr artinya
+- ksr singkatannya apa
+- ksr kepanjangannya apa
+- singkatan dari ukm ksr itu apa
+- kepanjangan ksr itu apa
+- apa itu ukm ksr?
+- apa itu ukm ksr
+- ukm ksr itu apa ?
+- ekstra ksr itu gimana
+- ekstra ksr itu bagaimana
+- ekstra ksr itu seperti apa?
+- ukm ksr seperti apa?
+- maksud dari ksr itu apa
+- maksudnya ksr itu bagaimana
+- kegiatan di ukm ksr apa saja?
+- kegiatan di ukm ksr apa aja
+- ukm ksr itu gimana kak?
+- jelaskan maksud dari ukm ksr
+- bisa jelaskan ukm ksr itu apa
+- bisa jelaskan ukm ksr itu bagaimana
+
+
+## intent:getUKMPenalaran
+- apa itu ukm penalaran?
+- apa itu ukm penalaran
+- ukm penalaran itu apa ?
+- ekstra penalaran itu gimana
+- ekstra penalaran itu bagaimana
+- ekstra penalaran itu seperti apa?
+- ukm penalaran seperti apa?
+- maksud dari penalaran itu apa
+- maksudnya penalaran itu bagaimana
+- kegiatan di ukm penalaran apa saja?
+- kegiatan di ukm penalaran apa aja
+- ukm penalaran itu gimana kak?
+- jelaskan maksud dari ukm penalaran
+- bisa jelaskan ukm penalaran itu apa
+- bisa jelaskan ukm penalaran itu bagaimana
+
+
+## synonym:badan eksekutif mahasiswa
+- bem
+- BEM
+- Badan Eksekutif Mahasiswa
+
+## synonym:korps sukarela
+- ksr
+- pmii
+- ksr-pmi
+- KSR-PMII
+- KSR
+
+
+## synonym:unit kegiatan mahasiswa
+- ukm
+- UKM
+- Ekstrakurikuler
+- Esktrakulikuler
+- Ekstra
+- Extra
+- kegiatan non akademik
+- eskul
 
 ## synonym:agrobisnis
 - Agrobisnis

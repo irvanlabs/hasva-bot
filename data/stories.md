@@ -13,6 +13,7 @@
 * affirm
     - utter_happy
 
+
 ## senang path 2
 * greet
   - utter_hello
@@ -100,6 +101,11 @@
 ## pertanyaan umum unwaha
 * getCollegeInfo
   - utter_getCollegeInfo
+
+## visi+misi unwaha
+* getVisiMisiUnwaha
+  - utter_getVisiUnwaha
+  - utter_getMisiUnwaha
 
 ## pertanyaan umum unwaha+ paham
 * getCollegeInfo
@@ -329,6 +335,29 @@
 ## penjelasan manajemen 2
 * getProdiFE-Management-2
   - utter_getProdiFE-Management-2
+
+
+## tanya pengertian ukm
+* getUKMGeneral
+  - utter_getUKMGeneral
+
+## tanya apakah ada ukm
+* getUKMIsAvailable
+  - utter_available
+* getUKMList
+  - utter_getUKMList
+
+## penjelasan bem
+* getUKMBem
+  - utter_getUKMBem
+
+## penjelasan ksr
+* getUKMKsr
+  - utter_getUKMKsr
+
+## penjelasan ukm penalaran
+* getUKMPenalaran
+  - utter_getUKMPenalaran
 
 ## user asks for something out of scope
 * out_of_scope

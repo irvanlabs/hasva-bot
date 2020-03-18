@@ -1,7 +1,11 @@
+![PyPI - Status](https://img.shields.io/pypi/status/rasa?style=for-the-badge)
+
+
+
 # hasva-bot
 Hasva an AI virtual assistant for wahab hasbullah university. 
 
-##T ujuan Projek
+## Tujuan Projek
 
 1. Membuat asisten virtual yang membantu para calon mahasiswa untuk medapatkan informasi calon kampus (unwaha).
 2. Calon mahasiswa akan mendapatkan informasi secara cepat karena asisten virtual yang siaga 24 jam.
