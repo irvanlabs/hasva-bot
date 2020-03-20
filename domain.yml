@@ -85,6 +85,7 @@ intents:
 - getUKMBem
 - getUKMKsr
 - getUKMPenalaran
+- ask_recommend_major
 responses:
   utter_available:
   - text: Ada
@@ -547,6 +548,9 @@ responses:
       mendapat info tentang Unwaha
   - text: 'umm, kata pembuatku: "Supaya tidak usah skripsi" hehe'
   - text: Membantu siapapun yang ingin mengenal unwaha
+
+  utter_recommend_question_stage_1:
+    
 actions:
 - utter_available
 - utter_greet

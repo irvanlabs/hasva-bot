@@ -364,3 +364,5 @@
   - utter_default
   - utter_how_can_do
 
+## untuk rekomendasi jurusan
+* ask_recommend_major
