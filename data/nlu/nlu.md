@@ -45,10 +45,10 @@
 - oke
 - yup
 - betul
-- betul kak
+- betul kak!
 - bener banget
 - bener banget kak
-- cantik
+- cakep!!
 
 ## intent:deny
 - tidak
@@ -76,6 +76,18 @@
 - aku bahagia
 - aku baik
 - alhamdulillah
+
+## intent:support
+- semangat kak
+- cemunguth ea
+- semangat ya kak
+- oke tetap berjuang kak
+- jangan menyerah kak
+- tetap semangat!
+- terus berusaha ya
+- semangat terus kak
+- jangan putus asa kak
+- jangan patah semangat kak
 
 ## intent:how_can_do
 - apa yang bisa kamu lakukan?

@@ -86,6 +86,12 @@
 * trivia_boyfriend
   - utter_trivia_boyfriend
 
+## trivia boyfriend v2 kyaaaa
+* trivia_boyfriend
+  - utter_trivia_boyfriend
+* support
+  - affirm
+
 ## trivia book
 * trivia_book
   - utter_trivia_book
