@@ -1519,6 +1519,51 @@
 - bisa jelaskan ukm penalaran itu apa
 - bisa jelaskan ukm penalaran itu bagaimana
 
+<!-- RECOMMEND SYSTEM START -->
+
+## intent:ask_recommend_major
+- tolong pilihkan jurusan yang cocok untuk saya
+- prodi yang cocok untuk saya apa ya?
+- saran dong jurusan yang cocok
+- saran dong jurusan yang cocok untuk saya
+- saya bingung milih jurusan
+- saya bingung milih jurusan yang cocok
+- pilihin jurusan dong
+- pilihkan jurusan yang tepat
+- jurusan yang cocok untuk saya apa ya?
+- pilihkan prodi yang cocok
+- pilihkan prodi yang sesuai
+- sarankan prodi untuk saya
+- sarankan prodi untuk gue
+- sarankan prodi
+- saran prodi
+- saranin prodi
+- saran prodi untuk saya
+- saran prodi yang sesuai untuk saya
+- saran jurusan yang cocok untuk saya
+- saran prodi yang cocok
+- saran prodi atau jurusan yang cocok
+- tentukan prodi yang cocok
+- saranin prodi yang cocok
+- aku bingung milih prodi
+- aku bingung milih prodiyang cocok
+- prodi yang pas buat saya apa
+- jurusan yang pas buat saya apa
+- pilihkan jurusan
+- jurusan yang sesuai dengan saya
+- prodi yang sesuai diri saya
+- prodi yang cocok untuk saya
+- prodi apakah yang sesuai dengan saya
+- prodi apakah yang sesuai dengan minat saya
+- prodi apakah yang sesuai dengan keinginan saya
+- jurusan apakah yang sesuai dengan keinginan saya
+- jurusan yang cocok untuk minat saya
+- prodi yang cocok dengan minat saya
+- pilihkan prodi yang paling pas
+- prodi yang pas buat saya apa?
+
+
+<!-- SYNONYM -->
 
 ## synonym:badan eksekutif mahasiswa
 - bem
