@@ -59,6 +59,7 @@
 ## tanya alamat
 * getCollegeAddressInfo
   - utter_getCollegeAddressInfo
+
 ## penjelasan fakultas
 * getGeneralFacultyInfo
   - utter_getGeneralFacultyInfo

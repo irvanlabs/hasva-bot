@@ -366,6 +366,7 @@
 - kamu cowok?
 - kamu cewek?
 - jenis kelamin kamu apa?
+- cowok apa cewek kamu itu?
 
 ## intent:question_general
 - apa yang sedang kamu lakukan?
@@ -378,6 +379,7 @@
 - lagi ngapain?
 - sekarang lagi ngapain?
 - ngapain sekarang?
+- kamu sekarang ngapain?
 
 ## intent:getCollegeInfo
 - apa itu unwaha?

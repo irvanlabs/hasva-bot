@@ -1,4 +1,3 @@
- - utter_question_general
 
 ## Penjelasan FAI umum
 * getFAIGeneral

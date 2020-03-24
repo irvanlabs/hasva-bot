@@ -68,6 +68,7 @@
 
 ## pertanyaan sepele
 * question_general
+  - utter_question_general
 
 ## user asks for something out of scope
 * out_of_scope

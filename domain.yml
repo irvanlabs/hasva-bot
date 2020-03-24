@@ -7,6 +7,7 @@ intents:
 - affirm
 - deny
 - mood_great
+- support
 - how_can_do
 - mood_unhappy
 - thanks
@@ -141,7 +142,7 @@ responses:
   - text: Sama-sama 😊
   - text: Oke 😊
   - text: Siap kak 😊
-  - text: Oke gpp
+  - text: Oke Sama-sama
   - text: Terima kasih kembali
   utter_hello:
   - text: Hai kak aku Hasva, ada perlu apa?
@@ -549,7 +550,6 @@ responses:
   - text: 'umm, kata pembuatku: "Supaya tidak usah skripsi" hehe'
   - text: Membantu siapapun yang ingin mengenal unwaha
 
-  utter_recommend_question_stage_1:
     
 actions:
 - utter_available
