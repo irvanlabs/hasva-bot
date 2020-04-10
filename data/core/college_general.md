@@ -41,7 +41,7 @@
 ## cara daftar + step 2
 * getRegisterInfo
   - utter_getRegisterInfo
-  - getRegisterInfo-step-2
+  - utter_getRegisterInfo-step-2
 
 ## tanggal test
 * test_date

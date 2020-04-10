@@ -57,7 +57,7 @@ class ActionCareer(Action):
 	def name(self) -> Text:
 		return "action_career"
 
-	def run(self, dispatcher, tracker, domain) -> List[EventType]:
+	def run(self, dispatcher, tracker, domain) -> None:
 		raw = tracker.get_slot('prodi')
 		prodi = raw.replace(" ", "_")
 

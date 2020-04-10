@@ -89,6 +89,11 @@ intents:
 - getUKMPenalaran
 - ask_recommend_major
 - getCareer
+entities:
+- prodi
+slots:
+  prodi:
+    type: unfeaturized
 responses:
   utter_available:
   - text: Ada
@@ -700,3 +705,4 @@ actions:
 - utter_career_teknologi_hasil_pertanian
 - utter_career_agroekoteknologi
 - utter_career_rekayasa_pertanian_dan_biosistem
+- action_career

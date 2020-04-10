@@ -53,9 +53,9 @@ Hasva an AI virtual assistant for wahab hasbullah university.
 
 > ### Engine
 >
-> Python3
-> Rasa
-> Set data kemungkinan percakapan
+> - Python3
+> - Rasa
+> - Set data kemungkinan percakapan
 
 #### Future plan
 - ***Pembayaran***

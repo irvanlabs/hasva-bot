@@ -127,6 +127,8 @@
 - marah
 - lagi gak mood
 - aku lagi galau nih
+- hibur aku dong
+- bisa kamu hibur aku?
 
 ## intent:thanks
 - terima kasih
