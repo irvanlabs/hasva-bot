@@ -93,3 +93,13 @@
   - utter_getProdiInFE
   - utter_getProdiInFP
   - utter_getProdiInFTI
+
+## career 
+* getCareer
+ - action_career
+
+## career + affirm
+* getCareer
+ - action_career
+* affirm
+  - utter_paham
