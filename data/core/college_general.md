@@ -33,10 +33,15 @@
 * getRegisterInfo
   - utter_getRegisterInfo
 
-## cara daftar
+## cara daftar v2
 * getRegisterInfo
   - utter_getRegisterInfo
   - utter_getRegisterInfo-2
+
+## cara daftar + step 2
+* getRegisterInfo
+  - utter_getRegisterInfo
+  - getRegisterInfo-step-2
 
 ## tanggal test
 * test_date
@@ -52,6 +57,10 @@
   - utter_register_requirement
 
 ## biaya kuliah
+* getCostInfo
+  - utter_getCostInfo
+
+## biaya kuliah v2
 * getCostInfo
   - utter_getCostInfo
   - utter_confuse

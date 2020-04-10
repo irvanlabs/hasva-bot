@@ -64,6 +64,11 @@
 - ora
 - tidak juga
 - tidak kak
+- ga
+- gak
+- enggak
+- no
+- engga
 
 ## intent:mood_great
 - sempurna
@@ -467,6 +472,22 @@
 - daftar online caranya
 - cara daftar online gimana?
 
+## intent:getRegisterInfo-step-2
+- kemudian kak
+- kemudian setelah mengisi formulir kak
+- kalau sudah mengisi formulir terus?
+- kalau sudah mengisi formulir terus ?
+- kalau sudah mengisi terus?
+- terus kak setelah itu
+- terus kak setelah itu?
+- habis itu ngapain
+- habis itu
+- habis ngisi formulir trus apa kak
+- langkah selanjutnya setelah mengisi formulir apa?
+- terus setelah mengisi formulir
+- terus setelah mengisi formulir ngapain
+- kalau sudah mengisi formulir?
+
 ## intent:confuse
 - aku gak paham
 - maaf saya tidak mengerti
@@ -616,6 +637,7 @@
 - beda nya fakultas dan program studi itu apa
 - bedanya fakultas dan prodi itu apa?
 - bedanya fakultas dan prodi itu apa ?
+- bedanya fakultas sama prodi itu apa ?
 - apa fakultas dan prodi itu sama?
 - apa fakultas dan prodi itu sama
 - apa fakultas dan prodi itu satu jenis
@@ -784,7 +806,7 @@
 - apa isi dari pendidikan fisika?
 - jelaskan prodi pendidikan fisika
 - jelaskan program studi pendidikan fisika
-- - fisika yang bagaimana?
+- fisika yang bagaimana?
 - pendidikan fisika itu yang bagaimana?
 - pendidikan fisika itu yang gimana?
 

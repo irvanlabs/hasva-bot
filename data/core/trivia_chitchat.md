@@ -26,7 +26,7 @@
 * trivia_boyfriend
   - utter_trivia_boyfriend
 * support
-  - affirm
+  - utter_support
 
 ## trivia book
 * trivia_book

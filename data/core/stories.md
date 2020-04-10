@@ -13,7 +13,6 @@
 * affirm
     - utter_happy
 
-
 ## senang path 2
 * greet
   - utter_hello

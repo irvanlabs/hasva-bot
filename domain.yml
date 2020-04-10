@@ -31,6 +31,7 @@ intents:
 - getMisiUnwaha
 - getCollegeAddressInfo
 - getRegisterInfo
+- getRegisterInfo-step-2
 - register_requirement
 - confuse
 - getCostInfo
@@ -87,6 +88,7 @@ intents:
 - getUKMKsr
 - getUKMPenalaran
 - ask_recommend_major
+- getCareer
 responses:
   utter_available:
   - text: Ada
@@ -111,6 +113,10 @@ responses:
   - text: Siap kak 😊
   - text: Oke kak 😊
   - text: Oke bye 😊
+  utter_support:
+  - text: Oke siap
+  - text: Oke terima kasih
+  - text: Siap kak
   utter_how_can_do:
   - text: Kamu bisa bertanya tentang program studi atau jelaskan fakultas sesuatu
   - text: Untuk saat ini Hasva bisa memberikanmu info mengenai Unwaha, coba tanyakan
@@ -204,7 +210,8 @@ responses:
   - text: Pilih dulu kak mau daftar kategori [3000 sarjana NU](http://pmb.unwaha.ac.id/beasiswanu/formulir-pendaftaran/)
       atau yang [Reguler](http://pmb.unwaha.ac.id/reguler/formulir-pendaftaran/) kemudian
       isi formulirnya ya
-  - text: Lengkapi persyaratan pendaftaran dan isi formulirnya kak di http://pmb.unwaha.ac.id/reguler/formulir-pendaftaran/
+  utter_getRegisterInfo-step-2:
+  - text: "Setelah itu kakak serahkan kelengkapan berkas pendaftaran ke bagian administrasi pendaftaran  pada hari Sabtu - Kamis Pada Jam : 08.00 -14.00 WIB"
   utter_register_requirement:
   - text: 'Persyaratan awal:  1. Mengisi Formulir  2.Membayar Biaya Pendaftaran   Persyaratan
       menyusul:  1. Foto copy ijazah MA/SMA/SMK dilegalisir 2 lembar  2. Foto copy
@@ -549,14 +556,55 @@ responses:
       mendapat info tentang Unwaha
   - text: 'umm, kata pembuatku: "Supaya tidak usah skripsi" hehe'
   - text: Membantu siapapun yang ingin mengenal unwaha
-
-    
+  utter_career_pendidikan_matematika:
+  - text: Peluang atau prospek kerja lulusan pendidikan matematika adalah Pegawai Bank (Account Officer), Data Scientist, Guru SMP/SMA, Guru Sekolah Dasar, Dosen,  Research And Development (RnD), System Analyst, Aktuaris.
+  - text: "Pekerjaan yang cocok untuk lulusan pendidikan matematika antara lain: \n Pegawai Bank (Account Officer) \n Data Scientist \n Guru SMP/SMA \n Guru Sekolah Dasar (SD) \n Dosen \n Content Creator \n Penulis (Content Writer) \n Research And Development (RnD) \n System Analyst \n Aktuaris \n"
+  utter_career_pendidikan_bahasa_inggris:
+  - text: Peluang atau prospek kerja lulusan pendidikan bahasa inggris adalah Penerjemah Lisan (Interpreter), Guru Bahasa Asing, Penerjemah Tulisan (Translator), Konsultan Pendidikan, Staf Maskapai Penerbangan, Concierge Hotel, Pemandu Wisata (Tour Guide), Jurnalis (Reporter), Guru SMP/SMA, Guru Sekolah Dasar (SD), Penulis (Content Writer), Editor.
+  - text: "Pekerjaan yang cocok untuk lulusan pendidikan bahasa inggris antara lain: \n Penerjemah Lisan (Interpreter) \n Guru Bahasa Asing \n Penerjemah Tulisan (Translator) \n Konsultan Pendidikan \n Staf Maskapai Penerbangan \n Concierge Hotel \n Pemandu Wisata (Tour Guide) \n Jurnalis (Reporter) \n Guru SMP/SMA \n Guru Sekolah Dasar (SD) \n Penulis (Content Writer) \n Editor"
+  utter_career_pendidikan_fisika:
+  - text: Peluang atau prospek kerja lulusan pendidikan fisika adalah Pegawai Negeri Sipil (PNS), Pegawai Bank (Account Officer), Bagian Operasional dan Logistik, Data Scientist, Bagian Perencanaan Produk Otomotif, Teknisi Tambang, Minyak, dan Material, Guru SMP/SMA, Guru Sekolah Dasar (SD), Instruktur Pelatihan Kejuruan, Dosen, Teknisi Listrik (Electrical Engineer), Research And Development (RnD), Quality Assurance (QA) & Quality Control (QC), System Analyst.
+  - text: "Pekerjaan yang cocok untuk lulusan pendidikan fisika antara lain: \n Pegawai Negeri Sipil (PNS) \n Pegawai Bank (Account Officer) \n Bagian Operasional dan Logistik \n Data Scientist \n Bagian Perencanaan Produk Otomotif \n Teknisi Tambang, Minyak, dan Material \n Guru SMP/SMA \n Guru Sekolah Dasar (SD) \n Instruktur Pelatihan Kejuruan \n Dosen \n Teknisi Listrik (Electrical Engineer) \n Research And Development (RnD) \n Quality Assurance (QA) & Quality Control (QC) \n System Analyst."
+  utter_career_pendidikan_biologi:
+  - text: Peluang atau prospek kerja lulusan pendidikan biologi adalah Pet Salon & Grooming, Perawat Hewan, Petani, Teknisi Konservasi Lingkungan, Peneliti Bioteknologi, Bagian Perencanaan, Pengembangan, dan Penelitian Produk Bioteknologi, Ahli Bioteknologi, Dosen, Ekonom, Wirausaha (Entrepreuner), Research And Development (RnD), Quality Assurance (QA) & Quality Control (QC).
+  - text: "Pekerjaan yang cocok untuk lulusan pendidikan biologi antara lain: \n Pet Salon & Grooming \n Perawat Hewan \n Petani \n Teknisi Konservasi Lingkungan \n Peneliti Bioteknologi \n Bagian Perencanaan, Pengembangan, dan Penelitian Produk Bioteknologi \n Ahli Bioteknologi \n Dosen \n Ekonom \n Wirausaha (Entrepreuner) \n Research And Development (RnD) \n Quality Assurance (QA) & Quality Control (QC)."
+  utter_career_pendidikan_agama_islam:
+  - text: Peluang atau prospek kerja lulusan pendidikan agama islam adalah Pegawai Negeri Sipil (PNS), Pegawai Bank (Account Officer), Video Editor, Guru SMP/SMA, Guru Sekolah Dasar (SD), Dosen, Penulis (Content Writer), Pendakwah atau Dai. 
+  - text: "Pekerjaan yang cocok untuk lulusan pendidikan agama islam antara lain: \n Pegawai Negeri Sipil (PNS) \n Pegawai Bank (Account Officer) \n Video Editor \n Guru SMP/SMA \n Guru Sekolah Dasar (SD) \n Dosen \n Penulis (Content Writer) \n Pendakwah atau Dai."
+  utter_career_pendidikan_bahasa_arab:
+  - text: Peluang atau prospek kerja lulusan pendidikan bahasa arab adalah Penerjemah Lisan (Interpreter), Guru Bahasa Asing, Bagian Tata Usaha (Atase) Perdagangan Luar Negeri, Penerjemah Tulisan (Translator), Konsultan Pendidikan, Pramugari / Pramugara, Staf Maskapai Penerbangan, Pemandu Wisata (Tour Guide), Jurnalis (Reporter), Dosen, Content Creator, Penulis (Content Writer), Editor, Sastrawan.
+  - text: "Pekerjaan yang cocok untuk lulusan pendidikan bahasa arab antara lain: \n Penerjemah Lisan (Interpreter) \n Guru Bahasa Asing \n Bagian Tata Usaha (Atase) Perdagangan Luar Negeri \n Penerjemah Tulisan (Translator) \n Konsultan Pendidikan \n Pramugari / Pramugara \n Staf Maskapai Penerbangan \n Pemandu Wisata (Tour Guide) \n Jurnalis (Reporter) \n Dosen \n Content Creator \n Penulis (Content Writer) \n Editor."
+  utter_career_ekonomi_syariah:
+  - text: Peluang atau prospek kerja lulusan ekonomi syariah adalah  Tenaga Pengajar, Pegawai Negeri Sipil (PNS), Staff Keuangan Syariah, Ahli Ekonomi Islam, Staff Perbankan Syariah, Staff Lembaga Islam, Konsultan Bisnis Syariah, Staff Perasuransian Syariah, Pialang atau Broker, Entrepreneur.
+  - text: "Pekerjaan yang cocok untuk lulusan ekonomi syariah antara lain: \n Tenaga Pengajar \n Pegawai Negeri Sipil (PNS) \n Staff Keuangan Syariah \n Ahli Ekonomi Islam \n Staff Perbankan Syariah \n Staff Lembaga Islam \n Konsultan Bisnis Syariah \n Staff Perasuransian Syariah \n Pialang atau Broker \n Entrepreneur."
+  utter_career_teknik_informatika:
+  - text: Peluang atau prospek kerja lulusan  teknik informatika adalah Insinyur Aplikasi (Application Engineer), Game Creator, Game Programmer / Game Developer, Insinyur Perangkat Lunak (Software Engineering), Konsultan IT, Data Scientist, Programmer (Software Developer), Teknisi Robot (Robot Engineer), Dosen, Teknisi Rekam Medis, Technopreneur.
+  - text: "Pekerjaan yang cocok untuk lulusan  antara lain: \n Insinyur Aplikasi (Application Engineer) \n Game Creator \n Game Programmer / Game Developer \n Insinyur Perangkat Lunak (Software Engineering) \n Konsultan IT \n Data Scientist \n Programmer (Software Developer) \n Teknisi Robot (Robot Engineer) \n Dosen \n Teknisi Rekam Medis \n Technopreneur."
+  utter_career_sistem_informasi:
+  - text: Peluang atau prospek kerja lulusan  adalah Insinyur Aplikasi (Application Engineer), Konsultan IT, Data Scientist, Programmer (Software Developer), Dosen, Staf Ahli Informasi Medis (Rekam Medis), Digital Marketing, Research And Development (RnD), Technopreneur.
+  - text: "Pekerjaan yang cocok untuk lulusan  antara lain: \n Insinyur Aplikasi (Application Engineer) \n Konsultan IT \n Data Scientist \n Programmer (Software Developer) \n Dosen \n Staf Ahli Informasi Medis (Rekam Medis) \n Digital Marketing \n Research And Development (RnD) \n Technopreneur."
+  utter_career_manajemen:
+  - text: Peluang atau prospek kerja lulusan  adalah Bagian Penjualan (Sales), Pegawai Bank (Account Officer), Bagian Operasional dan Logistik, Product Manager, Pegawai Asuransi, Market Researcher, Produser TV atau Radio, Event Planner/Event Organizer, Dosen, Wirausaha (Entrepreuner). 
+  - text: "Pekerjaan yang cocok untuk lulusan  antara lain: \n Bagian Penjualan (Sales) \n Pegawai Bank (Account Officer) \n Bagian Operasional dan Logistik \n Product Manager \n Pegawai Asuransi \n Market Researcher \n Produser TV atau Radio \n Event Planner/Event Organizer \n Dosen \n Wirausaha (Entrepreuner)."
+  utter_career_agrobisnis:
+  - text: Peluang atau prospek kerja lulusan  adalah  Pengusaha, Lembaga Swadaya Masyarakat, Peneliti, Pegawai Negeri Sipil (PNS), Tenaga Pendidik Atau Dosen, Pedagang Komoditi Baru, Konsultan Pertanian, Penulis Tentang Agribisnis, Konsultan Perusahaan Agribisnis.
+  - text: "Pekerjaan yang cocok untuk lulusan  antara lain: \n Pengusaha \n Lembaga Swadaya Masyarakat \n Peneliti \n Pegawai Negeri Sipil (PNS) \n Tenaga Pendidik Atau Dosen \n Pedagang Komoditi Baru \n Konsultan Pertanian \n Penulis Tentang Agribisnis \n Konsultan Perusahaan Agribisnis."
+  utter_career_teknologi_hasil_pertanian:
+  - text: Peluang atau prospek kerja lulusan  adalah Industri Pengolahan Pertanian, Konsultan Teknologi Hasil Pertanian dan Gizi, Pegawai Pemerintahan, Pengembangan Produk/Research and Development, Wirausaha/ Pengusaha Teknologi Hasil Pertanian, Manajer Produksi, Tenaga Pendidik.
+  - text: "Pekerjaan yang cocok untuk lulusan  antara lain: \n Industri Pengolahan Pertanian \n Konsultan Teknologi Hasil Pertanian dan Gizi \n Pegawai Pemerintahan \n Pengembangan Produk/Research and Development \n Wirausaha/ Pengusaha Teknologi Hasil Pertanian \n Manajer Produksi \n Tenaga Pendidik."
+  utter_career_agroekoteknologi:
+  - text: Peluang atau prospek kerja lulusan  adalah Pegawai Negeri Sipil (PNS), Pegawai Negeri Sipil Daerah (PNS Daerah), Surveyor Tanah, Petani, Ahli Bioteknologi, Dosen, Wirausaha (Entrepreuner), Konsultan Pertanian (Penyuluh Pertanian), Quality Assurance (QA) & Quality Control (QC), System Analyst.
+  - text: "Pekerjaan yang cocok untuk lulusan  antara lain: \n Pegawai Negeri Sipil (PNS) \n Pegawai Negeri Sipil Daerah (PNS Daerah) \n Surveyor Tanah \n Petani \n Ahli Bioteknologi \n Dosen \n Wirausaha (Entrepreuner) \n Konsultan Pertanian (Penyuluh Pertanian) \n Quality Assurance (QA) & Quality Control (QC) \n System Analyst."
+  utter_career_rekayasa_pertanian_dan_biosistem:
+  - text: Peluang atau prospek kerja lulusan  adalah  Pengajar Ilmu Agrikultural, Peneliti Tanah dan Tumbuhan, Pengusaha/Wirausahawan, Ahli Teknik Pertanian, Peneliti Bioteknologi, Dosen, Konsultan Pertanian (Penyuluh Pertanian), Quality Assurance (QA) & Quality Control (QC).
+  - text: "Pekerjaan yang cocok untuk lulusan  antara lain: \n Pengajar Ilmu Agrikultural \n Peneliti Tanah dan Tumbuhan \n Pengusaha/Wirausahawan \n Ahli Teknik Pertanian \n Peneliti Bioteknologi \n Dosen \n Konsultan Pertanian (Penyuluh Pertanian) \n Quality Assurance (QA) & Quality Control (QC)."
 actions:
 - utter_available
 - utter_greet
 - utter_name
 - utter_how_old
 - utter_goodbye
+- utter_support
 - utter_how_can_do
 - utter_cheer_up
 - utter_did_that_help
@@ -572,6 +620,7 @@ actions:
 - utter_getCollegeAddressInfo
 - utter_getRegisterInfo
 - utter_getRegisterInfo-2
+- utter_getRegisterInfo-step-2
 - utter_register_requirement
 - utter_confuse
 - utter_getCostInfo
@@ -637,3 +686,17 @@ actions:
 - utter_getUKMBem
 - utter_getUKMKsr
 - utter_getUKMPenalaran
+- utter_career_pendidikan_matematika
+- utter_career_pendidikan_bahasa_inggris
+- utter_career_pendidikan_fisika
+- utter_career_pendidikan_biologi
+- utter_career_pendidikan_agama_islam
+- utter_career_pendidikan_bahasa_arab
+- utter_career_ekonomi_syariah
+- utter_career_teknik_informatika
+- utter_career_sistem_informasi
+- utter_career_manajemen
+- utter_career_agrobisnis
+- utter_career_teknologi_hasil_pertanian
+- utter_career_agroekoteknologi
+- utter_career_rekayasa_pertanian_dan_biosistem
