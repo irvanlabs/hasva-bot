@@ -12,7 +12,7 @@ Hasva an AI virtual assistant for wahab hasbullah university.
 3. Calon mahasiswa dapat menghubungi atau berinteraksi dengan asisten virtual melalui Telegram atau Facebook Messenger.
 4. Asisten virtual dengan AI.
 
-## Latar Belakang
+### Latar Belakang
 
 1. Calon mahasiswa baru (selanjutnya: camaba) biasanya menghubungi contact person kampus saat jam 9 malam, sehingga membuat camaba menunggu esok hari agar pesannya dibalas.
 2. Contact person biasanya membalas lama karena kesibukan masing-masing.
@@ -20,43 +20,48 @@ Hasva an AI virtual assistant for wahab hasbullah university.
 
 
 
-## Cakupan Percakapan
+>### Cakupan Percakapan
+>
+>> Pertanyaan seputar kampus
+>  - Alamat
+>  - Fakultas
+>  - Prodi
+>  - Ukm
+>  - Prospek kerja setelah lulus di suatu prodi
+>> Pertanyaan seputar fakultas
+>  - Fai
+>  - Fti, dsb
+>> Pertanyaan seputar prodi
+>  - Matematika
+>  - Biologi, dsb
+>  - Apa yang dipelajari di prodi.
+>> Pertanyaan seputar hal teknis
+>  - Pendaftaran
+>  - Prodi yang cocok untuk camaba (*Ongoing*)
 
-1. Pertanyaan seputar kampus
-  1. a)Alamat
-  2. b)Fakultas
-  3. c)Prodi
-  4. d)Ukm
-2. Pertanyaan seputar fakultas
-  1. a)Fai
-  2. b)Fti
-  3. c)Dsb.
-3. Pertanyaan seputar prodi
-  1. a)Matematika
-  2. b)Biologi
-  3. c)Dsb..
-  4. d)Apa yang dipelajari di prodi.
-4. Pertanyaan seputar hal teknis
-  1. a)Pendaftaran
-  2. b)Prodi yang cocok untuk camaba
+> ### Diluar cakupan/trivia
+>
+> - Kondisi bot
+> - Nama bot
+> - Pembuat bot
+> - Menghibur pengguna
 
-## Diluar cakupan/trivia
+>### Sesuatu yang lain diluar cakupan, misal masalah yang membutuhkan hal teknis dengan staf
+>
+> - Memberikan rujukan nomor staff
+> - Bot tidak mengerti
 
-1. Kondisi bot
-2. Nama bot
-3. Pembuat bot
-4. Menghibur pengguna
+> ### Engine
+>
+> Python3
+> Rasa
+> Set data kemungkinan percakapan
 
-## Sesuatu yang lain diluar cakupan, misal masalah yang membutuhkan hal teknis dengan staf
+#### Future plan
+- ***Pembayaran***
+- ***pendaftaran***
+- ***Lapor***
+- ***Cetak Kartu***
 
-1. Memberikan rujukan nomor staff
-2. Bot tidak mengerti
-
-## Aplikasi teknis
-
-1. Python3
-2. Rasa
-3. Set data kemungkinan percakapan
-
-### kedepan jika memungkinkan akan saya tambah dataset + platform chat yang disupport. jadi pengetahuan robot akan meningkat
+#### kedepan jika memungkinkan akan saya tambah dataset + platform chat yang disupport. jadi pengetahuan robot akan meningkat plus pembayaran
 #### ***Jika ada yang mensupport***
