@@ -103,11 +103,11 @@ intents:
 - getCareer-agroekoteknologi
 - getCareer-hasil-pertanian
 - getCareer-rekayasa-pertanian
-entities:
-- prodi
-slots:
-  prodi:
-    type: unfeaturized
+# entities:
+# - prodi
+# slots:
+#   prodi:
+#     type: unfeaturized
 responses:
   utter_available:
   - text: Ada
