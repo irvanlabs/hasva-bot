@@ -23,6 +23,7 @@ intents:
 - trivia_maker
 - trivia_cry
 - trivia_language
+- salam_kenal
 - gender
 - question_general
 - getCollegeInfo
@@ -107,6 +108,10 @@ responses:
   - text: Namaku Hasva. Ada yang bisa aku bantu?
   - text: Namaku Hasva. Ada yang bisa dibantu?
   - text: Namaku Hasva. Ada yang bisa dibantu?
+  utter_i_can_help:
+  - text: Ada yang bisa aku bantu?
+  - text: Ada perlu apa kak?
+  - text: Apa masalah kamu?
   utter_how_old:
   - text: Ya karena baru dibuat berarti saya masih muda 😂
   - text: Gak sopan loh tanya usia pada robot
@@ -619,6 +624,7 @@ actions:
 - utter_hello
 - utter_iamabot
 - utter_trivia_eat_drink
+- utter_i_can_help
 - utter_state
 - utter_question_general
 - utter_getCollegeInfo

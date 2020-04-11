@@ -18,6 +18,8 @@
 - sis
 - Halo kak
 - Hai kak
+- permisi
+- nuwun sewu
 
 ## intent:goodbye
 - bye
@@ -93,6 +95,15 @@
 - semangat terus kak
 - jangan putus asa kak
 - jangan patah semangat kak
+
+## intent:salam_kenal
+- ya salam kenal
+- senang bertemu denganmu
+- salam kenal
+- ya kak salam kenal
+- oke salam kenal
+- oke senang berjumpa dengan kamu
+- salam
 
 ## intent:how_can_do
 - apa yang bisa kamu lakukan?

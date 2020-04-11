@@ -11,7 +11,8 @@ from typing import Any, Text, Dict, List
 
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
-from rasa_sdk.action import FormAction
+# from rasa_sdk.action import FormAction
+#from rasa_sdk.events import SlotSet
 
 #
 # class ActionHelloWorld(Action):
@@ -54,15 +55,15 @@ from rasa_sdk.action import FormAction
 
 class ActionCareer(Action):
 	
-	def name(self) -> Text:
-		return "action_career"
+	def name(self):
+		return "career"
 
-	def run(self, dispatcher, tracker, domain) -> None:
-		raw = tracker.get_slot('prodi')
-		prodi = raw.replace(" ", "_")
+	def run(self, dispatcher, tracker, domain):
+		raw_data = tracker.get_slot('prodi')
+		prodi = raw_data.replace(" ", "_").lower()
 
-		if not prodi:
-			dispatcher.utter_message("Program studi tidak diketahui")
+		# if not prodi:
+		# 	dispatcher.utter_message("Program studi tidak diketahui")
 
 		dispatcher.utter_message(template=f"utter_career_{prodi}")
 		return []

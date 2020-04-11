@@ -19,6 +19,12 @@
 * mood_great
   - utter_happy
 
+## senang path 3
+* greet
+  - utter_hello
+* salam_kenal
+  - utter_i_can_help
+
 ## tanya
 * how_can_do
   - utter_how_can_do
