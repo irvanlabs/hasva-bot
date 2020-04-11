@@ -89,7 +89,20 @@ intents:
 - getUKMKsr
 - getUKMPenalaran
 - ask_recommend_major
-- getCareer
+- getCareer-matematika
+- getCareer-inggris
+- getCareer-biologi
+- getCareer-fisika
+- getCareer-sistem-informasi
+- getCareer-teknik-informatika
+- getCareer-agama-islam
+- getCareer-bahasa-arab
+- getCareer-ekonomi-syariah
+- getCareer-manajemen
+- getCareer-agrobisnis
+- getCareer-agroekoteknologi
+- getCareer-hasil-pertanian
+- getCareer-rekayasa-pertanian
 entities:
 - prodi
 slots:
@@ -711,4 +724,3 @@ actions:
 - utter_career_teknologi_hasil_pertanian
 - utter_career_agroekoteknologi
 - utter_career_rekayasa_pertanian_dan_biosistem
-- action_career

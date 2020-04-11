@@ -53,17 +53,17 @@ from rasa_sdk.executor import CollectingDispatcher
 # 	return
 
 
-class ActionCareer(Action):
+# class ActionCareer(Action):
 	
-	def name(self):
-		return "career"
+# 	def name(self):
+# 		return "career"
 
-	def run(self, dispatcher, tracker, domain):
-		raw_data = tracker.get_slot('prodi')
-		prodi = raw_data.replace(" ", "_").lower()
+# 	def run(self, dispatcher, tracker, domain):
+# 		raw_data = tracker.get_slot('prodi')
+# 		prodi = raw_data.replace(" ", "_").lower()
 
-		# if not prodi:
-		# 	dispatcher.utter_message("Program studi tidak diketahui")
+# 		# if not prodi:
+# 		# 	dispatcher.utter_message("Program studi tidak diketahui")
 
-		dispatcher.utter_message(template=f"utter_career_{prodi}")
-		return []
+# 		dispatcher.utter_message(template=f"utter_career_{prodi}")
+# 		return []

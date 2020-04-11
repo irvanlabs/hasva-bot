@@ -79,3 +79,62 @@
 * out_of_scope
   - utter_default
   - utter_how_can_do
+
+## career for each major
+
+## karir matematika
+* getCareer-matematika
+  - utter_career_pendidikan_matematika
+
+## karir inggris
+* getCareer-inggris 
+  - utter_career_pendidikan_bahasa_inggris
+
+## karir biologi
+* getCareer-biologi 
+  - utter_career_pendidikan_biologi
+
+## karir fisika
+* getCareer-fisika 
+  - utter_career_pendidikan_fisika
+
+## karir sistem-informasi
+* getCareer-sistem-informasi 
+  - utter_career_sistem_informasi
+
+## karir teknik-informatika 
+* getCareer-teknik-informatika 
+  - utter_career_teknik_informatika
+
+## karir agama-islam 
+* getCareer-agama-islam 
+  - utter_career_pendidikan_agama_islam
+
+## karir bahasa-arab 
+* getCareer-bahasa-arab 
+  - utter_career_pendidikan_bahasa_arab
+
+## karir ekonomi-syariah
+* getCareer-ekonomi-syariah 
+  - utter_career_ekonomi_syariah
+
+## karir manajemen
+* getCareer-manajemen 
+  - utter_career_manajemen
+
+## karir agrobisnis
+* getCareer-agrobisnis 
+  - utter_career_agrobisnis
+
+## karir agroekoteknologi
+* getCareer-agroekoteknologi 
+  - utter_career_agroekoteknologi
+
+## karir hasil-pertanian 
+* getCareer-hasil-pertanian 
+  - utter_career_teknologi_hasil_pertanian
+
+## karir rekayasa-pertanian
+* getCareer-rekayasa-pertanian 
+  - utter_career_rekayasa_pertanian_dan_biosistem
+ 
