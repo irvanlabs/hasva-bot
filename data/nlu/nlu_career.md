@@ -2,8 +2,8 @@
 data/nlu/lookup/prodi.txt
 
 ## intent:getCareer
-- setelah lulus prodi [matematika](prodi) nanti kerja apa?
-- prospek kerja lulusan pendidikan matematika
+- setelah lulus prodi [pendidikan matematika](prodi) nanti kerja apa?
+- prospek kerja lulusan pendidikan [pendidikan matematika](prodi)
 - peluang kerja [pendidikan matematika](prodi) apa
 - peluang kerja [pendidikan matematika](prodi) apa ?
 - lulusan [pendidikan biologi](prodi) bisa jadi apa?
